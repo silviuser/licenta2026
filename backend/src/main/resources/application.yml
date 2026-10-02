@@ -1,0 +1,72 @@
+spring:
+  application:
+    name: hrhelper-backend
+  datasource:
+    url: ${HRHELPER_BACKEND_DB_URL:jdbc:postgresql://localhost:5432/hrhelper}
+    username: ${HRHELPER_BACKEND_DB_USER:hrhelper}
+    password: ${HRHELPER_BACKEND_DB_PASSWORD:hrhelper}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+  servlet:
+    multipart:
+      max-file-size: ${HRHELPER_BACKEND_MAX_PDF_MB:20}MB
+      # Bulk upload (REWORK 1 D21): N files in one request, so the request cap
+      # must exceed the per-file cap.
+      max-request-size: ${HRHELPER_BACKEND_MAX_REQUEST_MB:200}MB
+
+server:
+  port: ${HRHELPER_BACKEND_PORT:8080}
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /v3/api-docs
+
+hrhelper:
+  jwt:
+    secret: ${HRHELPER_BACKEND_JWT_SECRET:change-me-in-prod-a-very-long-development-only-secret-key-1234567890}
+    expiry-minutes: ${HRHELPER_BACKEND_JWT_EXPIRY_MIN:120}
+  nlp:
+    base-url: ${HRHELPER_BACKEND_NLP_BASE_URL:http://localhost:8000}
+    # Generous: a cold/large CV extract on the NLP pipeline can take well over
+    # 60s on modest hardware (REWORK 1 smoke test). The NLP service warms its
+    # extract pipeline at startup, so warm calls are ~1-3s.
+    timeout-seconds: ${HRHELPER_BACKEND_NLP_TIMEOUT_SEC:180}
+  cv:
+    # Max files accepted in one bulk upload. Must stay <= the extractExecutor
+    # queue capacity (see AsyncConfig) so a full batch can never overflow the
+    # pool and trigger a rejected dispatch.
+    max-bulk-files: ${HRHELPER_BACKEND_CV_MAX_BULK_FILES:100}
+    recovery:
+      # On startup, re-dispatch CVs stranded in PENDING/PROCESSING — by a crash,
+      # a restart that lost the in-memory queue, or a rejected dispatch. Throttled
+      # so the single-process NLP service is not flooded. Idempotent.
+      enabled: ${HRHELPER_BACKEND_CV_RECOVERY_ENABLED:true}
+      batch-size: ${HRHELPER_BACKEND_CV_RECOVERY_BATCH_SIZE:25}
+      batch-delay-ms: ${HRHELPER_BACKEND_CV_RECOVERY_BATCH_DELAY_MS:1500}
+  max-pdf-mb: ${HRHELPER_BACKEND_MAX_PDF_MB:20}
+  cors:
+    allow-origins: ${HRHELPER_BACKEND_CORS_ALLOW_ORIGINS:http://localhost:5173,http://localhost:3000}
+
+# Public candidate apply link (REWORK 3 D32/D38).
+app:
+  # The SPA serves the /apply/{token} route; the recruiter-facing link is built
+  # from this base. Defaults to the Vite dev server.
+  public-base-url: ${HRHELPER_PUBLIC_BASE_URL:http://localhost:5173}
+  # In-memory per-IP rate limits on /api/public/** (no extra infrastructure).
+  rate-limit-get-per-minute: ${HRHELPER_PUBLIC_RL_GET:60}
+  rate-limit-post-per-hour: ${HRHELPER_PUBLIC_RL_POST:10}
+
+logging:
+  level:
+    com.hrhelper: INFO
