@@ -1,0 +1,176 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "nlp-service"
+version = "0.2.0"
+description = "NLP service for HR Helper — Module 1 (cv_extractor) + Module 2 (skill_extractor) + Module 3 (skill_matcher)"
+requires-python = ">=3.11"
+dependencies = [
+    # Module 1 — PDF extraction
+    "pdfplumber>=0.11",
+    "pymupdf>=1.24",
+    "pytesseract>=0.3.10",
+    "pdf2image>=1.17",
+    "pillow>=10.0",
+    # Shared
+    "pydantic>=2.0",
+    "pydantic-settings>=2.0",
+    "structlog>=24.0",
+    "lingua-language-detector>=2.0",
+    # Module 2 — skill extraction (NLP)
+    # spaCy language models (en_core_web_lg, ro_core_news_lg) are NOT on PyPI
+    # by default; install via: python -m spacy download en_core_web_lg
+    "spacy>=3.7,<4.0",
+    # Module 2 patch round (May 2026) — overlays ship as YAML + JSON data
+    # files. PyYAML reads the tech-alias and suppression-rule files.
+    "PyYAML>=6.0",
+    # Module 3 — needed for the encoder Protocol's return type, the
+    # ESCO embedding matrix, and the baseline metrics. Listed at base
+    # level (rather than in [ml]) so ``import skill_matcher`` works
+    # even when the heavy torch + sentence-transformers stack is not
+    # installed (e.g. CI runs that only exercise MockEncoder).
+    "numpy>=1.26,<3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "pytest-mock>=3.14",
+    "ruff>=0.4",
+    "mypy>=1.10",
+    "reportlab>=4.0",
+    "types-Pillow",
+    "types-PyYAML>=6.0",
+]
+# Module 3 (skill_matcher) — semantic retrieval stack. Installed on
+# demand because torch CPU wheels are large (~200 MB) and most Module 1
+# / Module 2 contributors do not need them.
+#
+# Windows install (recommended path — the CPU index URL is required;
+# the default PyPI does not ship Windows torch wheels for many
+# versions):
+#
+#     pip install -e ".[ml]" --extra-index-url https://download.pytorch.org/whl/cpu
+#
+# scikit-learn is already a transitive dep via spaCy/thinc; pinning
+# explicitly so the Module 3 baseline can call
+# ``sklearn.metrics.precision_recall_fscore_support`` without depending
+# on whatever version got resolved by other constraints.
+ml = [
+    "torch>=2.1,<3",
+    "sentence-transformers>=2.5,<4",
+    "scikit-learn>=1.4,<2",
+]
+# Step 10 (2026-05-17) — FastAPI service surface (``api/``). Listed as
+# an optional extra because most Module 1/2/3 development happens
+# without spinning up the HTTP layer. The ``api/`` package lives at
+# ``nlp-service/api/`` (sibling of ``src/``) and is intentionally NOT
+# included in the wheel (see ``[tool.hatch.build.targets.wheel]``
+# below) — production deployment is by source checkout, not by wheel
+# install. ``python-multipart`` is pinned because the
+# ``POST /v1/extract`` and ``POST /v1/full`` endpoints accept
+# ``multipart/form-data`` uploads.
+api = [
+    "fastapi>=0.115,<1.0",
+    "uvicorn[standard]>=0.32,<1.0",
+    "python-multipart>=0.0.12",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cv_extractor", "src/skill_extractor", "src/skill_matcher"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# Step 10 amendment: ``"."`` joins ``"src"`` so ``import api`` resolves
+# to ``nlp-service/api/`` during the test run. The ``api`` package is
+# intentionally NOT in ``src/`` (it is a deployment artefact, not a
+# library) and is therefore not on the wheel-built import path.
+pythonpath = ["src", "."]
+addopts = "--cov=cv_extractor --cov=skill_extractor --cov=skill_matcher --cov=api --cov-report=term-missing --cov-fail-under=85"
+markers = [
+    "slow: end-to-end tests that run the full Module 1 + Module 2 + Module 3 pipeline on real PDFs / encoders",
+]
+
+[tool.coverage.run]
+source = ["src/cv_extractor", "src/skill_extractor", "src/skill_matcher", "api"]
+omit = [
+    "tests/*",
+    "scripts/*",
+    # ``api/__main__.py`` is a thin ``uvicorn.run(...)`` driver — its
+    # only branch is the ``if __name__ == "__main__"`` guard, which we
+    # cannot exercise under pytest without forking a subprocess.
+    "api/__main__.py",
+    # data/category_map.py is exercised only by the Step 3 training-
+    # dataset build script and its slow integration test; including it
+    # in the default ``--cov-fail-under`` gate would force every Step 4+
+    # development cycle to also run the slow build.
+    "src/skill_matcher/data/category_map.py",
+]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+src = ["src"]
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "UP",  # pyupgrade
+    "ANN", # flake8-annotations
+    "RUF", # ruff-specific
+]
+ignore = ["ANN101", "ANN102"]
+
+[tool.ruff.lint.per-file-ignores]
+# Inline CSV fixtures in skill_extractor / skill_matcher tests use
+# long lines to mirror real ESCO data; folding hurts readability more
+# than the line-length cap helps.
+"tests/skill_extractor/test_esco_loader.py" = ["E501"]
+"tests/skill_extractor/test_pipeline.py" = ["E501"]
+"tests/skill_matcher/test_esco_loader.py" = ["E501"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["api", "cv_extractor", "skill_extractor", "skill_matcher"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+# ``api`` lives at ``nlp-service/api/`` (sibling of ``src/``); the
+# repository root is implicitly on the mypy path because ``mypy``
+# discovers packages from the working directory. Listing ``api`` in
+# ``packages`` brings the new FastAPI surface under the same
+# ``--strict`` gate as the ``src/`` packages, so a single ``mypy``
+# invocation with no arguments covers the whole repo uniformly.
+mypy_path = "src"
+packages = ["api", "cv_extractor", "skill_extractor", "skill_matcher"]
+
+[[tool.mypy.overrides]]
+module = ["spacy.*", "thinc.*", "srsly.*", "pdf2image.*", "pdfplumber.*", "fitz.*"]
+ignore_missing_imports = true
+
+# Module 3 ML dependencies — ``sentence_transformers`` does not ship
+# type stubs, ``torch``'s stubs are partial and frequently lag behind
+# the runtime, ``transformers`` is a sentence-transformers transitive
+# dep that the encoder touches via ``set_seed``, and ``scikit-learn``'s
+# stubs are similarly incomplete. Ignoring missing imports is the
+# standard pragma for these packages under ``mypy --strict``.
+[[tool.mypy.overrides]]
+module = ["torch.*", "sentence_transformers.*", "transformers.*", "sklearn.*"]
+ignore_missing_imports = true
+
+# Step 10: ``python-multipart`` and ``uvicorn`` ship their own type
+# stubs in modern releases, but the ``starlette`` form-parser path
+# touches a couple of dynamically-typed symbols that mypy --strict
+# flags. Suppressing these keeps the API package clean without
+# loosening strictness anywhere else.
+[[tool.mypy.overrides]]
+module = ["multipart.*", "python_multipart.*"]
+ignore_missing_imports = true

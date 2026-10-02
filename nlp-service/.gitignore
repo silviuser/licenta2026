@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+!.env.example
+
+# Data / CV files (never commit real CVs)
+/data/
+# ...but DO commit the training-data scaffolding (structure markers + README)
+!/data/training/
+!/data/training/README.md
+!/data/training/**/.gitkeep
+# Re-ignore anything else inside training/ subdirs (PDFs, extracted text, pairs)
+/data/training/cvs_raw/*
+!/data/training/cvs_raw/.gitkeep
+/data/training/cvs_text/*
+!/data/training/cvs_text/.gitkeep
+/data/training/pairs/*
+!/data/training/pairs/.gitkeep
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Module 2 — skill_extractor on-disk caches (PhraseMatcher serialization)
+.cache/
+
+# Module 3 — fine-tuned skill_matcher checkpoints (DECISIONS.md D4)
+# Each Colab run produces ~500 MB of weights under models/skill_matcher/<run_name>/;
+# we keep only the report + manifest committed (under reports/), never the weights.
+/models/
+
+# Module 3 — Colab bundle artefacts (regenerable via scripts/pack_colab_bundle.py)
+/colab_bundle*.zip
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
