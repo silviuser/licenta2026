@@ -1,0 +1,30 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+  flyway:
+    enabled: true
+
+hrhelper:
+  jwt:
+    secret: test-only-secret-key-that-is-sufficiently-long-for-hs256-signing-0123456789
+    expiry-minutes: 60
+  nlp:
+    base-url: http://localhost:8000
+    timeout-seconds: 5
+  max-pdf-mb: 20
+  cors:
+    allow-origins: http://localhost:5173
+
+# Generous public limits by default so the apply-flow tests never trip them; the
+# dedicated rate-limit test lowers the POST budget via @TestPropertySource (its
+# own context, so it gets a fresh counter map).
+app:
+  public-base-url: http://localhost:5173
+  rate-limit-get-per-minute: 1000
+  rate-limit-post-per-hour: 1000
+
+logging:
+  level:
+    com.hrhelper: DEBUG
