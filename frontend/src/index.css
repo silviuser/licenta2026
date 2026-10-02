@@ -1,0 +1,10 @@
+/* Global resets are handled by MUI <CssBaseline />. Keep this minimal. */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
