@@ -1,0 +1,120 @@
+# ====================================================================
+# OS & System files
+# ====================================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+
+# ====================================================================
+# IDE & Tooling
+# ====================================================================
+.idea/
+.vscode/
+*.iml
+.claude/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ====================================================================
+# Environment & Secrets (NEVER COMMIT CREDENTIALS)
+# ====================================================================
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.p12
+
+# ====================================================================
+# Candidate CVs & Sensitive Documents (GDPR / Privacy protection)
+# ====================================================================
+nlp-service/tests/fixtures/real_cv*.pdf
+nlp-service/tests/fixtures/cv-europass.pdf
+/CVuri*/
+/CV_70/
+*.pdf.tmp
+*.pdf.bak
+
+# ====================================================================
+# Prompt archives & Auxiliary Thesis Drafts
+# ====================================================================
+*KICKOFF_PROMPT*.md
+*PROMPT*.md
+*CHAT_EXPORT*.md
+app_aux/
+auxiliare/
+doc_workspace/
+ESCO dataset*/
+
+# ====================================================================
+# Backend (Java 21 / Spring Boot / Gradle)
+# ====================================================================
+backend/.gradle/
+backend/build/
+!backend/gradle/wrapper/gradle-wrapper.jar
+backend/*.log
+
+# ====================================================================
+# Frontend (React / Vite / TypeScript)
+# ====================================================================
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/coverage/
+frontend/*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ====================================================================
+# NLP Service (Python / FastAPI / ML Models)
+# ====================================================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+nlp-service/.venv/
+nlp-service/venv/
+nlp-service/env/
+
+nlp-service/.pytest_cache/
+nlp-service/.mypy_cache/
+nlp-service/.ruff_cache/
+nlp-service/.coverage
+nlp-service/htmlcov/
+nlp-service/.cache/
+
+# ML Checkpoints & heavy weights (keep reports/manifests, ignore binary weights)
+nlp-service/models/
+nlp-service/colab_bundle*.zip
+
+# Training data PDFs / Raw text
+nlp-service/data/
+!nlp-service/data/training/
+!nlp-service/data/training/README.md
+!nlp-service/data/training/**/.gitkeep
+nlp-service/data/training/cvs_raw/*
+!nlp-service/data/training/cvs_raw/.gitkeep
+nlp-service/data/training/cvs_text/*
+!nlp-service/data/training/cvs_text/.gitkeep
+nlp-service/data/training/pairs/*
+!nlp-service/data/training/pairs/.gitkeep
+
+# Telemetry logs & raw execution logs with candidate data
+nlp-service/reports/per_cv_*
+nlp-service/reports/*.log
+nlp-service/*.log
+*.log
