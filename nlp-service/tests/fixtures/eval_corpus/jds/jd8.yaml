@@ -1,0 +1,66 @@
+id: jd8
+title: SAP Production Engineer
+language: en
+location: ''
+category: devops
+seniority: mid
+source_anonymized: ''
+raw_text: "SAP Production Engineer\nDB Global Technology is Deutsche Bank’s technology centre in Central and Eastern Europe.\
+  \ Since its set-up in 2013, Bucharest Technology Centre (BEX) has constantly proven its capacity to deliver global technology\
+  \ products and services, playing a dynamic role in the Bank’s technology transformation.\nWe have a robust, hands-on engineering\
+  \ culture dedicated to continuous learning, knowledge-sharing, technical skill development and networking. We are an essential\
+  \ part of the Bank’s technology platform and develop applications for many important business areas.\n\n\nThis role is part\
+  \ of Finance (FPI) - RFT Production Support. FPI Production Suzpport team is based out of India, Germany and Cary, US. This\
+  \ role will add to the follow the sun support model.\n\n\nFinance(FPI) IT is an integral function of DB providing end to\
+  \ end support for all Finance related applications . The Current team supports the below Finance domains:\n\n\nReporting\
+  \ Tribe \n\nRisk Close\nLocal Reg\nCRC\nGroup Reporting \nAccounting Tribe \n\nAccounting Revenue\nAccounting Close\n\n\n\
+  Responsibilities\n\nSystem Reliability: Ensure the reliability, availability, and performance of production systems by implementing\
+  \ best practices in monitoring, alerting, and incident response.\nSystem Maintenance: Understand thoroughly the end-to-end\
+  \ application support process and escalation procedures, become fully conversant with all support tools. Maintain an end\
+  \ to end view of the application and infrastructure landscape.\nAutomation: Develop and maintain automation tools and scripts\
+  \ to streamline deployment, scaling, and operational tasks.\nIncident Management: Act as a primary responder to system outages\
+  \ and incidents, ensuring rapid resolution and thorough post-mortem analysis to prevent recurrence.\nMonitoring & Alerting:\
+  \ Design and implement robust monitoring and alerting systems to proactively identify and address potential issues.\nPerformance\
+  \ Optimization: Identify and resolve performance bottlenecks across the stack, from application code to infrastructure.\n\
+  Collaboration: Work closely with development teams and other stakeholders to ensure that new features and services are designed\
+  \ with reliability and scalability in mind.\nDocumentation: Maintain comprehensive documentation of systems, processes,\
+  \ and procedures to ensure knowledge sharing and continuity.\nContinuous Improvement: Continuously evaluate and improve\
+  \ our infrastructure, tools, and processes to enhance system reliability and operational efficiency.\nDR Testing and Deployments:\
+  \ Support DR Tests, Patching and Deployments by executing defined Standard Tests / Verification and preparing respective\
+  \ Evidence and uploading them to the respective Portals\nSupport Times: There is the Requirement to provide Support also\
+  \ in Shifts outside Standard Business Times like Evening Support on ongoing critical Incidents until other Shift can take\
+  \ over or Weekend in case or DR Exercise, Migration or Patching etc.\n5+ years overall IT experience resource, with the\
+  \ right level of Customer oriented Production Support.\nAbility to work in a fast paced environment with competing and alternating\
+  \ priorities with a constant focus on delivery.\nAbility to balance business demands and IT fulfilment in terms of standardization,\
+  \ reducing risk and increasing IT flexibility.\n\n\nSkills \n\nSound understanding of change management processes and controls\
+  \ in large organizations.\nStrong experience of envisioning and driving full stack automation in medium to large sized groups.\n\
+  Excellent problem-solving skills in a distributed, multi-technology ecosystem\nMust have experience in SAP Standard Product\
+  \ BCS (Business Consolidation System). System is customized to fulfil the need of DB which requires the need to learn the\
+  \ changes compared to the Standard.\nBasic Knowledge about Financial Accounting in Banks and respective Closure Process\
+  \ (Month, Quarter and Year End).\nKnowledge about the Driver Based Cost Management (DBCM)\nBasis ABAP debugging skills.\n\
+  Basic Knowledge about Banking Products (on Balance Sheet, Derivatives etc.) appreciated\n• Experience with Linux/Unix systems\
+  \ and scripting languages such as, Python and shell\n• Automation with tools such as Ansible, SSH, and Shell\n• Monitoring\
+  \ Experience with the design and implementation of AI/ML and RPA/ automation tools or tools like Geneos, Prometheus, Grafana\
+  \ etc.\n• Problem analysis and solving in multiple layers such as hardware, Linux, networking and application\n• Working\
+  \ knowledge of networks and load balancing and ssh keys.\n• Expertise in Unix command line and shell scripting.\n• Deep\
+  \ knowledge of the Incident, Problem and Change Management processes within the ITSM framework at minimum must be ITIL V3\
+  \ Foundation certified. Proficient at using Service Management tools (e.g. ServiceNow, JIRA, etc.) and service monitoring\
+  \ tools.\n• Exposure to GCP and monitoring tools such as NewRelic will be preferred.\n"
+required_skills:
+- Sound understanding of change management processes and controls in large organizations.
+- Strong experience of envisioning and driving full stack automation in medium to large sized groups.
+- SAP Standard Product BCS (Business Consolidation System)
+- Financial Accounting in Banks and respective Closure Process (Month, Quarter and Year End).
+- Driver Based Cost Management (DBCM)
+- Basis ABAP debugging skills.
+- Experience with Linux/Unix systems and scripting languages such as, Python and shell
+- Automation with tools such as Ansible, SSH, and Shell
+- Monitoring tools like Geneos, Prometheus, Grafana
+- Networks and load balancing and ssh keys.
+- Expertise in Unix command line and shell scripting.
+- Incident, Problem and Change Management processes within the ITSM framework - ITIL V3 Foundation certified.
+- Service Management tools (e.g. ServiceNow, JIRA, etc.)
+nice_to_have_skills:
+- Knowledge about Banking Products (on Balance Sheet, Derivatives etc.)
+- Exposure to GCP and monitoring tools such as NewRelic
+notes: ''

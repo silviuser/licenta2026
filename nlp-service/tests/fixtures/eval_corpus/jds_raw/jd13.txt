@@ -1,0 +1,18 @@
+AWS Data Engineer
+YOUR ROLE
+•Design, develop, and maintain scalable data pipelines using AWS Redshift, primarily S3 , Cloud 9
+•Integrate and manage data workflows in Git repositories, including branching, pull requests, and version control best practices
+•Optimize Redshift performance through best practices in schema design, data partitioning, and query optimization
+•Monitor pipeline health and data quality; implement alerting and logging as needed.
+•Collaborate with Data Analysts, Data Scientists, and Business Stakeholders to understand data needs and deliver reliable datasets.
+•Participate in code reviews, testing, and documentation.
+
+
+YOUR PROFILE
+•Bachelor’s degree in computer science
+•Extended hands-on experience in AWS Redshift, data pipeline development, and version control systems
+•Proficient in - Git, Airflow, DBT
+•Should have a good understanding of SDLC and Agile methodologies
+•Basic knowledge of Python
+•Good understanding of data warehouse architecture and cloud-based data engineering principles.
+•Good to have domain knowledge of telecommunication industry

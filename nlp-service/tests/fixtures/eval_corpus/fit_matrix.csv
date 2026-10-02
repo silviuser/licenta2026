@@ -1,0 +1,16 @@
+cv_id,jd1,jd2,jd3,jd4,jd5,jd6,jd7,jd8,jd9,jd10,jd11,jd12,jd13,jd14,jd15,jd16,jd17,jd18,jd19,jd20
+real_cv1,possible,possible,no,possible,possible,possible,possible,no,no,possible,possible,possible,no,no,no,possible,strong,possible,no,strong
+real_cv2,possible,possible,no,possible,possible,possible,no,no,no,strong,strong,possible,possible,possible,possible,no,strong,possible,no,strong
+real_cv3,possible,possible,strong,possible,no,possible,no,no,possible,no,possible,no,no,no,no,no,no,no,no,no
+real_cv4,possible,possible,possible,possible,no,possible,strong,no,possible,strong,possible,possible,no,possible,possible,no,possible,no,no,possible
+real_cv5,possible,possible,possible,possible,strong,possible,possible,possible,possible,possible,possible,no,no,no,possible,strong,no,strong,no,no
+real_cv6,no,no,no,no,no,no,no,possible,possible,strong,no,no,strong,strong,no,no,no,no,possible,no
+real_cv7,no,no,possible,no,no,no,no,possible,possible,strong,possible,no,no,no,possible,possible,no,no,no,no
+real_cv8,possible,possible,strong,possible,no,possible,possible,no,possible,strong,strong,possible,no,no,strong,no,strong,no,possible,strong
+real_cv9,possible,possible,possible,possible,no,possible,possible,no,possible,strong,possible,possible,strong,strong,no,no,possible,no,no,possible
+real_cv10,no,no,possible,no,no,no,no,no,no,no,no,no,no,no,no,possible,no,possible,no,no
+real_cv11,strong,strong,possible,strong,no,strong,possible,no,possible,possible,possible,possible,possible,possible,possible,no,possible,no,no,possible
+real_cv12,possible,possible,possible,possible,strong,possible,possible,no,no,possible,strong,possible,no,no,strong,strong,strong,strong,no,strong
+real_cv13,no,no,strong,possible,no,no,no,no,strong,no,no,no,no,no,no,no,no,no,no,no
+real_cv14,possible,possible,no,possible,no,possible,no,no,no,no,possible,no,no,no,no,possible,no,no,strong,no
+real_cv15,no,no,no,no,no,no,no,possible,possible,possible,no,no,possible,possible,no,no,no,no,no,no

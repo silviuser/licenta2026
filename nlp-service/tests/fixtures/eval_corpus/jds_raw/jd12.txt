@@ -1,0 +1,38 @@
+Full Stack Engineer (Java with .Net)
+About the role:
+
+We are looking for a Full Stack Engineer (Backend + notion of Frontend) to help analyse and modernize legacy custom dev applications for deployment in a cloud-native environment. You will work closely with cloud architects and DevOps teams.
+
+
+Key Responsibilities:
+
+• Read and analyze existing code to identify the things to be updated and fixed
+• Being able to properly start the application locally within an IDE to become efficient in troubleshooting
+• Identify dependencies, legacy patterns, and potential migration blockers
+• Being able to fix SAST critical issues
+• Update application to be linked to a Single Sign On solution (OAUTH2/OIDC, SAMLv2), whether it is custom dev or vendor solution (Commercial off the shelf)
+• Update backend dependencies to under support version
+• Refactor applications to support containerization and CI/CD pipelines (producing dockerfile)
+• Collaborate with cloud and security architects to ensure compliance and best practices
+• Produce clear documentation, including application overviews, architecture diagrams, and migration plans
+• Deal with SQL issue for applications that need a database upgrade/switch to another database vendor.
+• Setup observability and capability that will accelerate troubleshooting and application lifecycle management
+
+
+Tech Stack (Required Skills):
+
+• Back-end: Notion or interest in learning for Java, .Net, (at least one programming language should be mastered and another known)
+• CI/CD: Git, GitLab CI
+• Tooling: SonarQube, SAST, DAST, Intellij or VScode
+• Cloud: Notions on Google Cloud Platform (GCP), Tanzu
+• Infrastructure: Docker, Kubernetes (GKE), Oauth2 OIDC, SAMLv2
+• Methodologies: Agile / Kanban
+
+
+Other Skills:
+
+• At least 5 years of experience in one backend programming language, 2+ on another one
+• Autonomous and comfortable working with modernizing legacy code and learning new things
+• Interest in cloud-native principles and containerization
+• Willingness to grow in infrastructure, DevOps, and CI/CD practices
+• Collaborative, structured, and adaptable – essential qualities in a complex enterprise environment

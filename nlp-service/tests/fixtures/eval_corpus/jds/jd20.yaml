@@ -1,0 +1,37 @@
+id: jd20
+title: .NET Developer
+language: en
+location: ''
+category: swe
+seniority: unspecified
+source_anonymized: ''
+raw_text: |-
+  .NET Developer
+
+  Main Responsibilities
+
+  Collaborate with business analysts, project managers, and other stakeholders to define and understand requirements
+  Design, develop, and maintain .NET-based applications, ensuring scalability, performance, and security
+  Participate in all stages of the software development life cycle, including planning, coding, testing, and deployment
+  Conduct code reviews to ensure quality and adherence to standards
+  Troubleshoot and resolve software issues efficiently
+  Stay up to date with industry trends, tools, and best practices
+
+
+  Qualifications / Technical Skills
+
+  Bachelor’s degree in Computer Science, Software Engineering, or a related field
+  Strong experience with .NET Core, C#, MVC, WebAPI, Entity Framework, and SQL
+  Knowledge of Kubernetes, MSSQL, Redis, and cloud platforms (GCP preferred)
+  Ability to approach AI with curiosity and intention, actively incorporating AI-powered tools into workflows to enhance productivity and drive innovation.
+  Experience with test automation
+  Eager to learn new technologies
+  Good team player with a result-oriented attitude and analytical mindset
+  Strong communication and interpersonal skills
+  High energy and drive
+required_skills:
+- Strong experience with .NET Core, C#, MVC, WebAPI, Entity Framework, and SQL
+- Knowledge of Kubernetes, MSSQL, Redis, and cloud platforms (GCP preferred)
+- Experience with test automation
+nice_to_have_skills: []
+notes: ''

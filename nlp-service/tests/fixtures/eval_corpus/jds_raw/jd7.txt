@@ -1,0 +1,28 @@
+Android Audio Software Engineer
+Who we are:
+
+Open-minded intellectuals who embrace emerging technologies on our mission to create innovative Software Engineering Solutions that will impact millions of users around the world.
+
+
+We are seeking a Android Audio Software Engineer with C/C++ skills and a solid understanding of native development using the Android NDK.
+
+
+Responsibilities
+
+• Develop and maintain an advanced Android application for maritime communications, integrating both audio and graphical components.
+• Implement performance-critical modules using C/C++ with the Android NDK.
+• Design and optimize low-level audio pipelines using OpenSL ES and/or AAudio for real-time communication.
+• Process and analyze audio signals, including filtering, encoding/decoding, and noise reduction techniques.
+• Ensure low-latency and high-reliability audio transmission suitable for naval environments.
+
+
+Qualifications
+
+• Experience in C/C++ for audio processing.
+• Experience developing mobile apps for Android using audio-specific low-level libraries (OpenSLES, AAudio, Oboe), NDK (Native Development Kit), SDK (Software Development Kit), frameworks.
+• Experience in Java for Android application integration.
+• Experience with Android Studio and SVN, maintaining Android toolchain, build Android APK packages.
+• Strong skills using adb, logcat, systrace, and dumpsys.
+• Familiarity with ALSA (Advanced Linux Sound Architecture) and Android Audio Hardware Abstraction Layer (HAL).
+• Knowledge of networking concepts and Linux network stack programming is highly desirable.
+• Understanding voice communication and voice signaling concepts is a big plus

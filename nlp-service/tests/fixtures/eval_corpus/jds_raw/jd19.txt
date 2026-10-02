@@ -1,0 +1,28 @@
+Junior LowCode Engineer
+WE ARE
+
+SoftServe is a global IT company specializing in software development and consultancy services. Since 1993, we’ve partnered with organizations from startups to large enterprises to help them accelerate growth and innovation, transform operational efficiency, and deliver new products to the market.
+
+The Low Code Platforms practice works as a global organization as part of SoftServe’s Digital Platforms Center of Excellence. We address the rapidly growing demand for automation with low-code platforms such as Microsoft Power Platform, ServiceNow, Mendix, Pegasystems, and others.
+
+Our team builds cross-functional solutions where low-code automation is integrated with other cutting-edge technologies. We are responsible for both the development of low-code applications and the delivery of advisory and implementation services to clients under the platform design best practices and with a defined implementation methodology.
+
+if you are
+
+Experienced as a Microsoft Power Platform Engineer for 1+ year
+A holder of bachelor’s degree in computer science
+Skilled in implementing RPA solutions with Power Automate Desktop
+Certified in Microsoft Power Platform (PL-900, PL-200)
+Accustomed to working within an Agile Scrum team
+Familiar with other low-code and RPA platforms
+
+
+AND YOU WANT TO
+
+Work with modern Microsoft low-code solutions for business automation
+Design, deliver, and support various solutions from large-scale ground-up custom-developed low-code applications to cloud-based development and integration services
+Customize industry sector-focused packages that help our clients meet business objectives
+Establish implementation capabilities and limitations, performance requirements, and interfaces for the end-user solution of a diverse SDLC team to achieve project goals
+Carry out process-oriented application workflow configuration as well as component and integration testing within the desired Low Code platform
+Troubleshoot platform automation issues, and communicate with platform support teams to resolve
+Conduct peer reviews of other team members, validating code for compliance with standards and best practices

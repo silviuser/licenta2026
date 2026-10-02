@@ -1,0 +1,64 @@
+# Surface-form → ESCO URI overlay.
+#
+# Each entry adds one or more surface forms (``altLabel`` style patterns)
+# to an EXISTING ESCO concept. If the canonical concept is not present
+# in ``skills_en.csv``, the surface should be placed in
+# ``custom_concepts.json`` instead — never invent ESCO URIs here.
+#
+# The May-2026 validation report catalogued a long list of CV-frequent
+# tech terms that the bare ESCO bundle does not index by their common
+# trade names. The mapping below is the small subset that has a direct
+# match in ESCO v1.2.1; concepts ESCO does not carry (Docker, Kubernetes,
+# TensorFlow, React, Node.js, MongoDB, IntelliJ IDEA, Linux, …) are
+# routed to ``custom_concepts.json``. The validation report
+# (reports/skill_extraction_validation_*.md, section 8) records the
+# precision/recall delta this overlay produces on the same corpus.
+#
+# Schema
+# ------
+# aliases:
+#   - target_uri: <ESCO concept URI; must exist in skills_en.csv>
+#     preferred_label: <human-readable label, copied from ESCO; documentation only>
+#     surfaces:
+#       - <surface form 1>
+#       - <surface form 2>
+#     reason: <one-line note for the report>
+#
+# All surfaces are added as ``alt`` patterns: they participate in
+# matching but never override the ESCO ``preferredLabel`` for that URI.
+
+aliases:
+  - target_uri: http://data.europa.eu/esco/skill/a8d07b5a-c1a1-42c6-9d53-db9c7a2ca996
+    preferred_label: PostgreSQL
+    surfaces:
+      - Postgres
+      - PostgresQL
+      - pg
+    reason: "Postgres is the de-facto short name; ESCO only ships the full PostgreSQL spelling."
+
+  - target_uri: http://data.europa.eu/esco/skill/e5d1f825-60ed-4bdd-872a-e748c387f777
+    preferred_label: CSS
+    surfaces:
+      - CSS3
+      - cascading style sheets
+      - HTML/CSS
+      - CSS/HTML
+    reason: "CSS3 / cascading style sheets are common spellings missing from the ESCO altLabels. Slash-joined pairs HTML/CSS and CSS/HTML route to this URI so Module 2 emits a CSS match in addition to the HTML match emitted by the CUST:html entry (slash segmenter only fires for single-letter sides like C/C++)."
+
+  - target_uri: http://data.europa.eu/esco/skill/f683ae1d-cb7c-4aa1-b9fe-205e1bd23535
+    preferred_label: use Microsoft Office
+    surfaces:
+      - Microsoft Office
+      - MS Office
+      - Office 365
+    reason: "ESCO only lists the imperative form 'use microsoft office'; CVs typically write 'Microsoft Office'."
+
+  - target_uri: http://data.europa.eu/esco/skill/5b9cde20-f1b9-4adc-bfb3-dbf70b14138d
+    preferred_label: use object-oriented programming
+    surfaces:
+      - OOP
+      - object-oriented programming
+      - object oriented programming
+      - object-oriented design
+      - OOD
+    reason: "ESCO lists the imperative 'use object-oriented programming'; CVs almost always write 'OOP'. The CUST:object-oriented-programming custom concept with altlabel 'OOP' was not firing on real_cv3 (suspected spaCy lemmatisation mismatch between standalone-pattern and in-context surface). Routing via tech_aliases overlay (proven mechanism — same one that recovered CSS3) bypasses the custom-concept path."

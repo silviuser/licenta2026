@@ -1,0 +1,1230 @@
+{
+  "version": "0.4.0",
+  "encoder": "C:\\Users\\silvi\\Desktop\\licenta2026\\app\\nlp-service\\models\\skill_matcher\\mnrl_sw_v1_20260516_1953",
+  "esco_sha": "fa2145a1216c14a14d6f6e9b4c2cdb5107bd80747e5d8ce45aa919b45cdad861",
+  "config": {
+    "drop_threshold": 0.45,
+    "keep_threshold": 0.55,
+    "expansion_threshold": 0.75,
+    "expansion_window_size": 30,
+    "expansion_window_stride": 15,
+    "seed": 42
+  },
+  "skipped": [
+    {
+      "cv_id": "real_cv2",
+      "reason": "Module 1/2 skip"
+    }
+  ],
+  "aggregates": {
+    "lexical": {
+      "name": "Module 2 lexical",
+      "macro": {
+        "precision": 0.6446032142460715,
+        "recall": 0.3705741220657634,
+        "f1": 0.4603329394610803
+      },
+      "micro": {
+        "precision": 0.7006802721088435,
+        "recall": 0.42386831275720166,
+        "f1": 0.5282051282051282
+      },
+      "per_cv": {
+        "real_cv1": {
+          "precision": 0.875,
+          "recall": 0.5,
+          "f1": 0.6363636363636364
+        },
+        "real_cv10": {
+          "precision": 1.0,
+          "recall": 0.2,
+          "f1": 0.33333333333333337
+        },
+        "real_cv11": {
+          "precision": 0.5555555555555556,
+          "recall": 0.38461538461538464,
+          "f1": 0.4545454545454546
+        },
+        "real_cv12": {
+          "precision": 0.5833333333333334,
+          "recall": 0.4827586206896552,
+          "f1": 0.5283018867924529
+        },
+        "real_cv13": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "real_cv14": {
+          "precision": 0.2,
+          "recall": 0.09090909090909091,
+          "f1": 0.12500000000000003
+        },
+        "real_cv15": {
+          "precision": 0.16666666666666666,
+          "recall": 0.08333333333333333,
+          "f1": 0.1111111111111111
+        },
+        "real_cv3": {
+          "precision": 1.0,
+          "recall": 0.5789473684210527,
+          "f1": 0.7333333333333334
+        },
+        "real_cv4": {
+          "precision": 0.9333333333333333,
+          "recall": 0.6086956521739131,
+          "f1": 0.7368421052631579
+        },
+        "real_cv5": {
+          "precision": 0.9333333333333333,
+          "recall": 0.5185185185185185,
+          "f1": 0.6666666666666667
+        },
+        "real_cv6": {
+          "precision": 0.3076923076923077,
+          "recall": 0.2857142857142857,
+          "f1": 0.29629629629629634
+        },
+        "real_cv7": {
+          "precision": 0.7142857142857143,
+          "recall": 0.5,
+          "f1": 0.588235294117647
+        },
+        "real_cv8": {
+          "precision": 0.9090909090909091,
+          "recall": 0.45454545454545453,
+          "f1": 0.6060606060606061
+        },
+        "real_cv9": {
+          "precision": 0.8461538461538461,
+          "recall": 0.5,
+          "f1": 0.6285714285714286
+        }
+      }
+    },
+    "kept": {
+      "name": "Linker kept only",
+      "macro": {
+        "precision": 0.7037414965986395,
+        "recall": 0.20238303706616545,
+        "f1": 0.29681056035735837
+      },
+      "micro": {
+        "precision": 0.75,
+        "recall": 0.2345679012345679,
+        "f1": 0.35736677115987464
+      },
+      "per_cv": {
+        "real_cv1": {
+          "precision": 0.8571428571428571,
+          "recall": 0.42857142857142855,
+          "f1": 0.5714285714285714
+        },
+        "real_cv10": {
+          "precision": 1.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "real_cv11": {
+          "precision": 0.4,
+          "recall": 0.15384615384615385,
+          "f1": 0.2222222222222222
+        },
+        "real_cv12": {
+          "precision": 0.5,
+          "recall": 0.1724137931034483,
+          "f1": 0.25641025641025644
+        },
+        "real_cv13": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "real_cv14": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "real_cv15": {
+          "precision": 1.0,
+          "recall": 0.08333333333333333,
+          "f1": 0.15384615384615385
+        },
+        "real_cv3": {
+          "precision": 1.0,
+          "recall": 0.42105263157894735,
+          "f1": 0.5925925925925926
+        },
+        "real_cv4": {
+          "precision": 1.0,
+          "recall": 0.2608695652173913,
+          "f1": 0.41379310344827586
+        },
+        "real_cv5": {
+          "precision": 1.0,
+          "recall": 0.4444444444444444,
+          "f1": 0.6153846153846153
+        },
+        "real_cv6": {
+          "precision": 0.42857142857142855,
+          "recall": 0.21428571428571427,
+          "f1": 0.2857142857142857
+        },
+        "real_cv7": {
+          "precision": 0.6666666666666666,
+          "recall": 0.2,
+          "f1": 0.30769230769230765
+        },
+        "real_cv8": {
+          "precision": 1.0,
+          "recall": 0.2727272727272727,
+          "f1": 0.42857142857142855
+        },
+        "real_cv9": {
+          "precision": 1.0,
+          "recall": 0.18181818181818182,
+          "f1": 0.3076923076923077
+        }
+      }
+    },
+    "expansion": {
+      "name": "Linker expansion only",
+      "macro": {
+        "precision": 0.9285714285714286,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "micro": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "per_cv": {
+        "real_cv1": {
+          "precision": 1.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "real_cv10": {
+          "precision": 1.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "real_cv11": {
+          "precision": 1.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "real_cv12": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "real_cv13": {
+          "precision": 1.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "real_cv14": {
+          "precision": 1.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "real_cv15": {
+          "precision": 1.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "real_cv3": {
+          "precision": 1.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "real_cv4": {
+          "precision": 1.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "real_cv5": {
+          "precision": 1.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "real_cv6": {
+          "precision": 1.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "real_cv7": {
+          "precision": 1.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "real_cv8": {
+          "precision": 1.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "real_cv9": {
+          "precision": 1.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "kept_plus_expansion": {
+      "name": "Linker kept + expansion",
+      "macro": {
+        "precision": 0.7004947433518863,
+        "recall": 0.20238303706616545,
+        "f1": 0.2963526848994829
+      },
+      "micro": {
+        "precision": 0.7402597402597403,
+        "recall": 0.2345679012345679,
+        "f1": 0.35624999999999996
+      },
+      "per_cv": {
+        "real_cv1": {
+          "precision": 0.8571428571428571,
+          "recall": 0.42857142857142855,
+          "f1": 0.5714285714285714
+        },
+        "real_cv10": {
+          "precision": 1.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "real_cv11": {
+          "precision": 0.4,
+          "recall": 0.15384615384615385,
+          "f1": 0.2222222222222222
+        },
+        "real_cv12": {
+          "precision": 0.45454545454545453,
+          "recall": 0.1724137931034483,
+          "f1": 0.25000000000000006
+        },
+        "real_cv13": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "real_cv14": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "real_cv15": {
+          "precision": 1.0,
+          "recall": 0.08333333333333333,
+          "f1": 0.15384615384615385
+        },
+        "real_cv3": {
+          "precision": 1.0,
+          "recall": 0.42105263157894735,
+          "f1": 0.5925925925925926
+        },
+        "real_cv4": {
+          "precision": 1.0,
+          "recall": 0.2608695652173913,
+          "f1": 0.41379310344827586
+        },
+        "real_cv5": {
+          "precision": 1.0,
+          "recall": 0.4444444444444444,
+          "f1": 0.6153846153846153
+        },
+        "real_cv6": {
+          "precision": 0.42857142857142855,
+          "recall": 0.21428571428571427,
+          "f1": 0.2857142857142857
+        },
+        "real_cv7": {
+          "precision": 0.6666666666666666,
+          "recall": 0.2,
+          "f1": 0.30769230769230765
+        },
+        "real_cv8": {
+          "precision": 1.0,
+          "recall": 0.2727272727272727,
+          "f1": 0.42857142857142855
+        },
+        "real_cv9": {
+          "precision": 1.0,
+          "recall": 0.18181818181818182,
+          "f1": 0.3076923076923077
+        }
+      }
+    }
+  },
+  "per_cv": [
+    {
+      "cv_id": "real_cv1",
+      "text_length": 2129,
+      "n_lexical_in": 8,
+      "lexical_uris": [
+        "CUST:algorithms",
+        "CUST:dotnet",
+        "CUST:intellij-idea",
+        "CUST:object-oriented-programming",
+        "http://data.europa.eu/esco/skill/43ae58b9-5e56-4524-b45a-b422777a0576",
+        "http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a",
+        "http://data.europa.eu/esco/skill/54924a2c-daca-40d3-9716-4b38ceb04f38",
+        "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742"
+      ],
+      "gold_high_plus_medium": [
+        "CUST:cpp",
+        "CUST:database-design",
+        "CUST:dotnet",
+        "CUST:intellij-idea",
+        "CUST:object-oriented-programming",
+        "CUST:oracle-db",
+        "CUST:plsql",
+        "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+        "http://data.europa.eu/esco/skill/43ae58b9-5e56-4524-b45a-b422777a0576",
+        "http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a",
+        "http://data.europa.eu/esco/skill/54924a2c-daca-40d3-9716-4b38ceb04f38",
+        "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742",
+        "http://data.europa.eu/esco/skill/ab1e97ed-2319-4293-a8b7-072d2648822f",
+        "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d"
+      ],
+      "kept_uris": [
+        "CUST:algorithms",
+        "CUST:dotnet",
+        "CUST:intellij-idea",
+        "CUST:object-oriented-programming",
+        "http://data.europa.eu/esco/skill/43ae58b9-5e56-4524-b45a-b422777a0576",
+        "http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a",
+        "http://data.europa.eu/esco/skill/54924a2c-daca-40d3-9716-4b38ceb04f38"
+      ],
+      "expansion_only_uris": [],
+      "kept_plus_expansion_uris": [
+        "CUST:algorithms",
+        "CUST:dotnet",
+        "CUST:intellij-idea",
+        "CUST:object-oriented-programming",
+        "http://data.europa.eu/esco/skill/43ae58b9-5e56-4524-b45a-b422777a0576",
+        "http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a",
+        "http://data.europa.eu/esco/skill/54924a2c-daca-40d3-9716-4b38ceb04f38"
+      ],
+      "stats": {
+        "n_lexical_kept": 13,
+        "n_lexical_ambiguous": 7,
+        "n_lexical_dropped": 2,
+        "n_expansion": 0,
+        "n_windows": 18,
+        "n_unknown_uris": 0,
+        "elapsed_seconds": 1.0630000000237487
+      }
+    },
+    {
+      "cv_id": "real_cv10",
+      "text_length": 884,
+      "n_lexical_in": 1,
+      "lexical_uris": [
+        "http://data.europa.eu/esco/skill/7b5cce4d-c7fe-4119-b48f-70aa05391787"
+      ],
+      "gold_high_plus_medium": [
+        "CUST:c",
+        "CUST:html-css",
+        "CUST:javascript",
+        "http://data.europa.eu/esco/skill/7b5cce4d-c7fe-4119-b48f-70aa05391787",
+        "http://data.europa.eu/esco/skill/f683ae1d-cb7c-4aa1-b9fe-205e1bd23535"
+      ],
+      "kept_uris": [],
+      "expansion_only_uris": [],
+      "kept_plus_expansion_uris": [],
+      "stats": {
+        "n_lexical_kept": 0,
+        "n_lexical_ambiguous": 0,
+        "n_lexical_dropped": 2,
+        "n_expansion": 0,
+        "n_windows": 8,
+        "n_unknown_uris": 0,
+        "elapsed_seconds": 0.45300000003771856
+      }
+    },
+    {
+      "cv_id": "real_cv11",
+      "text_length": 2005,
+      "n_lexical_in": 9,
+      "lexical_uris": [
+        "CUST:openai-api",
+        "CUST:vite",
+        "http://data.europa.eu/esco/skill/1f1d2ff8-c4c1-45cc-9812-6a7ee84a73cb",
+        "http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7",
+        "http://data.europa.eu/esco/skill/4707da90-9cfc-46ca-8de0-38a0b7bfb137",
+        "http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a",
+        "http://data.europa.eu/esco/skill/75d8e5d9-bef3-418b-9011-01bff9f27207",
+        "http://data.europa.eu/esco/skill/a8d07b5a-c1a1-42c6-9d53-db9c7a2ca996",
+        "http://data.europa.eu/esco/skill/b9bb1f03-15e2-4079-943e-7e483b21725b"
+      ],
+      "gold_high_plus_medium": [
+        "CUST:cpp",
+        "CUST:deepseek-api",
+        "CUST:openai-api",
+        "CUST:plsql",
+        "CUST:react",
+        "CUST:spring-boot",
+        "CUST:vite",
+        "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+        "http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7",
+        "http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a",
+        "http://data.europa.eu/esco/skill/a8d07b5a-c1a1-42c6-9d53-db9c7a2ca996",
+        "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+        "http://data.europa.eu/esco/skill/d8829a1d-dbde-435b-b921-29d6462f35c9"
+      ],
+      "kept_uris": [
+        "http://data.europa.eu/esco/skill/1f1d2ff8-c4c1-45cc-9812-6a7ee84a73cb",
+        "http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7",
+        "http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a",
+        "http://data.europa.eu/esco/skill/75d8e5d9-bef3-418b-9011-01bff9f27207",
+        "http://data.europa.eu/esco/skill/b9bb1f03-15e2-4079-943e-7e483b21725b"
+      ],
+      "expansion_only_uris": [],
+      "kept_plus_expansion_uris": [
+        "http://data.europa.eu/esco/skill/1f1d2ff8-c4c1-45cc-9812-6a7ee84a73cb",
+        "http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7",
+        "http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a",
+        "http://data.europa.eu/esco/skill/75d8e5d9-bef3-418b-9011-01bff9f27207",
+        "http://data.europa.eu/esco/skill/b9bb1f03-15e2-4079-943e-7e483b21725b"
+      ],
+      "stats": {
+        "n_lexical_kept": 5,
+        "n_lexical_ambiguous": 1,
+        "n_lexical_dropped": 4,
+        "n_expansion": 0,
+        "n_windows": 17,
+        "n_unknown_uris": 0,
+        "elapsed_seconds": 0.9530000000377186
+      }
+    },
+    {
+      "cv_id": "real_cv12",
+      "text_length": 4019,
+      "n_lexical_in": 24,
+      "lexical_uris": [
+        "CUST:canva",
+        "CUST:database-design",
+        "CUST:full-stack",
+        "CUST:github",
+        "CUST:lang:english",
+        "CUST:lang:romanian",
+        "CUST:linux",
+        "CUST:node",
+        "CUST:vite",
+        "http://data.europa.eu/esco/skill/14ced458-5f4b-495f-bd3d-9c240614bda0",
+        "http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7",
+        "http://data.europa.eu/esco/skill/21dfab2e-f954-49ab-8fb6-18cc98cf10bb",
+        "http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7",
+        "http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a",
+        "http://data.europa.eu/esco/skill/5608d5a0-6d5e-43b7-be37-616501729bb4",
+        "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742",
+        "http://data.europa.eu/esco/skill/614c627b-2ec9-4a0d-811e-de14be4362f2",
+        "http://data.europa.eu/esco/skill/86ed2a45-eae9-4ab7-b0e6-d7508d33df4f",
+        "http://data.europa.eu/esco/skill/be6ab363-3de1-427f-a8ef-85d5b0250822",
+        "http://data.europa.eu/esco/skill/c624c6a3-b0ba-4a31-a296-0d433fe47e41",
+        "http://data.europa.eu/esco/skill/d97c894e-d330-4bd3-b8ba-138fc11855ee",
+        "http://data.europa.eu/esco/skill/ddbf25f1-b91a-4083-9ef1-cc113a46e4c0",
+        "http://data.europa.eu/esco/skill/e49f4158-9d4c-425d-bf32-dfe89b19840a",
+        "http://data.europa.eu/esco/skill/efa141df-f382-418f-9121-bd88fd735669"
+      ],
+      "gold_high_plus_medium": [
+        "CUST:assembly",
+        "CUST:blender",
+        "CUST:c",
+        "CUST:canva",
+        "CUST:cmake",
+        "CUST:cpp",
+        "CUST:database-design",
+        "CUST:full-stack",
+        "CUST:github",
+        "CUST:glsl",
+        "CUST:jira",
+        "CUST:lang:english",
+        "CUST:lang:romanian",
+        "CUST:linux",
+        "CUST:node",
+        "CUST:opengl",
+        "CUST:pytorch",
+        "CUST:react",
+        "CUST:unity",
+        "CUST:vite",
+        "http://data.europa.eu/esco/skill/14ced458-5f4b-495f-bd3d-9c240614bda0",
+        "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+        "http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7",
+        "http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a",
+        "http://data.europa.eu/esco/skill/5608d5a0-6d5e-43b7-be37-616501729bb4",
+        "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742",
+        "http://data.europa.eu/esco/skill/ab1e97ed-2319-4293-a8b7-072d2648822f",
+        "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+        "http://data.europa.eu/esco/skill/f683ae1d-cb7c-4aa1-b9fe-205e1bd23535"
+      ],
+      "kept_uris": [
+        "CUST:database-design",
+        "CUST:linux",
+        "CUST:node",
+        "http://data.europa.eu/esco/skill/14ced458-5f4b-495f-bd3d-9c240614bda0",
+        "http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7",
+        "http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a",
+        "http://data.europa.eu/esco/skill/614c627b-2ec9-4a0d-811e-de14be4362f2",
+        "http://data.europa.eu/esco/skill/c624c6a3-b0ba-4a31-a296-0d433fe47e41",
+        "http://data.europa.eu/esco/skill/e49f4158-9d4c-425d-bf32-dfe89b19840a",
+        "http://data.europa.eu/esco/skill/efa141df-f382-418f-9121-bd88fd735669"
+      ],
+      "expansion_only_uris": [
+        "http://data.europa.eu/esco/skill/7e796b51-49d7-4e73-95af-2e7323763f15"
+      ],
+      "kept_plus_expansion_uris": [
+        "CUST:database-design",
+        "CUST:linux",
+        "CUST:node",
+        "http://data.europa.eu/esco/skill/14ced458-5f4b-495f-bd3d-9c240614bda0",
+        "http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7",
+        "http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a",
+        "http://data.europa.eu/esco/skill/614c627b-2ec9-4a0d-811e-de14be4362f2",
+        "http://data.europa.eu/esco/skill/7e796b51-49d7-4e73-95af-2e7323763f15",
+        "http://data.europa.eu/esco/skill/c624c6a3-b0ba-4a31-a296-0d433fe47e41",
+        "http://data.europa.eu/esco/skill/e49f4158-9d4c-425d-bf32-dfe89b19840a",
+        "http://data.europa.eu/esco/skill/efa141df-f382-418f-9121-bd88fd735669"
+      ],
+      "stats": {
+        "n_lexical_kept": 13,
+        "n_lexical_ambiguous": 6,
+        "n_lexical_dropped": 13,
+        "n_expansion": 1,
+        "n_windows": 34,
+        "n_unknown_uris": 2,
+        "elapsed_seconds": 2.047000000020489
+      }
+    },
+    {
+      "cv_id": "real_cv13",
+      "text_length": 1001,
+      "n_lexical_in": 2,
+      "lexical_uris": [
+        "http://data.europa.eu/esco/skill/b8df1689-6763-437d-bfca-fe03d43f36c3",
+        "http://data.europa.eu/esco/skill/bec4359e-cb92-468f-a997-8fb28e32fba9"
+      ],
+      "gold_high_plus_medium": [
+        "CUST:3d-printing",
+        "CUST:agile",
+        "CUST:azure",
+        "CUST:code-review",
+        "CUST:docker",
+        "CUST:frontend-development",
+        "CUST:git",
+        "CUST:javascript",
+        "CUST:mysql",
+        "CUST:nextjs",
+        "CUST:react",
+        "CUST:react-query"
+      ],
+      "kept_uris": [
+        "http://data.europa.eu/esco/skill/b8df1689-6763-437d-bfca-fe03d43f36c3",
+        "http://data.europa.eu/esco/skill/bec4359e-cb92-468f-a997-8fb28e32fba9"
+      ],
+      "expansion_only_uris": [],
+      "kept_plus_expansion_uris": [
+        "http://data.europa.eu/esco/skill/b8df1689-6763-437d-bfca-fe03d43f36c3",
+        "http://data.europa.eu/esco/skill/bec4359e-cb92-468f-a997-8fb28e32fba9"
+      ],
+      "stats": {
+        "n_lexical_kept": 2,
+        "n_lexical_ambiguous": 2,
+        "n_lexical_dropped": 0,
+        "n_expansion": 0,
+        "n_windows": 8,
+        "n_unknown_uris": 0,
+        "elapsed_seconds": 0.48499999998603016
+      }
+    },
+    {
+      "cv_id": "real_cv14",
+      "text_length": 1632,
+      "n_lexical_in": 5,
+      "lexical_uris": [
+        "CUST:rag",
+        "http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7",
+        "http://data.europa.eu/esco/skill/1fce1197-3a5b-45b7-8797-575cd3b57a01",
+        "http://data.europa.eu/esco/skill/43ae58b9-5e56-4524-b45a-b422777a0576",
+        "http://data.europa.eu/esco/skill/f049d050-12da-4e40-813a-2b5eb6df6b51"
+      ],
+      "gold_high_plus_medium": [
+        "CUST:arduino",
+        "CUST:automation",
+        "CUST:cybersecurity",
+        "CUST:databases",
+        "CUST:generative-ai",
+        "CUST:iot",
+        "CUST:java",
+        "CUST:llm",
+        "CUST:rag",
+        "CUST:rpa",
+        "CUST:sql"
+      ],
+      "kept_uris": [
+        "http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7",
+        "http://data.europa.eu/esco/skill/1fce1197-3a5b-45b7-8797-575cd3b57a01"
+      ],
+      "expansion_only_uris": [],
+      "kept_plus_expansion_uris": [
+        "http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7",
+        "http://data.europa.eu/esco/skill/1fce1197-3a5b-45b7-8797-575cd3b57a01"
+      ],
+      "stats": {
+        "n_lexical_kept": 2,
+        "n_lexical_ambiguous": 2,
+        "n_lexical_dropped": 3,
+        "n_expansion": 0,
+        "n_windows": 14,
+        "n_unknown_uris": 0,
+        "elapsed_seconds": 0.625
+      }
+    },
+    {
+      "cv_id": "real_cv15",
+      "text_length": 1436,
+      "n_lexical_in": 6,
+      "lexical_uris": [
+        "CUST:data-visualization",
+        "CUST:lang:english",
+        "CUST:lang:french",
+        "CUST:lang:japanese",
+        "http://data.europa.eu/esco/skill/8088750d-8388-4170-a76f-48354c469c44",
+        "http://data.europa.eu/esco/skill/92e4064a-a93c-4e22-a63b-8da91757b90c"
+      ],
+      "gold_high_plus_medium": [
+        "CUST:bug-bounty",
+        "CUST:cybersecurity",
+        "CUST:data-manipulation",
+        "CUST:data-visualization",
+        "CUST:incident-response",
+        "CUST:pandas",
+        "CUST:programming",
+        "CUST:python",
+        "CUST:scripting",
+        "CUST:siem",
+        "CUST:soc-analyst",
+        "CUST:threat-detection"
+      ],
+      "kept_uris": [
+        "CUST:data-visualization"
+      ],
+      "expansion_only_uris": [],
+      "kept_plus_expansion_uris": [
+        "CUST:data-visualization"
+      ],
+      "stats": {
+        "n_lexical_kept": 1,
+        "n_lexical_ambiguous": 1,
+        "n_lexical_dropped": 2,
+        "n_expansion": 0,
+        "n_windows": 12,
+        "n_unknown_uris": 3,
+        "elapsed_seconds": 0.5939999999827705
+      }
+    },
+    {
+      "cv_id": "real_cv3",
+      "text_length": 2333,
+      "n_lexical_in": 11,
+      "lexical_uris": [
+        "CUST:crud",
+        "CUST:database-design",
+        "CUST:github",
+        "CUST:intellij-idea",
+        "CUST:linux",
+        "CUST:node",
+        "CUST:plsql",
+        "CUST:tailwind",
+        "CUST:webpack",
+        "http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7",
+        "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742"
+      ],
+      "gold_high_plus_medium": [
+        "CUST:cpp",
+        "CUST:crud",
+        "CUST:database-design",
+        "CUST:express",
+        "CUST:github",
+        "CUST:html-css",
+        "CUST:intellij-idea",
+        "CUST:linux",
+        "CUST:node",
+        "CUST:plsql",
+        "CUST:react",
+        "CUST:tailwind",
+        "CUST:visual-studio-ide",
+        "CUST:vscode",
+        "CUST:webpack",
+        "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+        "http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7",
+        "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742",
+        "http://data.europa.eu/esco/skill/ab1e97ed-2319-4293-a8b7-072d2648822f"
+      ],
+      "kept_uris": [
+        "CUST:database-design",
+        "CUST:github",
+        "CUST:intellij-idea",
+        "CUST:linux",
+        "CUST:node",
+        "CUST:plsql",
+        "http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7",
+        "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742"
+      ],
+      "expansion_only_uris": [],
+      "kept_plus_expansion_uris": [
+        "CUST:database-design",
+        "CUST:github",
+        "CUST:intellij-idea",
+        "CUST:linux",
+        "CUST:node",
+        "CUST:plsql",
+        "http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7",
+        "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742"
+      ],
+      "stats": {
+        "n_lexical_kept": 13,
+        "n_lexical_ambiguous": 6,
+        "n_lexical_dropped": 6,
+        "n_expansion": 0,
+        "n_windows": 19,
+        "n_unknown_uris": 0,
+        "elapsed_seconds": 1.2349999999860302
+      }
+    },
+    {
+      "cv_id": "real_cv4",
+      "text_length": 2638,
+      "n_lexical_in": 15,
+      "lexical_uris": [
+        "CUST:beautifulsoup",
+        "CUST:django",
+        "CUST:dotnet",
+        "CUST:express",
+        "CUST:kotlin",
+        "CUST:mongodb",
+        "CUST:node",
+        "CUST:openai-api",
+        "CUST:random-forest",
+        "CUST:tensorflow",
+        "CUST:web-scraping",
+        "http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7",
+        "http://data.europa.eu/esco/skill/4868410e-6245-4aa7-96f6-ee1ec52382a5",
+        "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742",
+        "http://data.europa.eu/esco/skill/d8829a1d-dbde-435b-b921-29d6462f35c9"
+      ],
+      "gold_high_plus_medium": [
+        "CUST:bash",
+        "CUST:beautifulsoup",
+        "CUST:cpp",
+        "CUST:django",
+        "CUST:dotnet",
+        "CUST:express",
+        "CUST:flask",
+        "CUST:git",
+        "CUST:intellij-idea",
+        "CUST:kotlin",
+        "CUST:mongodb",
+        "CUST:node",
+        "CUST:openai-api",
+        "CUST:random-forest",
+        "CUST:selenium",
+        "CUST:tensorflow",
+        "CUST:web-scraping",
+        "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+        "http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7",
+        "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742",
+        "http://data.europa.eu/esco/skill/ab1e97ed-2319-4293-a8b7-072d2648822f",
+        "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+        "http://data.europa.eu/esco/skill/d8829a1d-dbde-435b-b921-29d6462f35c9"
+      ],
+      "kept_uris": [
+        "CUST:dotnet",
+        "CUST:express",
+        "CUST:kotlin",
+        "CUST:node",
+        "CUST:random-forest",
+        "CUST:tensorflow"
+      ],
+      "expansion_only_uris": [],
+      "kept_plus_expansion_uris": [
+        "CUST:dotnet",
+        "CUST:express",
+        "CUST:kotlin",
+        "CUST:node",
+        "CUST:random-forest",
+        "CUST:tensorflow"
+      ],
+      "stats": {
+        "n_lexical_kept": 8,
+        "n_lexical_ambiguous": 5,
+        "n_lexical_dropped": 11,
+        "n_expansion": 0,
+        "n_windows": 23,
+        "n_unknown_uris": 0,
+        "elapsed_seconds": 1.2660000000032596
+      }
+    },
+    {
+      "cv_id": "real_cv5",
+      "text_length": 2680,
+      "n_lexical_in": 15,
+      "lexical_uris": [
+        "CUST:algorithms",
+        "CUST:cryptography",
+        "CUST:data-structures",
+        "CUST:full-stack",
+        "CUST:intellij-idea",
+        "CUST:linux",
+        "CUST:memory-management",
+        "CUST:network-security",
+        "CUST:node",
+        "CUST:oracle-db",
+        "CUST:real-time-systems",
+        "CUST:rest-api",
+        "http://data.europa.eu/esco/skill/43ae58b9-5e56-4524-b45a-b422777a0576",
+        "http://data.europa.eu/esco/skill/54924a2c-daca-40d3-9716-4b38ceb04f38",
+        "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742"
+      ],
+      "gold_high_plus_medium": [
+        "CUST:assembly",
+        "CUST:c",
+        "CUST:cpp",
+        "CUST:cryptography",
+        "CUST:data-structures",
+        "CUST:full-stack",
+        "CUST:git",
+        "CUST:intellij-idea",
+        "CUST:linux",
+        "CUST:memory-management",
+        "CUST:network-security",
+        "CUST:node",
+        "CUST:operating-systems",
+        "CUST:oracle-db",
+        "CUST:react",
+        "CUST:real-time-systems",
+        "CUST:rest-api",
+        "CUST:secure-coding",
+        "CUST:spa",
+        "CUST:visual-studio-ide",
+        "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+        "http://data.europa.eu/esco/skill/43ae58b9-5e56-4524-b45a-b422777a0576",
+        "http://data.europa.eu/esco/skill/54924a2c-daca-40d3-9716-4b38ceb04f38",
+        "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742",
+        "http://data.europa.eu/esco/skill/ab1e97ed-2319-4293-a8b7-072d2648822f",
+        "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+        "http://data.europa.eu/esco/skill/d8829a1d-dbde-435b-b921-29d6462f35c9"
+      ],
+      "kept_uris": [
+        "CUST:cryptography",
+        "CUST:full-stack",
+        "CUST:intellij-idea",
+        "CUST:linux",
+        "CUST:memory-management",
+        "CUST:network-security",
+        "CUST:node",
+        "CUST:real-time-systems",
+        "CUST:rest-api",
+        "http://data.europa.eu/esco/skill/43ae58b9-5e56-4524-b45a-b422777a0576",
+        "http://data.europa.eu/esco/skill/54924a2c-daca-40d3-9716-4b38ceb04f38",
+        "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742"
+      ],
+      "expansion_only_uris": [],
+      "kept_plus_expansion_uris": [
+        "CUST:cryptography",
+        "CUST:full-stack",
+        "CUST:intellij-idea",
+        "CUST:linux",
+        "CUST:memory-management",
+        "CUST:network-security",
+        "CUST:node",
+        "CUST:real-time-systems",
+        "CUST:rest-api",
+        "http://data.europa.eu/esco/skill/43ae58b9-5e56-4524-b45a-b422777a0576",
+        "http://data.europa.eu/esco/skill/54924a2c-daca-40d3-9716-4b38ceb04f38",
+        "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742"
+      ],
+      "stats": {
+        "n_lexical_kept": 17,
+        "n_lexical_ambiguous": 13,
+        "n_lexical_dropped": 7,
+        "n_expansion": 0,
+        "n_windows": 22,
+        "n_unknown_uris": 0,
+        "elapsed_seconds": 1.375
+      }
+    },
+    {
+      "cv_id": "real_cv6",
+      "text_length": 2932,
+      "n_lexical_in": 13,
+      "lexical_uris": [
+        "http://data.europa.eu/esco/skill/1c460d2d-90c6-4fc9-ad49-febb6e15605a",
+        "http://data.europa.eu/esco/skill/1cca610d-2afc-44a7-97fc-f2262fb5fc75",
+        "http://data.europa.eu/esco/skill/3816bddd-0765-48d6-b972-0f9aa7296a46",
+        "http://data.europa.eu/esco/skill/43ae58b9-5e56-4524-b45a-b422777a0576",
+        "http://data.europa.eu/esco/skill/4f1b6304-f54a-42f0-9604-5427a28d240f",
+        "http://data.europa.eu/esco/skill/52eb7ab6-269f-4f44-a21d-b0c705eaf857",
+        "http://data.europa.eu/esco/skill/5d46ca01-f2b4-4d0b-9232-6b8f012c223c",
+        "http://data.europa.eu/esco/skill/6eff134b-e34f-4d6e-a6e8-5e47cf2228d0",
+        "http://data.europa.eu/esco/skill/75d8e5d9-bef3-418b-9011-01bff9f27207",
+        "http://data.europa.eu/esco/skill/be6ab363-3de1-427f-a8ef-85d5b0250822",
+        "http://data.europa.eu/esco/skill/c8d53d69-d900-4092-af80-c5d0422bcdb3",
+        "http://data.europa.eu/esco/skill/ecc4552a-92c5-4222-b18d-faf5ac841080",
+        "http://data.europa.eu/esco/skill/f0ab5d57-4be7-411b-afce-b4a76a142302"
+      ],
+      "gold_high_plus_medium": [
+        "CUST:cpp",
+        "CUST:dax",
+        "CUST:gbm",
+        "CUST:pandas",
+        "CUST:power-bi",
+        "CUST:pytorch",
+        "CUST:random-forest",
+        "CUST:scikit-learn",
+        "CUST:sql",
+        "http://data.europa.eu/esco/skill/1c460d2d-90c6-4fc9-ad49-febb6e15605a",
+        "http://data.europa.eu/esco/skill/43ae58b9-5e56-4524-b45a-b422777a0576",
+        "http://data.europa.eu/esco/skill/6eff134b-e34f-4d6e-a6e8-5e47cf2228d0",
+        "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+        "http://data.europa.eu/esco/skill/ecc4552a-92c5-4222-b18d-faf5ac841080"
+      ],
+      "kept_uris": [
+        "http://data.europa.eu/esco/skill/1c460d2d-90c6-4fc9-ad49-febb6e15605a",
+        "http://data.europa.eu/esco/skill/1cca610d-2afc-44a7-97fc-f2262fb5fc75",
+        "http://data.europa.eu/esco/skill/43ae58b9-5e56-4524-b45a-b422777a0576",
+        "http://data.europa.eu/esco/skill/52eb7ab6-269f-4f44-a21d-b0c705eaf857",
+        "http://data.europa.eu/esco/skill/5d46ca01-f2b4-4d0b-9232-6b8f012c223c",
+        "http://data.europa.eu/esco/skill/75d8e5d9-bef3-418b-9011-01bff9f27207",
+        "http://data.europa.eu/esco/skill/ecc4552a-92c5-4222-b18d-faf5ac841080"
+      ],
+      "expansion_only_uris": [],
+      "kept_plus_expansion_uris": [
+        "http://data.europa.eu/esco/skill/1c460d2d-90c6-4fc9-ad49-febb6e15605a",
+        "http://data.europa.eu/esco/skill/1cca610d-2afc-44a7-97fc-f2262fb5fc75",
+        "http://data.europa.eu/esco/skill/43ae58b9-5e56-4524-b45a-b422777a0576",
+        "http://data.europa.eu/esco/skill/52eb7ab6-269f-4f44-a21d-b0c705eaf857",
+        "http://data.europa.eu/esco/skill/5d46ca01-f2b4-4d0b-9232-6b8f012c223c",
+        "http://data.europa.eu/esco/skill/75d8e5d9-bef3-418b-9011-01bff9f27207",
+        "http://data.europa.eu/esco/skill/ecc4552a-92c5-4222-b18d-faf5ac841080"
+      ],
+      "stats": {
+        "n_lexical_kept": 10,
+        "n_lexical_ambiguous": 8,
+        "n_lexical_dropped": 6,
+        "n_expansion": 0,
+        "n_windows": 25,
+        "n_unknown_uris": 0,
+        "elapsed_seconds": 1.297000000020489
+      }
+    },
+    {
+      "cv_id": "real_cv7",
+      "text_length": 3587,
+      "n_lexical_in": 14,
+      "lexical_uris": [
+        "CUST:lang:english",
+        "CUST:lang:french",
+        "CUST:lang:japanese",
+        "CUST:linux",
+        "CUST:secure-coding",
+        "http://data.europa.eu/esco/skill/1ce4cddd-4a74-458e-a2d4-152ca939475a",
+        "http://data.europa.eu/esco/skill/21d2f96d-35f7-4e3f-9745-c533d2dd6e97",
+        "http://data.europa.eu/esco/skill/43ae58b9-5e56-4524-b45a-b422777a0576",
+        "http://data.europa.eu/esco/skill/50597e96-9b6a-4736-ac79-dd80f36c0269",
+        "http://data.europa.eu/esco/skill/798d427e-51b3-4cd4-8b24-1357015e9ae7",
+        "http://data.europa.eu/esco/skill/86ed2a45-eae9-4ab7-b0e6-d7508d33df4f",
+        "http://data.europa.eu/esco/skill/8fa510d0-a8a6-4932-a361-00f8442cfe23",
+        "http://data.europa.eu/esco/skill/9af1bd12-01bd-4d6a-947b-69e64f23150a",
+        "http://data.europa.eu/esco/skill/c1388df1-47bd-4fd5-8b71-dce7886ef21b"
+      ],
+      "gold_high_plus_medium": [
+        "CUST:burp-suite",
+        "CUST:lang:english",
+        "CUST:lang:french",
+        "CUST:lang:japanese",
+        "CUST:linux",
+        "CUST:nmap",
+        "CUST:penetration-testing",
+        "CUST:react",
+        "CUST:secure-coding",
+        "CUST:tailwind",
+        "CUST:threat-modeling",
+        "CUST:vulnerability-assessment",
+        "http://data.europa.eu/esco/skill/1ce4cddd-4a74-458e-a2d4-152ca939475a",
+        "http://data.europa.eu/esco/skill/21d2f96d-35f7-4e3f-9745-c533d2dd6e97",
+        "http://data.europa.eu/esco/skill/43ae58b9-5e56-4524-b45a-b422777a0576",
+        "http://data.europa.eu/esco/skill/50597e96-9b6a-4736-ac79-dd80f36c0269",
+        "http://data.europa.eu/esco/skill/7bf4539a-3f2e-4485-876b-1c9306b181af",
+        "http://data.europa.eu/esco/skill/8fa510d0-a8a6-4932-a361-00f8442cfe23",
+        "http://data.europa.eu/esco/skill/902fb91c-3113-4004-9b4f-79aa86b638b7",
+        "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d"
+      ],
+      "kept_uris": [
+        "CUST:secure-coding",
+        "http://data.europa.eu/esco/skill/1ce4cddd-4a74-458e-a2d4-152ca939475a",
+        "http://data.europa.eu/esco/skill/43ae58b9-5e56-4524-b45a-b422777a0576",
+        "http://data.europa.eu/esco/skill/798d427e-51b3-4cd4-8b24-1357015e9ae7",
+        "http://data.europa.eu/esco/skill/8fa510d0-a8a6-4932-a361-00f8442cfe23",
+        "http://data.europa.eu/esco/skill/c1388df1-47bd-4fd5-8b71-dce7886ef21b"
+      ],
+      "expansion_only_uris": [],
+      "kept_plus_expansion_uris": [
+        "CUST:secure-coding",
+        "http://data.europa.eu/esco/skill/1ce4cddd-4a74-458e-a2d4-152ca939475a",
+        "http://data.europa.eu/esco/skill/43ae58b9-5e56-4524-b45a-b422777a0576",
+        "http://data.europa.eu/esco/skill/798d427e-51b3-4cd4-8b24-1357015e9ae7",
+        "http://data.europa.eu/esco/skill/8fa510d0-a8a6-4932-a361-00f8442cfe23",
+        "http://data.europa.eu/esco/skill/c1388df1-47bd-4fd5-8b71-dce7886ef21b"
+      ],
+      "stats": {
+        "n_lexical_kept": 6,
+        "n_lexical_ambiguous": 5,
+        "n_lexical_dropped": 6,
+        "n_expansion": 0,
+        "n_windows": 27,
+        "n_unknown_uris": 3,
+        "elapsed_seconds": 1.5150000000139698
+      }
+    },
+    {
+      "cv_id": "real_cv8",
+      "text_length": 2932,
+      "n_lexical_in": 11,
+      "lexical_uris": [
+        "CUST:database-design",
+        "CUST:github",
+        "CUST:lang:english",
+        "CUST:lang:romanian",
+        "CUST:langchain",
+        "http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7",
+        "http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7",
+        "http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a",
+        "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742",
+        "http://data.europa.eu/esco/skill/867137fb-ff1b-4ca3-99f3-cb6969aa2c68",
+        "http://data.europa.eu/esco/skill/bec4359e-cb92-468f-a997-8fb28e32fba9"
+      ],
+      "gold_high_plus_medium": [
+        "CUST:cpp",
+        "CUST:database-design",
+        "CUST:github",
+        "CUST:html-css",
+        "CUST:lang:english",
+        "CUST:lang:romanian",
+        "CUST:langchain",
+        "CUST:langgraph",
+        "CUST:llm",
+        "CUST:mcp",
+        "CUST:playwright",
+        "CUST:plsql",
+        "CUST:selenium",
+        "CUST:software-testing",
+        "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+        "http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7",
+        "http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a",
+        "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742",
+        "http://data.europa.eu/esco/skill/867137fb-ff1b-4ca3-99f3-cb6969aa2c68",
+        "http://data.europa.eu/esco/skill/ab1e97ed-2319-4293-a8b7-072d2648822f",
+        "http://data.europa.eu/esco/skill/bec4359e-cb92-468f-a997-8fb28e32fba9",
+        "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d"
+      ],
+      "kept_uris": [
+        "CUST:database-design",
+        "CUST:github",
+        "CUST:langchain",
+        "http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7",
+        "http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a",
+        "http://data.europa.eu/esco/skill/bec4359e-cb92-468f-a997-8fb28e32fba9"
+      ],
+      "expansion_only_uris": [],
+      "kept_plus_expansion_uris": [
+        "CUST:database-design",
+        "CUST:github",
+        "CUST:langchain",
+        "http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7",
+        "http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a",
+        "http://data.europa.eu/esco/skill/bec4359e-cb92-468f-a997-8fb28e32fba9"
+      ],
+      "stats": {
+        "n_lexical_kept": 7,
+        "n_lexical_ambiguous": 4,
+        "n_lexical_dropped": 4,
+        "n_expansion": 0,
+        "n_windows": 24,
+        "n_unknown_uris": 2,
+        "elapsed_seconds": 1.2810000000172295
+      }
+    },
+    {
+      "cv_id": "real_cv9",
+      "text_length": 2323,
+      "n_lexical_in": 13,
+      "lexical_uris": [
+        "CUST:django",
+        "CUST:express",
+        "CUST:full-stack",
+        "CUST:node",
+        "CUST:rest-api",
+        "CUST:scikit-learn",
+        "CUST:spa",
+        "http://data.europa.eu/esco/skill/02e22093-3436-46a8-8dc5-b041bc4800cc",
+        "http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7",
+        "http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7",
+        "http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a",
+        "http://data.europa.eu/esco/skill/4da171e5-779c-4983-a76f-91c16751e99f",
+        "http://data.europa.eu/esco/skill/76ef6ed3-1658-4a1a-9593-204d799c6d0c"
+      ],
+      "gold_high_plus_medium": [
+        "CUST:cpp",
+        "CUST:django",
+        "CUST:express",
+        "CUST:full-stack",
+        "CUST:node",
+        "CUST:numpy",
+        "CUST:pandas",
+        "CUST:plsql",
+        "CUST:rest-api",
+        "CUST:scikit-learn",
+        "CUST:sql",
+        "CUST:uml",
+        "http://data.europa.eu/esco/skill/02e22093-3436-46a8-8dc5-b041bc4800cc",
+        "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+        "http://data.europa.eu/esco/skill/3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+        "http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7",
+        "http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a",
+        "http://data.europa.eu/esco/skill/4da171e5-779c-4983-a76f-91c16751e99f",
+        "http://data.europa.eu/esco/skill/76ef6ed3-1658-4a1a-9593-204d799c6d0c",
+        "http://data.europa.eu/esco/skill/98301d4a-2cc3-439d-8d7f-0b6ac76302bb",
+        "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+        "http://data.europa.eu/esco/skill/d56fc2b5-4b0a-4e7e-9bde-a33736f6ff18"
+      ],
+      "kept_uris": [
+        "CUST:django",
+        "CUST:express",
+        "http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a",
+        "http://data.europa.eu/esco/skill/76ef6ed3-1658-4a1a-9593-204d799c6d0c"
+      ],
+      "expansion_only_uris": [],
+      "kept_plus_expansion_uris": [
+        "CUST:django",
+        "CUST:express",
+        "http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a",
+        "http://data.europa.eu/esco/skill/76ef6ed3-1658-4a1a-9593-204d799c6d0c"
+      ],
+      "stats": {
+        "n_lexical_kept": 4,
+        "n_lexical_ambiguous": 2,
+        "n_lexical_dropped": 13,
+        "n_expansion": 0,
+        "n_windows": 20,
+        "n_unknown_uris": 0,
+        "elapsed_seconds": 1.2339999999967404
+      }
+    }
+  ],
+  "elapsed_seconds": 51.07799999997951,
+  "generated_at": "2026-05-17T12:49:06.927122+00:00"
+}

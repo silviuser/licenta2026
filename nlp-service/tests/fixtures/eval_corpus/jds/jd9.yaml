@@ -1,0 +1,54 @@
+id: jd9
+title: Application Support DevOps Engineer
+language: en
+location: ''
+category: devops
+seniority: mid
+source_anonymized: ''
+raw_text: "Application Support DevOps Engineer \nMission \n\nEnsure the proper administration, stability, and optimal functioning\
+  \ of applications and services within the assigned technical area. Act as an effective communication link between internal\
+  \ teams and external stakeholders. \n\nKey Responsibilities\n\nAdminister and monitor IT applications and solutions. \n\
+  Resolve incidents in a timely manner for applications within scope. \nMaintain application stability, perform upgrades and\
+  \ apply security patches. \nParticipate as an active member in project teams. \nRegularly assess the health of deployed\
+  \ components and take or recommend corrective actions. \nCreate and maintain documentation for procedures related to administered\
+  \ IT solutions. \nPerform testing activities for applications under support. \nProvide consultancy and technical assistance\
+  \ for applications in scope. \n\nRequired Technical Skills\n\nAdministration of Java and HTTP application servers. \nAdvanced\
+  \ knowledge of Windows, Linux/UNIX operating systems. \nExperience with databases: Oracle, SQL, RDS, PostgreSQL. \nHands‑on\
+  \ experience with cloud platforms (AWS and/or Azure). \nBasic understanding of Artificial Intelligence and ability to use\
+  \ AI tools. \nExperience with Web Services: APIs, SOAP, REST. \nKnowledge of integration concepts (message queues, web services,\
+  \ SCA, databases, etc.). \nIssue tracking tools (optional): Jira. \nStrong analytical and problem‑solving skills. \nAutomation\
+  \ tools: Git, Gradle, Jenkins, Artifactory. \nTools: Toad, SQL Developer, IBM Data Studio, IBM MQ Explorer, ODI, SFTP clients.\
+  \ \nContainerization and orchestration: Docker, Kubernetes, OpenShift. \nFamiliarity with CI/CD concepts, microservices,\
+  \ web services, ELK stack. \nAbility to develop or enhance CI/CD pipelines for modern and legacy systems. \nAutomation‑driven\
+  \ mindset. \nBasic understanding of AI with openness to developing advanced knowledge. \n\nBenefits\n\nFun and collaborative\
+  \ working environment When we say “collaborative,” we truly mean it. We are open to new ideas and initiatives and value\
+  \ everyone’s contribution.\nCompetitive compensation We believe remuneration is a basic and essential element, which is\
+  \ why we offer competitive salaries aligned with market standards and your level of expertise.\nHoliday Starting from 23\
+  \ days of paid leave, increasing up to 27 days per year based on your professional experience.\n13th salary We offer a 13th\
+  \ salary, granted after completing the first year with the company.\nAnnual performance bonus As we consistently deliver\
+  \ high-quality work on time, RBI & RBRO also offers an annual performance bonus.\nGroup insurance Collective insurance coverage\
+  \ provided through Uniqa.\nFlexible benefits account Monthly benefits budget, including meal vouchers and additional options.\n\
+  Personal development & career plan Individual development and career plan, with up to 2 days per month dedicated exclusively\
+  \ to personal and professional growth.\nPrivate pension – Pillar III Private pension contribution (Pillar III) via Raiffeisen\
+  \ Leasing.\nPrivate medical health insurance\nVolunteering events\nTeam-building activities\n\nReady to make an impact?\
+  \ Take the initiative and join us! Apply now and let’s build the future of banking together.\n\nAt Raiffeisen Bank, we are\
+  \ committed to equal opportunities for all. We celebrate diversity and foster an inclusive environment where everyone can\
+  \ thrive.\n\nCandidate Profile \n\n3–5 years of experience in application support or development. \nFast learner, motivated\
+  \ to stay up to date with new technologies. \nStrong communication skills. \nAdvanced knowledge of the skills required for\
+  \ the role.\n\n\nDesired Skills and Experience\nJava, SQL, Linux, Jenkins, Microsoft Azure, Artificial Intelligence, Unix"
+required_skills:
+- Administration of Java and HTTP application servers.
+- Advanced knowledge of Windows, Linux/UNIX operating systems.
+- 'Experience with databases: Oracle, SQL, RDS, PostgreSQL.'
+- Hands-on experience with cloud platforms (AWS and/or Azure).
+- 'Experience with Web Services: APIs, SOAP, REST.'
+- Knowledge of integration concepts (message queues, web services, SCA, databases, etc.).
+- 'Automation tools: Git, Gradle, Jenkins, Artifactory.'
+- 'Tools: Toad, SQL Developer, IBM Data Studio, IBM MQ Explorer, ODI, SFTP clients.'
+- 'Containerization and orchestration: Docker, Kubernetes, OpenShift.'
+- Familiarity with CI/CD concepts, microservices, web services, ELK stack.
+- Ability to develop or enhance CI/CD pipelines for modern and legacy systems.
+nice_to_have_skills:
+- Basic understanding of Artificial Intelligence and ability to use AI tools.
+- 'Issue tracking tools: Jira.'
+notes: ''

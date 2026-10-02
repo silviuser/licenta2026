@@ -1,0 +1,76 @@
+cv_id: real_cv4
+gold_skills:
+- skill_uri: CUST:django
+  label: Django
+  confidence_expected: high
+- skill_uri: CUST:express
+  label: Express
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389
+  label: Java (computer programming)
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7
+  label: JavaScript
+  confidence_expected: high
+- skill_uri: CUST:kotlin
+  label: Kotlin
+  confidence_expected: high
+- skill_uri: CUST:mongodb
+  label: MongoDB
+  confidence_expected: high
+- skill_uri: CUST:node
+  label: Node.js
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d
+  label: Python (computer programming)
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742
+  label: SQL
+  confidence_expected: high
+- skill_uri: CUST:tensorflow
+  label: TensorFlow
+  confidence_expected: high
+- skill_uri: CUST:random-forest
+  label: Random Forest
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/ab1e97ed-2319-4293-a8b7-072d2648822f
+  label: database management systems
+  confidence_expected: high
+- skill_uri: CUST:intellij-idea
+  label: IntelliJ IDEA
+  confidence_expected: medium
+- skill_uri: CUST:dotnet
+  label: .NET
+  confidence_expected: medium
+- skill_uri: CUST:beautifulsoup
+  label: BeautifulSoup
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/d8829a1d-dbde-435b-b921-29d6462f35c9
+  label: Android (mobile operating systems)
+  confidence_expected: high
+- skill_uri: CUST:openai-api
+  label: OpenAI API
+  confidence_expected: high
+- skill_uri: CUST:web-scraping
+  label: Web Scraping
+  confidence_expected: high
+- skill_uri: CUST:flask
+  label: Flask
+  confidence_expected: high
+- skill_uri: CUST:cpp
+  label: C/C++
+  confidence_expected: high
+- skill_uri: CUST:selenium
+  label: Selenium
+  confidence_expected: high
+- skill_uri: CUST:git
+  label: Git
+  confidence_expected: high
+- skill_uri: CUST:bash
+  label: Bash
+  confidence_expected: medium
+skills_definitely_not_in_cv:
+- football
+notes: Reviewed 2026-05-13 against PDF. Candidate 4, ASE - Economic Informatics. 'football' = volunteer/hobby (he plays
+  for ASE Bucharest), not a technical skill. Promoted BeautifulSoup / Android / OpenAI API / Web Scraping — all explicit in
+  the project descriptions. Added Flask, C/C++, Selenium, Git, Bash from Technical Skills.

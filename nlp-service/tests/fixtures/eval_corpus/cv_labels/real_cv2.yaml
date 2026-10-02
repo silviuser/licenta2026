@@ -1,0 +1,55 @@
+cv_id: real_cv2
+gold_skills:
+- skill_uri: CUST:dotnet
+  label: .NET
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a
+  label: C#
+  confidence_expected: high
+- skill_uri: CUST:canva
+  label: Canva
+  confidence_expected: high
+- skill_uri: CUST:data-structures
+  label: Data Structures
+  confidence_expected: high
+- skill_uri: CUST:data-visualization
+  label: Data Visualization
+  confidence_expected: high
+- skill_uri: CUST:plsql
+  label: PL/SQL
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d
+  label: Python (computer programming)
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742
+  label: SQL
+  confidence_expected: high
+- skill_uri: CUST:streamlit
+  label: Streamlit
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/7fb699d9-182a-430e-b7a0-6d8ed05c284b
+  label: graphic design
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/ab1e97ed-2319-4293-a8b7-072d2648822f
+  label: database management systems
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389
+  label: Java (computer programming)
+  confidence_expected: high
+- skill_uri: CUST:cpp
+  label: C++
+  confidence_expected: high
+- skill_uri: CUST:oop
+  label: Object-Oriented Programming
+  confidence_expected: high
+- skill_uri: CUST:software-testing
+  label: Software Testing
+  confidence_expected: high
+- skill_uri: CUST:signal-processing
+  label: Signal Processing
+  confidence_expected: medium
+skills_definitely_not_in_cv:
+- think creatively
+notes: Reviewed 2026-05-13 against PDF. Candidate 2, Python Developer Intern (ISS) + Graphic Designer @Alfa Omega.
+  'think creatively' is a Module 2 soft-skill FP — not named explicitly. Added missing C++, OOP, Software Testing, Signal
+  Processing (all in the Skills line of the PDF).

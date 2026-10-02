@@ -1,0 +1,604 @@
+{
+  "_meta": {
+    "description": "Custom (non-ESCO) tech concepts overlay for Module 2.",
+    "schema_version": 1,
+    "rationale": "ESCO v1.2.1 does not index a long tail of CV-frequent tech tools and frameworks (Docker, Kubernetes, TensorFlow, React, MongoDB, IntelliJ IDEA, ...). The May-2026 validation report (reports/skill_extraction_validation_*.md, section 7) recorded these as the dominant false-negative families. This file adds them as first-class concepts with the CUST: URI prefix; downstream SkillMatch carries is_custom=True so they can be reported separately.",
+    "source": "Manually compiled from the validation report's FN catalogue plus de-facto tech-radar conventions (Wikipedia, official docs).",
+    "id_prefix": "CUST:",
+    "id_collision_policy": "CUST: IDs MUST NOT collide with ESCO URIs (which all start with http://data.europa.eu/esco/). The loader asserts this invariant at startup."
+  },
+  "concepts": [
+    {
+      "id": "CUST:docker",
+      "preferred_label": "Docker",
+      "alt_labels": ["Docker Engine", "dockerized", "Dockerised"],
+      "skill_type": "knowledge",
+      "description": "Container runtime and image format used to package applications and their dependencies.",
+      "source_url": "https://www.docker.com/"
+    },
+    {
+      "id": "CUST:kubernetes",
+      "preferred_label": "Kubernetes",
+      "alt_labels": ["k8s", "K8s", "Kube"],
+      "skill_type": "knowledge",
+      "description": "Container orchestration platform for automating deployment, scaling, and operations of application containers.",
+      "source_url": "https://kubernetes.io/"
+    },
+    {
+      "id": "CUST:tensorflow",
+      "preferred_label": "TensorFlow",
+      "alt_labels": ["TF", "tf.keras", "Tensorflow"],
+      "skill_type": "knowledge",
+      "description": "Open-source machine-learning framework developed by Google.",
+      "source_url": "https://www.tensorflow.org/"
+    },
+    {
+      "id": "CUST:pytorch",
+      "preferred_label": "PyTorch",
+      "alt_labels": ["torch", "pytorch", "PyTorch Lightning"],
+      "skill_type": "knowledge",
+      "description": "Open-source machine-learning framework primarily developed by Meta AI.",
+      "source_url": "https://pytorch.org/"
+    },
+    {
+      "id": "CUST:react",
+      "preferred_label": "React",
+      "alt_labels": ["React.js", "ReactJS", "React JS"],
+      "skill_type": "knowledge",
+      "description": "JavaScript library for building user interfaces, maintained by Meta.",
+      "source_url": "https://react.dev/"
+    },
+    {
+      "id": "CUST:react-native",
+      "preferred_label": "React Native",
+      "alt_labels": ["RN"],
+      "skill_type": "knowledge",
+      "description": "Framework for building native mobile applications using React.",
+      "source_url": "https://reactnative.dev/"
+    },
+    {
+      "id": "CUST:node",
+      "preferred_label": "Node.js",
+      "alt_labels": ["NodeJS", "Node", "node"],
+      "skill_type": "knowledge",
+      "description": "JavaScript runtime built on Chrome's V8 engine for server-side and CLI tooling.",
+      "source_url": "https://nodejs.org/"
+    },
+    {
+      "id": "CUST:express",
+      "preferred_label": "Express",
+      "alt_labels": ["Express.js", "ExpressJS"],
+      "skill_type": "knowledge",
+      "description": "Minimalist web framework for Node.js, used to build REST APIs and web servers.",
+      "source_url": "https://expressjs.com/"
+    },
+    {
+      "id": "CUST:mongodb",
+      "preferred_label": "MongoDB",
+      "alt_labels": ["Mongo", "mongo"],
+      "skill_type": "knowledge",
+      "description": "Document-oriented NoSQL database.",
+      "source_url": "https://www.mongodb.com/"
+    },
+    {
+      "id": "CUST:django",
+      "preferred_label": "Django",
+      "alt_labels": ["django framework"],
+      "skill_type": "knowledge",
+      "description": "High-level Python web framework that encourages rapid development and clean design.",
+      "source_url": "https://www.djangoproject.com/"
+    },
+    {
+      "id": "CUST:flask",
+      "preferred_label": "Flask",
+      "alt_labels": ["Flask framework"],
+      "skill_type": "knowledge",
+      "description": "Lightweight Python web framework based on Werkzeug and Jinja2.",
+      "source_url": "https://flask.palletsprojects.com/"
+    },
+    {
+      "id": "CUST:fastapi",
+      "preferred_label": "FastAPI",
+      "alt_labels": ["fast api"],
+      "skill_type": "knowledge",
+      "description": "Modern, high-performance Python web framework for building APIs based on standard Python type hints.",
+      "source_url": "https://fastapi.tiangolo.com/"
+    },
+    {
+      "id": "CUST:streamlit",
+      "preferred_label": "Streamlit",
+      "alt_labels": ["streamlit"],
+      "skill_type": "knowledge",
+      "description": "Open-source Python framework for building data and ML web apps.",
+      "source_url": "https://streamlit.io/"
+    },
+    {
+      "id": "CUST:kotlin",
+      "preferred_label": "Kotlin",
+      "alt_labels": ["kotlin"],
+      "skill_type": "knowledge",
+      "description": "Statically-typed JVM language officially supported for Android development.",
+      "source_url": "https://kotlinlang.org/"
+    },
+    {
+      "id": "CUST:selenium",
+      "preferred_label": "Selenium",
+      "alt_labels": ["Selenium WebDriver", "selenium"],
+      "skill_type": "knowledge",
+      "description": "Browser automation framework used for end-to-end testing.",
+      "source_url": "https://www.selenium.dev/"
+    },
+    {
+      "id": "CUST:beautifulsoup",
+      "preferred_label": "BeautifulSoup",
+      "alt_labels": ["Beautiful Soup", "bs4"],
+      "skill_type": "knowledge",
+      "description": "Python library for pulling data out of HTML and XML files.",
+      "source_url": "https://www.crummy.com/software/BeautifulSoup/"
+    },
+    {
+      "id": "CUST:git",
+      "preferred_label": "Git",
+      "alt_labels": ["git"],
+      "skill_type": "knowledge",
+      "description": "Distributed version control system widely used in software development.",
+      "source_url": "https://git-scm.com/"
+    },
+    {
+      "id": "CUST:github",
+      "preferred_label": "GitHub",
+      "alt_labels": ["github.com", "GH"],
+      "skill_type": "knowledge",
+      "description": "Git hosting service provided by Microsoft; also CI/CD via Actions.",
+      "source_url": "https://github.com/"
+    },
+    {
+      "id": "CUST:gitlab",
+      "preferred_label": "GitLab",
+      "alt_labels": ["gitlab.com"],
+      "skill_type": "knowledge",
+      "description": "DevOps platform with Git hosting, CI/CD and issue tracking.",
+      "source_url": "https://about.gitlab.com/"
+    },
+    {
+      "id": "CUST:intellij-idea",
+      "preferred_label": "IntelliJ IDEA",
+      "alt_labels": ["IntelliJ", "IDEA", "intellij idea"],
+      "skill_type": "knowledge",
+      "description": "JetBrains IDE for JVM languages (Java, Kotlin, Scala).",
+      "source_url": "https://www.jetbrains.com/idea/"
+    },
+    {
+      "id": "CUST:linux",
+      "preferred_label": "Linux",
+      "alt_labels": ["GNU/Linux", "Ubuntu", "Debian", "Fedora", "CentOS"],
+      "skill_type": "knowledge",
+      "description": "Family of open-source Unix-like operating systems based on the Linux kernel.",
+      "source_url": "https://www.kernel.org/"
+    },
+    {
+      "id": "CUST:bash",
+      "preferred_label": "Bash",
+      "alt_labels": ["bash scripting", "shell scripting", "bash shell"],
+      "skill_type": "knowledge",
+      "description": "Unix shell and command language; the default shell on most Linux distributions.",
+      "source_url": "https://www.gnu.org/software/bash/"
+    },
+    {
+      "id": "CUST:plsql",
+      "preferred_label": "PL/SQL",
+      "alt_labels": ["PLSQL", "pl/sql"],
+      "skill_type": "knowledge",
+      "description": "Oracle's procedural extension to SQL.",
+      "source_url": "https://www.oracle.com/database/technologies/appdev/plsql.html"
+    },
+    {
+      "id": "CUST:oracle-db",
+      "preferred_label": "Oracle Database",
+      "alt_labels": ["Oracle DB", "Oracle SQL", "Oracle RDBMS"],
+      "skill_type": "knowledge",
+      "description": "Multi-model database management system produced by Oracle Corporation.",
+      "source_url": "https://www.oracle.com/database/"
+    },
+    {
+      "id": "CUST:dotnet",
+      "preferred_label": ".NET",
+      "alt_labels": [".NET Core", ".NET Framework", "dotnet"],
+      "skill_type": "knowledge",
+      "description": "Cross-platform application development framework from Microsoft.",
+      "source_url": "https://dotnet.microsoft.com/"
+    },
+    {
+      "id": "CUST:html",
+      "preferred_label": "HTML",
+      "alt_labels": ["HTML5", "HyperText Markup Language", "HTML/CSS", "CSS/HTML"],
+      "skill_type": "knowledge",
+      "description": "Standard markup language for documents designed to be displayed in a web browser.",
+      "source_url": "https://html.spec.whatwg.org/"
+    },
+    {
+      "id": "CUST:rest-api",
+      "preferred_label": "REST API",
+      "alt_labels": ["RESTful API", "REST", "RESTful", "REST endpoints"],
+      "skill_type": "knowledge",
+      "description": "Architectural style for distributed hypermedia systems, popular for HTTP web services.",
+      "source_url": "https://restfulapi.net/"
+    },
+    {
+      "id": "CUST:json",
+      "preferred_label": "JSON",
+      "alt_labels": ["JavaScript Object Notation"],
+      "skill_type": "knowledge",
+      "description": "Lightweight data-interchange format widely used in web APIs and configuration.",
+      "source_url": "https://www.json.org/"
+    },
+    {
+      "id": "CUST:xml",
+      "preferred_label": "XML",
+      "alt_labels": ["Extensible Markup Language"],
+      "skill_type": "knowledge",
+      "description": "Markup language defining a set of rules for encoding documents in a machine-readable form.",
+      "source_url": "https://www.w3.org/XML/"
+    },
+    {
+      "id": "CUST:tailwind",
+      "preferred_label": "Tailwind CSS",
+      "alt_labels": ["Tailwind", "TailwindCSS", "tailwindcss"],
+      "skill_type": "knowledge",
+      "description": "Utility-first CSS framework for rapidly building custom user interfaces.",
+      "source_url": "https://tailwindcss.com/"
+    },
+    {
+      "id": "CUST:webpack",
+      "preferred_label": "Webpack",
+      "alt_labels": ["webpack"],
+      "skill_type": "knowledge",
+      "description": "Static module bundler for modern JavaScript applications.",
+      "source_url": "https://webpack.js.org/"
+    },
+    {
+      "id": "CUST:vite",
+      "preferred_label": "Vite",
+      "alt_labels": ["vite", "vite.js"],
+      "skill_type": "knowledge",
+      "description": "Next-generation front-end tooling — instant dev server plus bundler.",
+      "source_url": "https://vitejs.dev/"
+    },
+    {
+      "id": "CUST:vue",
+      "preferred_label": "Vue.js",
+      "alt_labels": ["Vue", "VueJS", "vue.js"],
+      "skill_type": "knowledge",
+      "description": "Progressive JavaScript framework for building user interfaces.",
+      "source_url": "https://vuejs.org/"
+    },
+    {
+      "id": "CUST:svelte",
+      "preferred_label": "Svelte",
+      "alt_labels": ["SvelteKit", "svelte"],
+      "skill_type": "knowledge",
+      "description": "Compiler-based front-end framework with no virtual DOM.",
+      "source_url": "https://svelte.dev/"
+    },
+    {
+      "id": "CUST:pinia",
+      "preferred_label": "Pinia",
+      "alt_labels": ["pinia"],
+      "skill_type": "knowledge",
+      "description": "Modern state-management library for Vue applications.",
+      "source_url": "https://pinia.vuejs.org/"
+    },
+    {
+      "id": "CUST:zustand",
+      "preferred_label": "Zustand",
+      "alt_labels": ["zustand"],
+      "skill_type": "knowledge",
+      "description": "Small, fast and scalable state-management library for React.",
+      "source_url": "https://zustand-demo.pmnd.rs/"
+    },
+    {
+      "id": "CUST:openai-api",
+      "preferred_label": "OpenAI API",
+      "alt_labels": ["OpenAI", "GPT API", "ChatGPT API"],
+      "skill_type": "knowledge",
+      "description": "API exposing OpenAI's language and embedding models.",
+      "source_url": "https://platform.openai.com/"
+    },
+    {
+      "id": "CUST:anthropic-api",
+      "preferred_label": "Anthropic API",
+      "alt_labels": ["Claude API", "Anthropic"],
+      "skill_type": "knowledge",
+      "description": "API exposing Anthropic's Claude family of language models.",
+      "source_url": "https://docs.anthropic.com/"
+    },
+    {
+      "id": "CUST:langchain",
+      "preferred_label": "LangChain",
+      "alt_labels": ["lang chain", "langchain"],
+      "skill_type": "knowledge",
+      "description": "Framework for developing applications powered by language models.",
+      "source_url": "https://www.langchain.com/"
+    },
+    {
+      "id": "CUST:rag",
+      "preferred_label": "Retrieval-Augmented Generation",
+      "alt_labels": ["RAG", "retrieval augmented generation"],
+      "skill_type": "knowledge",
+      "description": "Technique that augments LLM responses with external retrieved context.",
+      "source_url": "https://arxiv.org/abs/2005.11401"
+    },
+    {
+      "id": "CUST:fine-tuning",
+      "preferred_label": "Fine-tuning",
+      "alt_labels": ["fine tuning", "model fine-tuning", "LLM fine-tuning"],
+      "skill_type": "knowledge",
+      "description": "Adapting a pretrained model to a downstream task by additional supervised training.",
+      "source_url": "https://en.wikipedia.org/wiki/Fine-tuning_(deep_learning)"
+    },
+    {
+      "id": "CUST:random-forest",
+      "preferred_label": "Random Forest",
+      "alt_labels": ["Random Forest Classifier", "random forest"],
+      "skill_type": "knowledge",
+      "description": "Ensemble learning method based on bagging decision trees.",
+      "source_url": "https://en.wikipedia.org/wiki/Random_forest"
+    },
+    {
+      "id": "CUST:xgboost",
+      "preferred_label": "XGBoost",
+      "alt_labels": ["xgboost", "Extreme Gradient Boosting"],
+      "skill_type": "knowledge",
+      "description": "Scalable gradient-boosting library widely used in tabular ML.",
+      "source_url": "https://xgboost.ai/"
+    },
+    {
+      "id": "CUST:scikit-learn",
+      "preferred_label": "scikit-learn",
+      "alt_labels": ["sklearn", "Scikit-learn"],
+      "skill_type": "knowledge",
+      "description": "Python machine-learning library built on NumPy, SciPy and matplotlib.",
+      "source_url": "https://scikit-learn.org/"
+    },
+    {
+      "id": "CUST:websockets",
+      "preferred_label": "WebSockets",
+      "alt_labels": ["WebSocket", "ws"],
+      "skill_type": "knowledge",
+      "description": "Protocol providing full-duplex communication channels over a single TCP connection.",
+      "source_url": "https://datatracker.ietf.org/doc/html/rfc6455"
+    },
+    {
+      "id": "CUST:graphql",
+      "preferred_label": "GraphQL",
+      "alt_labels": ["graphql"],
+      "skill_type": "knowledge",
+      "description": "Query language and runtime for APIs developed by Meta.",
+      "source_url": "https://graphql.org/"
+    },
+    {
+      "id": "CUST:grpc",
+      "preferred_label": "gRPC",
+      "alt_labels": ["grpc", "GRPC"],
+      "skill_type": "knowledge",
+      "description": "High-performance, open-source RPC framework developed by Google.",
+      "source_url": "https://grpc.io/"
+    },
+    {
+      "id": "CUST:crud",
+      "preferred_label": "CRUD operations",
+      "alt_labels": ["CRUD"],
+      "skill_type": "knowledge",
+      "description": "Create, Read, Update, Delete — the four basic operations of persistent storage.",
+      "source_url": "https://en.wikipedia.org/wiki/Create,_read,_update_and_delete"
+    },
+    {
+      "id": "CUST:html5-canvas",
+      "preferred_label": "HTML5 Canvas",
+      "alt_labels": ["Canvas API"],
+      "skill_type": "knowledge",
+      "description": "HTML element used to draw graphics via scripting (usually JavaScript).",
+      "source_url": "https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API"
+    },
+    {
+      "id": "CUST:spa",
+      "preferred_label": "Single Page Application",
+      "alt_labels": ["SPA", "single-page application"],
+      "skill_type": "knowledge",
+      "description": "Web app that rewrites the current page rather than loading entire new pages.",
+      "source_url": "https://en.wikipedia.org/wiki/Single-page_application"
+    },
+    {
+      "id": "CUST:microservices",
+      "preferred_label": "Microservices",
+      "alt_labels": ["microservice", "microservice architecture"],
+      "skill_type": "knowledge",
+      "description": "Architectural style structuring an application as a collection of loosely coupled services.",
+      "source_url": "https://martinfowler.com/articles/microservices.html"
+    },
+    {
+      "id": "CUST:object-oriented-programming",
+      "preferred_label": "Object-Oriented Programming",
+      "alt_labels": ["OOP", "object oriented programming"],
+      "skill_type": "knowledge",
+      "description": "Programming paradigm based on the concept of objects with data and behaviour.",
+      "source_url": "https://en.wikipedia.org/wiki/Object-oriented_programming"
+    },
+    {
+      "id": "CUST:data-structures",
+      "preferred_label": "Data Structures",
+      "alt_labels": ["Data Structures and Algorithms", "DSA"],
+      "skill_type": "knowledge",
+      "description": "Study of organising and storing data for efficient access and modification.",
+      "source_url": "https://en.wikipedia.org/wiki/Data_structure"
+    },
+    {
+      "id": "CUST:database-design",
+      "preferred_label": "Database Design",
+      "alt_labels": ["database modeling", "database modelling", "ER modeling"],
+      "skill_type": "knowledge",
+      "description": "Process of producing a detailed data model of a database.",
+      "source_url": "https://en.wikipedia.org/wiki/Database_design"
+    },
+    {
+      "id": "CUST:cryptography",
+      "preferred_label": "Cryptography",
+      "alt_labels": ["crypto", "cryptographic"],
+      "skill_type": "knowledge",
+      "description": "Practice and study of techniques for secure communication in the presence of adversaries.",
+      "source_url": "https://en.wikipedia.org/wiki/Cryptography"
+    },
+    {
+      "id": "CUST:network-security",
+      "preferred_label": "Network Security",
+      "alt_labels": ["network security protocols"],
+      "skill_type": "knowledge",
+      "description": "Policies and practices to prevent and monitor unauthorized access to a network.",
+      "source_url": "https://en.wikipedia.org/wiki/Network_security"
+    },
+    {
+      "id": "CUST:secure-coding",
+      "preferred_label": "Secure Coding",
+      "alt_labels": ["Secure Coding Practices"],
+      "skill_type": "knowledge",
+      "description": "Practice of writing software that is robust against security vulnerabilities.",
+      "source_url": "https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/"
+    },
+    {
+      "id": "CUST:embedded-systems",
+      "preferred_label": "Embedded Systems",
+      "alt_labels": ["embedded development"],
+      "skill_type": "knowledge",
+      "description": "Computer systems with dedicated functions within a larger mechanical or electronic system.",
+      "source_url": "https://en.wikipedia.org/wiki/Embedded_system"
+    },
+    {
+      "id": "CUST:assembly",
+      "preferred_label": "Assembly language",
+      "alt_labels": ["assembly", "x86 assembly", "Assembly x86", "ASM"],
+      "skill_type": "knowledge",
+      "description": "Low-level programming language with a strong correspondence to a computer's machine code.",
+      "source_url": "https://en.wikipedia.org/wiki/Assembly_language"
+    },
+    {
+      "id": "CUST:operating-systems",
+      "preferred_label": "Operating Systems",
+      "alt_labels": ["OS fundamentals", "Operating Systems Fundamentals"],
+      "skill_type": "knowledge",
+      "description": "System software that manages computer hardware and software resources.",
+      "source_url": "https://en.wikipedia.org/wiki/Operating_system"
+    },
+    {
+      "id": "CUST:web-scraping",
+      "preferred_label": "Web Scraping",
+      "alt_labels": ["web-scraping", "web scraping", "scraping"],
+      "skill_type": "knowledge",
+      "description": "Extracting data from websites programmatically.",
+      "source_url": "https://en.wikipedia.org/wiki/Web_scraping"
+    },
+    {
+      "id": "CUST:figma",
+      "preferred_label": "Figma",
+      "alt_labels": ["figma"],
+      "skill_type": "knowledge",
+      "description": "Collaborative web-based interface design tool.",
+      "source_url": "https://www.figma.com/"
+    },
+    {
+      "id": "CUST:canva",
+      "preferred_label": "Canva",
+      "alt_labels": ["canva"],
+      "skill_type": "knowledge",
+      "description": "Online graphic design platform.",
+      "source_url": "https://www.canva.com/"
+    },
+    {
+      "id": "CUST:vscode",
+      "preferred_label": "Visual Studio Code",
+      "alt_labels": ["VS Code", "VSCode", "vscode"],
+      "skill_type": "knowledge",
+      "description": "Source-code editor developed by Microsoft.",
+      "source_url": "https://code.visualstudio.com/"
+    },
+    {
+      "id": "CUST:visual-studio-ide",
+      "preferred_label": "Microsoft Visual Studio",
+      "alt_labels": ["Visual Studio", "MSVS"],
+      "skill_type": "knowledge",
+      "description": "Integrated development environment from Microsoft for .NET and C++ development.",
+      "source_url": "https://visualstudio.microsoft.com/"
+    },
+    {
+      "id": "CUST:data-visualization",
+      "preferred_label": "Data Visualization",
+      "alt_labels": ["data visualisation", "Data Visualisation"],
+      "skill_type": "knowledge",
+      "description": "Graphical representation of data and information.",
+      "source_url": "https://en.wikipedia.org/wiki/Data_visualization"
+    },
+    {
+      "id": "CUST:signal-processing",
+      "preferred_label": "Signal Processing",
+      "alt_labels": ["Digital Signal Processing", "DSP"],
+      "skill_type": "knowledge",
+      "description": "Analysis, modification, and synthesis of signals such as sound, images, and biological measurements.",
+      "source_url": "https://en.wikipedia.org/wiki/Signal_processing"
+    },
+    {
+      "id": "CUST:software-testing",
+      "preferred_label": "Software Testing",
+      "alt_labels": ["software quality control", "SQC", "QA"],
+      "skill_type": "knowledge",
+      "description": "Process of evaluating software to detect differences between expected and actual behaviour.",
+      "source_url": "https://en.wikipedia.org/wiki/Software_testing"
+    },
+    {
+      "id": "CUST:algorithms",
+      "preferred_label": "Algorithms",
+      "alt_labels": ["algorithm design", "algorithmic"],
+      "skill_type": "knowledge",
+      "description": "Step-by-step procedures for calculations and problem solving.",
+      "source_url": "https://en.wikipedia.org/wiki/Algorithm"
+    },
+    {
+      "id": "CUST:bfs",
+      "preferred_label": "Breadth-First Search",
+      "alt_labels": ["BFS"],
+      "skill_type": "knowledge",
+      "description": "Graph traversal algorithm that explores neighbours level by level.",
+      "source_url": "https://en.wikipedia.org/wiki/Breadth-first_search"
+    },
+    {
+      "id": "CUST:full-stack",
+      "preferred_label": "Full-Stack Web Development",
+      "alt_labels": ["Full Stack", "Full-Stack", "Fullstack"],
+      "skill_type": "knowledge",
+      "description": "Development of both client-side and server-side software for web applications.",
+      "source_url": "https://en.wikipedia.org/wiki/Web_development"
+    },
+    {
+      "id": "CUST:real-time-systems",
+      "preferred_label": "Real-Time Systems",
+      "alt_labels": ["real-time concepts", "real time systems"],
+      "skill_type": "knowledge",
+      "description": "Computing systems with hard time constraints on response.",
+      "source_url": "https://en.wikipedia.org/wiki/Real-time_computing"
+    },
+    {
+      "id": "CUST:memory-management",
+      "preferred_label": "Memory Management",
+      "alt_labels": ["memory allocation", "manual memory management"],
+      "skill_type": "knowledge",
+      "description": "Process of controlling and coordinating computer memory.",
+      "source_url": "https://en.wikipedia.org/wiki/Memory_management"
+    },
+    {
+      "id": "CUST:c-language",
+      "preferred_label": "C (programming language)",
+      "alt_labels": ["C programming"],
+      "skill_type": "knowledge",
+      "description": "General-purpose, procedural programming language designed by Dennis Ritchie at Bell Labs.",
+      "source_url": "https://en.wikipedia.org/wiki/C_(programming_language)"
+    }
+  ]
+}

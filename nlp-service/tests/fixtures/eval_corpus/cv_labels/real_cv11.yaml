@@ -1,0 +1,49 @@
+cv_id: real_cv11
+gold_skills:
+- skill_uri: http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389
+  label: Java (computer programming)
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/a8d07b5a-c1a1-42c6-9d53-db9c7a2ca996
+  label: PostgreSQL
+  confidence_expected: high
+- skill_uri: CUST:vite
+  label: Vite
+  confidence_expected: high
+- skill_uri: CUST:openai-api
+  label: OpenAI API
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a
+  label: C#
+  confidence_expected: medium
+- skill_uri: http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7
+  label: JavaScript
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/d8829a1d-dbde-435b-b921-29d6462f35c9
+  label: Android (mobile operating systems)
+  confidence_expected: medium
+- skill_uri: http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d
+  label: Python (computer programming)
+  confidence_expected: high
+- skill_uri: CUST:spring-boot
+  label: Spring Boot
+  confidence_expected: high
+- skill_uri: CUST:plsql
+  label: PL/SQL
+  confidence_expected: high
+- skill_uri: CUST:cpp
+  label: C/C++
+  confidence_expected: high
+- skill_uri: CUST:react
+  label: React
+  confidence_expected: high
+- skill_uri: CUST:deepseek-api
+  label: DeepSeek API
+  confidence_expected: medium
+skills_definitely_not_in_cv:
+- give constructive feedback
+- lead a team
+- lead others
+- think analytically
+notes: Reviewed 2026-05-13 against PDF. Candidate 11, Economic Informatics 3rd year. Cleaned soft-skill FPs from
+  his HR director role (give constructive feedback / lead a team / lead others / think analytically). Promoted JavaScript,
+  Python, OpenAI API — explicit in technical skills / project. Added Spring Boot, PL/SQL, C/C++, React, DeepSeek API.

@@ -1,0 +1,31 @@
+filename,method,chars_extracted,time_ms,quality_score,error
+corrupt.pdf,pdfplumber,0,0,0.0000,PDFCorruptError: Cannot open PDF: tests\fixtures\corrupt.pdf — No /Root object! - Is this really a PDF?
+corrupt.pdf,pymupdf,0,0,0.0000,PDFCorruptError: PyMuPDF cannot open PDF: tests\fixtures\corrupt.pdf
+corrupt.pdf,ocr_tesseract,0,30,0.0000,PDFCorruptError: pdf2image cannot process PDF: tests\fixtures\corrupt.pdf
+cv (1).pdf,pdfplumber,0,0,0.0000,
+cv (1).pdf,pymupdf,0,0,0.0000,
+cv (1).pdf,ocr_tesseract,0,16,0.0000,PDFCorruptError: pdf2image cannot process PDF: tests\fixtures\cv (1).pdf
+CV - Silviu.pdf,pdfplumber,2680,202,0.6217,
+CV - Silviu.pdf,pymupdf,2732,0,0.6140,
+CV - Silviu.pdf,ocr_tesseract,0,15,0.0000,PDFCorruptError: pdf2image cannot process PDF: tests\fixtures\CV - Silviu.pdf
+CV- canva.pdf,pdfplumber,1599,125,0.6546,
+CV- canva.pdf,pymupdf,1636,0,0.6455,
+CV- canva.pdf,ocr_tesseract,0,15,0.0000,PDFCorruptError: pdf2image cannot process PDF: tests\fixtures\CV- canva.pdf
+cv-europass.pdf,pdfplumber,523,47,0.4328,
+cv-europass.pdf,pymupdf,557,0,0.4107,
+cv-europass.pdf,ocr_tesseract,0,0,0.0000,PDFCorruptError: pdf2image cannot process PDF: tests\fixtures\cv-europass.pdf
+CV_14-03-2025.pdf,pdfplumber,2129,202,0.6159,
+CV_14-03-2025.pdf,pymupdf,2174,0,0.6076,
+CV_14-03-2025.pdf,ocr_tesseract,0,0,0.0000,PDFCorruptError: pdf2image cannot process PDF: tests\fixtures\CV_14-03-2025.pdf
+minimal.pdf,pdfplumber,0,31,0.0000,
+minimal.pdf,pymupdf,0,0,0.0000,
+minimal.pdf,ocr_tesseract,0,0,0.0000,PDFCorruptError: pdf2image cannot process PDF: tests\fixtures\minimal.pdf
+Scrisoare de intenție pentru desfășurarea stagiului de practică.pdf,pdfplumber,3184,156,0.3967,
+Scrisoare de intenție pentru desfășurarea stagiului de practică.pdf,pymupdf,3260,0,0.3874,
+Scrisoare de intenție pentru desfășurarea stagiului de practică.pdf,ocr_tesseract,0,14,0.0000,PDFCorruptError: pdf2image cannot process PDF: tests\fixtures\Scrisoare de intenție pentru desfășurarea stagiului de practică.pdf
+single_column.pdf,pdfplumber,330,16,0.5764,
+single_column.pdf,pymupdf,342,0,0.5637,
+single_column.pdf,ocr_tesseract,0,0,0.0000,PDFCorruptError: pdf2image cannot process PDF: tests\fixtures\single_column.pdf
+two_column.pdf,pdfplumber,414,30,0.5778,
+two_column.pdf,pymupdf,414,16,0.5778,
+two_column.pdf,ocr_tesseract,0,0,0.0000,PDFCorruptError: pdf2image cannot process PDF: tests\fixtures\two_column.pdf

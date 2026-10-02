@@ -1,0 +1,240 @@
+# Suppression rules — drop matches that hit a (surface, target URI) pair
+# known to be a false positive in CV context.
+#
+# Each rule fires when:
+#   * the matched surface form (case-handling per rule) equals
+#     ``surface_pattern``;
+#   * the candidate ESCO/custom URI equals ``target_concept_uri``.
+#
+# Optional ``context_required`` narrows the rule to specific CV
+# sections — useful for keeping the rare TP case alive (e.g. the
+# Graphic Design Artist whose ``design`` legitimately maps to "think
+# creatively"). The supported context fields are documented in
+# ``skill_extractor.overlays.suppression``.
+#
+# Reference: reports/skill_extraction_validation_2026-05-11.md section 6.
+
+rules:
+  # ---- .NET → Visual Basic family (5 CVs) ----------------------------
+  - surface_pattern: ".NET"
+    target_concept_uri: http://data.europa.eu/esco/skill/13bdd41a-2a18-441f-96db-41252c519413
+    reason: ".NET is a framework, not the Visual Basic language. Drop the cross-mapping; the custom CUST:dotnet concept carries the correct match."
+
+  - surface_pattern: "Visual Studio"
+    target_concept_uri: http://data.europa.eu/esco/skill/13bdd41a-2a18-441f-96db-41252c519413
+    reason: "Visual Studio is the IDE, not the Visual Basic language. Drop the conflation."
+
+  # ---- Pronoun "It" misread as IT ------------------------------------
+  - surface_pattern: "It"
+    case_sensitive: true
+    target_concept_uri: http://data.europa.eu/esco/skill/ddc3119d-1d6e-4324-9125-a3380d299ac5
+    reason: "Title-cased ``It`` is overwhelmingly a pronoun, not the IT abbreviation."
+
+  # ---- Financial / ethical homonyms ----------------------------------
+  - surface_pattern: "security"
+    target_concept_uri: http://data.europa.eu/esco/skill/749ce4c2-4dfd-461a-a8f3-0f6914814d3e
+    reason: "Computer security is not the financial 'securities' concept."
+
+  - surface_pattern: "integrity"
+    target_concept_uri: http://data.europa.eu/esco/skill/7cf2762d-32e1-4b21-8ef8-574e40310c18
+    reason: "Data integrity is the canonical CV usage; the ESCO 'morality' altLabel match is spurious."
+
+  - surface_pattern: "banking"
+    target_concept_uri: http://data.europa.eu/esco/skill/88af9294-b697-4687-ae19-aefbb6234dfa
+    reason: "A 'Bank Management' student project is not evidence of the broad ESCO 'economics' concept."
+
+  # ---- Pure tokenizer / lemma collisions -----------------------------
+  - surface_pattern: "tailored"
+    target_concept_uri: http://data.europa.eu/esco/skill/533b3f0b-c8f8-4668-95ef-69011bb081d7
+    reason: "The adjective 'tailored' (customized) is unrelated to dressmaking."
+
+  - surface_pattern: "called"
+    target_concept_uri: http://data.europa.eu/esco/skill/b8df1689-6763-437d-bfca-fe03d43f36c3
+    reason: "The past participle 'called' (= named) collides with the CALL acronym."
+
+  # ---- CS-context homonyms ------------------------------------------
+  - surface_pattern: "logic"
+    target_concept_uri: http://data.europa.eu/esco/skill/294cf13e-4fdf-4cb8-bb6b-31b9da7f4819
+    reason: "In CV context 'logic' nearly always refers to business / application logic, not the discipline; suppress unconditionally."
+
+  - surface_pattern: "statistics"
+    target_concept_uri: http://data.europa.eu/esco/skill/7ee4c2ea-b349-4bd2-81a3-ec31475d4833
+    context_required:
+      surrounding_terms_any:
+        - "match statistics"
+        - "match"
+        - "football"
+        - "game statistics"
+        - "game"
+        - "score"
+    surrounding_window_chars: 60
+    reason: "Sports/match statistics is not the academic discipline of statistics."
+
+  - surface_pattern: "lecture"
+    target_concept_uri: http://data.europa.eu/esco/skill/3012a059-e062-4171-b37e-f9e7c7eb603e
+    context_required:
+      forbidden_surrounding_terms_any:
+        - "delivered a lecture"
+        - "lecturer"
+        - "lecturing"
+        - "I lecture"
+    surrounding_window_chars: 80
+    reason: "Drop the 'perform lectures' mapping unless the candidate is explicitly a lecturer."
+
+  - surface_pattern: "lecture"
+    target_concept_uri: http://data.europa.eu/esco/skill/609a8ac1-9d29-4237-9886-596dbbe7ca8a
+    context_required:
+      forbidden_surrounding_terms_any:
+        - "delivered a lecture"
+        - "lecturer"
+        - "lecturing"
+        - "I lecture"
+    surrounding_window_chars: 80
+    reason: "Drop the 'address an audience' mapping unless the candidate is explicitly a lecturer."
+
+  # ---- Soft-skill / domain conflations -------------------------------
+  - surface_pattern: "communication"
+    target_concept_uri: http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7
+    context_required:
+      surrounding_terms_any:
+        - "protocol"
+        - "protocols"
+        - "channel"
+        - "channels"
+        - "event"
+        - "events"
+        - "API"
+      surrounding_window_chars: 60
+    reason: "Drop 'communication' as soft skill when surrounded by protocol / events / API language."
+
+  - surface_pattern: "communications"
+    target_concept_uri: http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7
+    reason: "The plural 'communications' is almost always either a department name or a noun, never the soft skill."
+
+  - surface_pattern: "document management"
+    target_concept_uri: http://data.europa.eu/esco/skill/ea1bf5e5-e7f0-4d2c-a415-1c39c00512b1
+    context_required:
+      allowed_sections:
+        - skills
+    reason: "Drop incidental 'document management' from project descriptions; keep it only when listed as a skill."
+
+  # ---- design verb / think-creatively conflation ---------------------
+  # The "graphic design" exception is encoded as ``allowed_sections``
+  # plus an explicit graphic-design context check so the Graphic Design
+  # Artist CV (real_cv2) keeps its TP.
+  - surface_pattern: "design"
+    target_concept_uri: http://data.europa.eu/esco/skill/c624c6a3-b0ba-4a31-a296-0d433fe47e41
+    context_required:
+      forbidden_surrounding_terms_any:
+        - "graphic design"
+        - "Canva"
+        - "Figma"
+        - "Photoshop"
+        - "illustration"
+    surrounding_window_chars: 80
+    reason: "The verb 'design' in software/database context is not the 'think creatively' soft skill."
+
+  - surface_pattern: "designed"
+    target_concept_uri: http://data.europa.eu/esco/skill/c624c6a3-b0ba-4a31-a296-0d433fe47e41
+    case_sensitive: false
+    context_required:
+      forbidden_surrounding_terms_any:
+        - "graphic design"
+        - "Canva"
+        - "Figma"
+        - "Photoshop"
+        - "illustration"
+    surrounding_window_chars: 80
+    reason: "Past tense of design — same rationale."
+
+  - surface_pattern: "designing"
+    target_concept_uri: http://data.europa.eu/esco/skill/c624c6a3-b0ba-4a31-a296-0d433fe47e41
+    context_required:
+      forbidden_surrounding_terms_any:
+        - "graphic design"
+        - "Canva"
+        - "Figma"
+        - "Photoshop"
+        - "illustration"
+    surrounding_window_chars: 80
+    reason: "Gerund form of design — same rationale."
+
+  # ---- ML acronym → ML (computer programming) -------------------------
+  # ML in CS-CV context is the Machine Learning abbreviation, not the
+  # obscure ML / Meta Language programming language ESCO indexes.
+  - surface_pattern: "ML"
+    case_sensitive: true
+    target_concept_uri: http://data.europa.eu/esco/skill/a4d336a6-9ffd-402a-91cc-f359716ba4e0
+    reason: "ML in CS context is Machine Learning, not the ML programming language."
+
+  # ---- Generic-URI suppressions paired with the demo-day drop_threshold
+  # ---- lowering to 0.35 in skill_matcher/config.py. -------------------
+  # The placeholder Step 5 encoder under-scores correct matches in dense
+  # skills-list contexts, so we lowered the Linker's drop_threshold from
+  # 0.40 to 0.35 to recover OOP, C++, CRUD. The trade-off is that some
+  # generic ESCO URIs (e.g. "database management systems" matched on
+  # plain "SQL", "style sheet languages" matched on plain "CSS") would
+  # leak through at sim 0.35-0.40. We suppress these at Module 2 so the
+  # Linker never sees them — the specific URIs (SQL, CSS) keep firing
+  # via the same surface, the generic-parent URIs do not. Recruiter UI
+  # is cleaner; no information is lost.
+
+  - surface_pattern: "SQL"
+    target_concept_uri: http://data.europa.eu/esco/skill/ab1e97ed-2319-4293-a8b7-072d2648822f
+    reason: "'SQL' surface → 'database management systems' is the generic ESCO parent. The specific SQL URI fires on the same surface and is what the recruiter wants; the parent URI is redundant noise."
+
+  - surface_pattern: "CSS"
+    target_concept_uri: http://data.europa.eu/esco/skill/c2999f0c-eb37-4cdf-b9b0-82107b628794
+    reason: "'CSS' surface → 'style sheet languages' is the generic ESCO parent. The specific CSS URI (via tech_aliases.yaml routing) fires on the same surface; the parent is redundant."
+
+  - surface_pattern: "HR"
+    case_sensitive: true
+    target_concept_uri: http://data.europa.eu/esco/skill/e437eba1-3e22-41f2-8703-741e94785cba
+    reason: "'HR' in CS-CV context is overwhelmingly a project / domain name (e.g. 'HR Helper'), not evidence of human-resource-management expertise."
+
+  - surface_pattern: "Git"
+    case_sensitive: true
+    target_concept_uri: http://data.europa.eu/esco/skill/9d2e926f-53d9-41f5-98f3-19dfaa687f3f
+    reason: "'Git' as a surface should match the specific CUST:git concept (the version control tool), not the broader ESCO 'tools for software configuration management' (SCM-tools-in-general) parent which is generic and overlaps with the specific URI in production output."
+
+  # ==== REWORK-EVAL (2026-06-08): drop generic-prose false positives that pollute
+  # recruiter free-text JD requirement extraction. Surfaces are the bare matched
+  # tokens (the "(other)" section suffix is not part of the surface). Each pair was
+  # observed firing on ordinary prose, not a real skill mention. ====
+  - surface_pattern: "semantics"
+    target_concept_uri: http://data.europa.eu/esco/skill/e6ee5bb8-12b9-4e60-8baf-102d0c4f1da5
+    reason: "'REST semantics' prose, not the linguistics skill."
+  - surface_pattern: "plan"
+    target_concept_uri: http://data.europa.eu/esco/skill/e49f4158-9d4c-425d-bf32-dfe89b19840a
+    reason: "Generic verb 'plan' in prose."
+  - surface_pattern: "accounting"
+    target_concept_uri: http://data.europa.eu/esco/skill/ecc18804-a466-40d9-98b4-fba5cd67dd4b
+    reason: "'asset accounting' context word, not the profession."
+  - surface_pattern: "algorithms"
+    target_concept_uri: "CUST:algorithms"
+    reason: "'whiteboard algorithms' prose; explicitly a non-requirement in the JD."
+  - surface_pattern: "agile"
+    target_concept_uri: http://data.europa.eu/esco/skill/bec4359e-cb92-468f-a997-8fb28e32fba9
+    reason: "'agile' prose maps to the over-broad 'ICT project management methodologies' parent."
+  - surface_pattern: "call"
+    target_concept_uri: http://data.europa.eu/esco/skill/b8df1689-6763-437d-bfca-fe03d43f36c3
+    reason: "'call' verb collides with the CALL (Computer Assisted Language Learning) acronym."
+  - surface_pattern: "it"
+    case_sensitive: false
+    target_concept_uri: http://data.europa.eu/esco/skill/ddc3119d-1d6e-4324-9125-a3380d299ac5
+    reason: "lowercase 'it' pronoun / generic 'IT' prose, not the 'computer technology' parent."
+  - surface_pattern: "logistics"
+    target_concept_uri: http://data.europa.eu/esco/skill/e843973c-23dd-416a-8a9c-9e89512542fb
+    reason: "'wholesale/logistics' company description, not a candidate skill."
+  - surface_pattern: "German"
+    target_concept_uri: http://data.europa.eu/esco/skill/4812a4ea-dc55-4dc6-b9b0-4a59bba2c647
+    reason: "'German-style work-life' idiom, not a language requirement."
+  - surface_pattern: "conversation"
+    target_concept_uri: http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7
+    reason: "'conversation/conversational' prose, not the 'communication' soft skill."
+  - surface_pattern: "warehouse"
+    target_concept_uri: http://data.europa.eu/esco/skill/7afb5a64-e574-421a-bb3a-7a7bc108d2a5
+    reason: "'data warehouse' tech term; the warehouse-operations profession is spurious here."
+  - surface_pattern: "design"
+    target_concept_uri: http://data.europa.eu/esco/skill/c624c6a3-b0ba-4a31-a296-0d433fe47e41
+    reason: "'design system'/'designers' prose, not the 'think creatively' soft skill."

@@ -1,0 +1,22 @@
+QA Automation Engineer – Mobile
+In this role, you will:
+
+Design, implement, and execute manual and automated test suites for mobile (iOS, Android) and web applications;
+Perform functional, end-to-end, and rebranding testing to ensure consistent and high-quality user experience;
+Submit, regress, verify defects, conduct root-cause analysis and track defect resolution to completion;
+Review and provide feedback on product specifications, design documents, and test cases.
+Collaborate closely with development, design, and product teams to maintain high-quality deliverables;
+Explore and leverage AI-assisted testing tools or frameworks to enhance test coverage and efficiency.
+
+
+You should ideally have:
+
+Strong QA skills – troubleshooting, bug isolation and reporting, and a solid understanding of testing methodologies and processes;
+Experience testing across different operating systems: Android, iOS, Windows and macOS;
+Familiarity with mobile and web testing frameworks (manual and automated).
+Basic networking knowledge;
+Scripting or automation experience, preferably with Python or Java;
+Experience with Agile workflows and issue tracking systems such as Jira;
+Ability to create, review, and follow detailed test plans and test cases;
+Interest or hands-on experience with AI-based testing or automation tools;
+Good command of written and spoken English.

@@ -1,0 +1,74 @@
+cv_id: real_cv9
+gold_skills:
+- skill_uri: http://data.europa.eu/esco/skill/98301d4a-2cc3-439d-8d7f-0b6ac76302bb
+  label: business process modelling
+  confidence_expected: high
+- skill_uri: CUST:node
+  label: Node.js
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d
+  label: Python (computer programming)
+  confidence_expected: high
+- skill_uri: CUST:scikit-learn
+  label: scikit-learn
+  confidence_expected: high
+- skill_uri: CUST:rest-api
+  label: REST API
+  confidence_expected: high
+- skill_uri: CUST:express
+  label: Express
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/4da171e5-779c-4983-a76f-91c16751e99f
+  label: MySQL
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/76ef6ed3-1658-4a1a-9593-204d799c6d0c
+  label: NoSQL
+  confidence_expected: high
+- skill_uri: CUST:full-stack
+  label: Full-Stack Web Development
+  confidence_expected: medium
+- skill_uri: http://data.europa.eu/esco/skill/d56fc2b5-4b0a-4e7e-9bde-a33736f6ff18
+  label: Scratch (computer programming)
+  confidence_expected: medium
+- skill_uri: http://data.europa.eu/esco/skill/3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43
+  label: machine learning
+  confidence_expected: medium
+- skill_uri: http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a
+  label: C#
+  confidence_expected: medium
+- skill_uri: CUST:django
+  label: Django
+  confidence_expected: medium
+- skill_uri: http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7
+  label: JavaScript
+  confidence_expected: medium
+- skill_uri: http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389
+  label: Java (computer programming)
+  confidence_expected: medium
+- skill_uri: http://data.europa.eu/esco/skill/02e22093-3436-46a8-8dc5-b041bc4800cc
+  label: create model
+  confidence_expected: medium
+- skill_uri: CUST:plsql
+  label: PL/SQL
+  confidence_expected: high
+- skill_uri: CUST:cpp
+  label: C/C++
+  confidence_expected: high
+- skill_uri: CUST:pandas
+  label: Pandas
+  confidence_expected: high
+- skill_uri: CUST:numpy
+  label: NumPy
+  confidence_expected: high
+- skill_uri: CUST:uml
+  label: UML
+  confidence_expected: high
+- skill_uri: CUST:sql
+  label: SQL
+  confidence_expected: high
+skills_definitely_not_in_cv:
+- ML (computer programming)
+- communication
+notes: Reviewed 2026-05-13 against PDF. Candidate 9, Computer Science / data science. 'ML (computer programming)' is duplicate-ish
+  with 'machine learning' and reads like a Module 2 hallucination (no language called 'ML'). 'communication' is soft-skill
+  noise. Added PL/SQL, C/C++, Pandas, NumPy, UML, SQL — all in the Programming Skills line.

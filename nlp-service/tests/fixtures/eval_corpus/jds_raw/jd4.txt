@@ -1,0 +1,49 @@
+Backend Developer
+
+Your day to day:
+
+We’re looking for a skilled Backend Developer to join our team and help us design and build robust, scalable, and efficient backend services. Your primary focus will be working with Java (11+) and Spring Boot, but we also welcome experience with other backend technologies like Golang.
+
+With these activities you will have a great impact on our business:
+
+Design, develop, and maintain backend services and APIs
+Collaborate with frontend developers, DevOps, QA, and product teams to deliver high-quality features
+Build scalable microservices and event-driven architectures
+Ensure high availability and performance of backend systems,write clean, testable, and maintainable code with unit and integration tests
+Debug, troubleshoot, and resolve issues in real-time during testing phases,contribute to continuous improvement of development practices and CI/CD pipelines
+
+
+With these skills you are a great candidate:
+
+Proficiency in REST API design, development & integration
+Security best practices in backend development
+Solid grasp of Unit Testing and TDD
+Exposure to Kafka or similar messaging platforms (RabbitMQ, ActiveMQ, etc.)
+Understanding of CI/CD pipelines,familiarity with microservices and event-driven architecture
+
+
+Must have technical / professional qualifications:
+
+Strong experience with Java 8+ and Spring Boot
+Solid knowledge of Git and version control best practices
+Familiarity with Docker or other containerization tools
+Cloud environment familiarity (AWS, GCP, Azure—any is welcome)
+Bonus points for experience with Golang
+
+
+Sounds like the perfect job? We’ve got even more to offer:
+
+Hybrid way of working
+Medical and dental services
+Life and hospitalization insurance
+Dedicated employee phone subscription
+Take control of your benefits and choose any of the below options: meal tickets/private pension/vacation vouchers/cultural vouchers within the budget 
+Special discounts for gyms and retailers
+Annual Company Bonus
+Loyalty Programme
+Ongoing Education – we continuously invest in you to ensure you have everything needed to excel on the job and enhance your skills 
+You get to work with tried and trusted web-technology
+Getting in on the ground floor of a technology changing company
+We let you write your own story: go for a trip, experience new things, have fun and enjoy your 23 vacation days 
+Special Paternal Program - 4 months of paid paternity leave
+

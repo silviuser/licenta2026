@@ -99,7 +99,9 @@ nlp-service/.cache/
 
 # ML Checkpoints & heavy weights (keep reports/manifests, ignore binary weights)
 nlp-service/models/
-nlp-service/colab_bundle*.zip
+nlp-service/colab_bundle*/
+nlp-service/*.zip
+*.zip
 
 # Training data PDFs / Raw text
 nlp-service/data/

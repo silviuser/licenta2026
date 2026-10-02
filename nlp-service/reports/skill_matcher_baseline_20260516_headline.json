@@ -1,0 +1,428 @@
+{
+  "by_view": {
+    "high": {
+      "ensemble_macro": {
+        "f1": 0.2737,
+        "precision": 0.2009,
+        "recall": 0.4425
+      },
+      "ensemble_micro": {
+        "f1": 0.3101,
+        "precision": 0.2202,
+        "recall": 0.524
+      },
+      "lexical_macro": {
+        "f1": 0.416,
+        "precision": 0.509,
+        "recall": 0.3587
+      },
+      "lexical_micro": {
+        "f1": 0.507,
+        "precision": 0.6122,
+        "recall": 0.4327
+      },
+      "per_cv_semantic": {
+        "real_cv1": {
+          "f1": 0.4211,
+          "precision": 0.3333,
+          "recall": 0.5714
+        },
+        "real_cv10": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "real_cv11": {
+          "f1": 0.0625,
+          "precision": 0.0455,
+          "recall": 0.1
+        },
+        "real_cv12": {
+          "f1": 0.1266,
+          "precision": 0.0943,
+          "recall": 0.1923
+        },
+        "real_cv13": {
+          "f1": 0.1739,
+          "precision": 0.1333,
+          "recall": 0.25
+        },
+        "real_cv14": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "real_cv15": {
+          "f1": 0.0645,
+          "precision": 0.0435,
+          "recall": 0.125
+        },
+        "real_cv3": {
+          "f1": 0.0435,
+          "precision": 0.0357,
+          "recall": 0.0556
+        },
+        "real_cv4": {
+          "f1": 0.2326,
+          "precision": 0.2174,
+          "recall": 0.25
+        },
+        "real_cv5": {
+          "f1": 0.3143,
+          "precision": 0.2558,
+          "recall": 0.4074
+        },
+        "real_cv6": {
+          "f1": 0.0377,
+          "precision": 0.0244,
+          "recall": 0.0833
+        },
+        "real_cv7": {
+          "f1": 0.1071,
+          "precision": 0.0811,
+          "recall": 0.1579
+        },
+        "real_cv8": {
+          "f1": 0.1961,
+          "precision": 0.1613,
+          "recall": 0.25
+        },
+        "real_cv9": {
+          "f1": 0.0645,
+          "precision": 0.0588,
+          "recall": 0.0714
+        }
+      },
+      "semantic_macro": {
+        "f1": 0.1317,
+        "precision": 0.106,
+        "recall": 0.1796
+      },
+      "semantic_micro": {
+        "f1": 0.1512,
+        "precision": 0.1176,
+        "recall": 0.2115
+      },
+      "threshold": 0.55,
+      "top_k": 5,
+      "view": "high"
+    },
+    "high_plus_medium": {
+      "ensemble_macro": {
+        "f1": 0.3057,
+        "precision": 0.2361,
+        "recall": 0.45
+      },
+      "ensemble_micro": {
+        "f1": 0.3333,
+        "precision": 0.2485,
+        "recall": 0.5062
+      },
+      "lexical_macro": {
+        "f1": 0.4603,
+        "precision": 0.6446,
+        "recall": 0.3706
+      },
+      "lexical_micro": {
+        "f1": 0.5282,
+        "precision": 0.7007,
+        "recall": 0.4239
+      },
+      "per_cv_semantic": {
+        "real_cv1": {
+          "f1": 0.4211,
+          "precision": 0.3333,
+          "recall": 0.5714
+        },
+        "real_cv10": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "real_cv11": {
+          "f1": 0.1143,
+          "precision": 0.0909,
+          "recall": 0.1538
+        },
+        "real_cv12": {
+          "f1": 0.122,
+          "precision": 0.0943,
+          "recall": 0.1724
+        },
+        "real_cv13": {
+          "f1": 0.1481,
+          "precision": 0.1333,
+          "recall": 0.1667
+        },
+        "real_cv14": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "real_cv15": {
+          "f1": 0.0571,
+          "precision": 0.0435,
+          "recall": 0.0833
+        },
+        "real_cv3": {
+          "f1": 0.0426,
+          "precision": 0.0357,
+          "recall": 0.0526
+        },
+        "real_cv4": {
+          "f1": 0.2174,
+          "precision": 0.2174,
+          "recall": 0.2174
+        },
+        "real_cv5": {
+          "f1": 0.3143,
+          "precision": 0.2558,
+          "recall": 0.4074
+        },
+        "real_cv6": {
+          "f1": 0.0364,
+          "precision": 0.0244,
+          "recall": 0.0714
+        },
+        "real_cv7": {
+          "f1": 0.1053,
+          "precision": 0.0811,
+          "recall": 0.15
+        },
+        "real_cv8": {
+          "f1": 0.1887,
+          "precision": 0.1613,
+          "recall": 0.2273
+        },
+        "real_cv9": {
+          "f1": 0.1026,
+          "precision": 0.1176,
+          "recall": 0.0909
+        }
+      },
+      "semantic_macro": {
+        "f1": 0.1335,
+        "precision": 0.1135,
+        "recall": 0.1689
+      },
+      "semantic_micro": {
+        "f1": 0.1491,
+        "precision": 0.123,
+        "recall": 0.1893
+      },
+      "threshold": 0.55,
+      "top_k": 5,
+      "view": "high_plus_medium"
+    }
+  },
+  "config": {
+    "concept_text_format": "b",
+    "embedding_dim": 384,
+    "n_concepts": 14013,
+    "n_cvs": 14,
+    "semantic_threshold": 0.55,
+    "top_k_per_window": 5,
+    "window_size_tokens": 30,
+    "window_stride_tokens": 15
+  },
+  "environment": {
+    "concept_counts": {
+      "custom": 74,
+      "knowledge": 3219,
+      "language": 359,
+      "skill/competence": 10435,
+      "total": 14013
+    },
+    "device": "cpu",
+    "embedding_dim": 384,
+    "esco_file_sha": "bce83eb3ad4f",
+    "model_name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "python_version": "3.11.9",
+    "seed": 42,
+    "skill_matcher_version": "0.2.0"
+  },
+  "headline": {
+    "ensemble_macro": {
+      "f1": 0.3057,
+      "precision": 0.2361,
+      "recall": 0.45
+    },
+    "ensemble_micro": {
+      "f1": 0.3333,
+      "precision": 0.2485,
+      "recall": 0.5062
+    },
+    "lexical_macro": {
+      "f1": 0.4603,
+      "precision": 0.6446,
+      "recall": 0.3706
+    },
+    "lexical_micro": {
+      "f1": 0.5282,
+      "precision": 0.7007,
+      "recall": 0.4239
+    },
+    "semantic_macro": {
+      "f1": 0.1335,
+      "precision": 0.1135,
+      "recall": 0.1689
+    },
+    "semantic_micro": {
+      "f1": 0.1491,
+      "precision": 0.123,
+      "recall": 0.1893
+    },
+    "threshold": 0.55,
+    "top_k": 5,
+    "view": "high_plus_medium"
+  },
+  "index_timing": {
+    "cold_build": false,
+    "concept_text_format": "b",
+    "elapsed_seconds": 0.265,
+    "embedding_dim": 384,
+    "n_concepts": 14013
+  },
+  "per_cv": [
+    {
+      "cv_id": "real_cv1",
+      "elapsed_seconds": 17.953,
+      "gold_high_count": 14,
+      "gold_high_plus_medium_count": 14,
+      "lexical_count": 8,
+      "n_windows": 18,
+      "semantic_count_default_threshold": 24,
+      "text_length": 2129
+    },
+    {
+      "cv_id": "real_cv10",
+      "elapsed_seconds": 0.813,
+      "gold_high_count": 4,
+      "gold_high_plus_medium_count": 5,
+      "lexical_count": 1,
+      "n_windows": 8,
+      "semantic_count_default_threshold": 7,
+      "text_length": 884
+    },
+    {
+      "cv_id": "real_cv11",
+      "elapsed_seconds": 1.297,
+      "gold_high_count": 10,
+      "gold_high_plus_medium_count": 13,
+      "lexical_count": 9,
+      "n_windows": 17,
+      "semantic_count_default_threshold": 22,
+      "text_length": 2005
+    },
+    {
+      "cv_id": "real_cv12",
+      "elapsed_seconds": 2.265,
+      "gold_high_count": 26,
+      "gold_high_plus_medium_count": 29,
+      "lexical_count": 24,
+      "n_windows": 34,
+      "semantic_count_default_threshold": 53,
+      "text_length": 4019
+    },
+    {
+      "cv_id": "real_cv13",
+      "elapsed_seconds": 0.61,
+      "gold_high_count": 8,
+      "gold_high_plus_medium_count": 12,
+      "lexical_count": 2,
+      "n_windows": 8,
+      "semantic_count_default_threshold": 15,
+      "text_length": 1001
+    },
+    {
+      "cv_id": "real_cv14",
+      "elapsed_seconds": 0.844,
+      "gold_high_count": 8,
+      "gold_high_plus_medium_count": 11,
+      "lexical_count": 5,
+      "n_windows": 14,
+      "semantic_count_default_threshold": 10,
+      "text_length": 1632
+    },
+    {
+      "cv_id": "real_cv15",
+      "elapsed_seconds": 0.765,
+      "gold_high_count": 8,
+      "gold_high_plus_medium_count": 12,
+      "lexical_count": 6,
+      "n_windows": 12,
+      "semantic_count_default_threshold": 23,
+      "text_length": 1436
+    },
+    {
+      "cv_id": "real_cv3",
+      "elapsed_seconds": 1.578,
+      "gold_high_count": 18,
+      "gold_high_plus_medium_count": 19,
+      "lexical_count": 11,
+      "n_windows": 19,
+      "semantic_count_default_threshold": 28,
+      "text_length": 2333
+    },
+    {
+      "cv_id": "real_cv4",
+      "elapsed_seconds": 1.578,
+      "gold_high_count": 20,
+      "gold_high_plus_medium_count": 23,
+      "lexical_count": 15,
+      "n_windows": 23,
+      "semantic_count_default_threshold": 23,
+      "text_length": 2638
+    },
+    {
+      "cv_id": "real_cv5",
+      "elapsed_seconds": 1.656,
+      "gold_high_count": 27,
+      "gold_high_plus_medium_count": 27,
+      "lexical_count": 15,
+      "n_windows": 22,
+      "semantic_count_default_threshold": 43,
+      "text_length": 2680
+    },
+    {
+      "cv_id": "real_cv6",
+      "elapsed_seconds": 1.844,
+      "gold_high_count": 12,
+      "gold_high_plus_medium_count": 14,
+      "lexical_count": 13,
+      "n_windows": 25,
+      "semantic_count_default_threshold": 41,
+      "text_length": 2932
+    },
+    {
+      "cv_id": "real_cv7",
+      "elapsed_seconds": 2.235,
+      "gold_high_count": 19,
+      "gold_high_plus_medium_count": 20,
+      "lexical_count": 14,
+      "n_windows": 27,
+      "semantic_count_default_threshold": 37,
+      "text_length": 3587
+    },
+    {
+      "cv_id": "real_cv8",
+      "elapsed_seconds": 1.937,
+      "gold_high_count": 20,
+      "gold_high_plus_medium_count": 22,
+      "lexical_count": 11,
+      "n_windows": 24,
+      "semantic_count_default_threshold": 31,
+      "text_length": 2932
+    },
+    {
+      "cv_id": "real_cv9",
+      "elapsed_seconds": 1.547,
+      "gold_high_count": 14,
+      "gold_high_plus_medium_count": 22,
+      "lexical_count": 13,
+      "n_windows": 20,
+      "semantic_count_default_threshold": 17,
+      "text_length": 2323
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+cv_id: real_cv10
+gold_skills:
+- skill_uri: http://data.europa.eu/esco/skill/f683ae1d-cb7c-4aa1-b9fe-205e1bd23535
+  label: use microsoft office
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/7b5cce4d-c7fe-4119-b48f-70aa05391787
+  label: computer science
+  confidence_expected: medium
+- skill_uri: CUST:c
+  label: C
+  confidence_expected: high
+- skill_uri: CUST:html-css
+  label: HTML/CSS
+  confidence_expected: high
+- skill_uri: CUST:javascript
+  label: JavaScript
+  confidence_expected: high
+skills_definitely_not_in_cv: []
+notes: Reviewed 2026-05-13 against PDF. Candidate 10, Business Informatics student (Bitdefender product mgmt academy).
+  Thin technical CV — Technical Skills list has just C / HTML / CSS / JavaScript / Microsoft Office. Bootstrap only captured
+  'use microsoft office' + 'computer science'; added the three explicit programming entries.

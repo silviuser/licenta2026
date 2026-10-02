@@ -1,0 +1,35 @@
+id: jd6
+title: Java Software Engineer
+language: en
+location: ''
+category: backend
+seniority: unspecified
+source_anonymized: ''
+raw_text: |-
+  Java Software Engineer
+  Job Description
+
+  Design and develop new features front to back as part of an agile/scrum team
+  Ensure the delivery of high-quality and scalable solutions using modern development practices such as clean code, automated testing, monitoring, alerting and secure by design
+  Provide L3 support on application in production environment, when needed
+  Drive innovation and contribute with new ideas for the existing architecture, services and processes
+  Maintain and improve the continuous integration and delivery environment
+  Maintain a close relationship with the Front Office team and ensure the delivery of high-quality features
+
+  Qualifications
+
+  Solid knowledge of Java 11 at least, Spring, relational database (PostgreSQL, Sybase), GIT, Maven
+  Good knowledge of Java Microservices, Spring Boot, JPA, REST
+  Java 21, Docker, Kubernetes, ELK, JavaScript with Angular or React would be a plus
+  Good knowledge of Linux environment and Shell scripting required
+  Hands-on experience with tools such as Eclipse/IntelliJ, Jenkins or Github Actions CI/CD Pipelines, JUnit, Jira, Cucumber
+  You have a bachelor’s degree in computer science or equivalent
+  Good command of English, both written and spoken with the ability to participate in English-only meetings
+required_skills:
+- Solid knowledge of Java 11 at least, Spring, relational database (PostgreSQL, Sybase), GIT, Maven
+- Good knowledge of Java Microservices, Spring Boot, JPA, REST
+- Java 21, Docker, Kubernetes, ELK, JavaScript with Angular or React would be a plus
+- Good knowledge of Linux environment and Shell scripting required
+- Hands-on experience with tools such as Eclipse/IntelliJ, Jenkins or Github Actions CI/CD Pipelines, JUnit, Jira, Cucumber
+nice_to_have_skills: []
+notes: ''

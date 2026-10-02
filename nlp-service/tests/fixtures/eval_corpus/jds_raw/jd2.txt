@@ -1,0 +1,38 @@
+Junior Java Backend Developer - Qualitest
+
+Job description:
+
+About the Project: We are building a large-scale Big Data Intelligence Platform based on a distributed microservices architecture.The system ingests and processes high-volume data streams in real time, applies advanced analytics, and provides decision-support capabilities across multiple functional modules. The technical environment includes: Java 17 + Spring Boot microservices, Kafka for event streaming, message orchestration, and distributed processing; Elasticsearch as a primary data store for indexing and search; Docker/Kubernetes for containerization and orchestration; Integrations with external systems and optional AI/ML components.
+ 
+Responsibilities:
+
+ 
+Design, develop, and maintain microservices using Java 21 and Spring Boot.
+Build and optimize event-driven data pipelines using Kafka (producers, consumers, partitions, schema evolution).
+Work with Elasticsearch to design efficient indexing strategies and fast querying capabilities.
+Contribute to system architecture, performance improvements, and scalability initiatives.
+Implement clean, maintainable, well-tested code following best engineering practices.
+Collaborate with cross-functional teams (DevOps, Data, Frontend, QA).
+Participate in code reviews, technical discussions, and solution design sessions.
+ 
+Requirements:
+
+ 
+1 year of hands-on experience with Java and Spring Boot.
+Experience with Kafka (streams, consumer groups, message delivery guarantees).
+Experience with Elasticsearch (indexing, queries, performance tuning).
+Understanding of microservices architecture, distributed systems, and REST APIs.
+Experience with Docker, container-based deployment, and CI/CD pipelines.
+Familiarity with asynchronous/event-driven systems and messaging patterns.
+Ability to troubleshoot complex issues in distributed environments.
+Strong English communication skills.
+ 
+ 
+Nice to Have:
+
+ 
+Experience + desire to integrate features end-to-end in both spring boot backend and react frontend.
+Experience with Kubernetes.
+Exposure to Python or Node.js services within a distributed ecosystem.
+Experience with AI/ML pipelines or data processing frameworks.
+Experience with security best practices for distributed systems. 

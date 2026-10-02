@@ -1,0 +1,49 @@
+cv_id: real_cv1
+gold_skills:
+- skill_uri: http://data.europa.eu/esco/skill/43ae58b9-5e56-4524-b45a-b422777a0576
+  label: database
+  confidence_expected: high
+- skill_uri: CUST:intellij-idea
+  label: IntelliJ IDEA
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a
+  label: C#
+  confidence_expected: high
+- skill_uri: CUST:object-oriented-programming
+  label: Object-Oriented Programming
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389
+  label: Java (computer programming)
+  confidence_expected: high
+- skill_uri: CUST:dotnet
+  label: .NET
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/54924a2c-daca-40d3-9716-4b38ceb04f38
+  label: algorithms
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742
+  label: SQL
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/ab1e97ed-2319-4293-a8b7-072d2648822f
+  label: database management systems
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d
+  label: Python (computer programming)
+  confidence_expected: high
+- skill_uri: CUST:cpp
+  label: C/C++
+  confidence_expected: high
+- skill_uri: CUST:plsql
+  label: PL/SQL
+  confidence_expected: high
+- skill_uri: CUST:database-design
+  label: Database Design
+  confidence_expected: high
+- skill_uri: CUST:oracle-db
+  label: Oracle Database
+  confidence_expected: high
+skills_definitely_not_in_cv:
+- Algorithms
+notes: Reviewed 2026-05-13 against PDF. Candidate 1, ASE-CSIE 2nd year. Removed duplicate Algorithms (CUST) — the ESCO 'algorithms'
+  entry covers it. Promoted explicit programming stack to high; added PL/SQL, C/C++, Database Design, Oracle Database which
+  were missing from the bootstrap.

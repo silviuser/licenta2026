@@ -1,0 +1,63 @@
+cv_id: real_cv3
+gold_skills:
+- skill_uri: CUST:database-design
+  label: Database Design
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/ab1e97ed-2319-4293-a8b7-072d2648822f
+  label: database management systems
+  confidence_expected: high
+- skill_uri: CUST:github
+  label: GitHub
+  confidence_expected: high
+- skill_uri: CUST:intellij-idea
+  label: IntelliJ IDEA
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7
+  label: JavaScript
+  confidence_expected: high
+- skill_uri: CUST:linux
+  label: Linux
+  confidence_expected: high
+- skill_uri: CUST:node
+  label: Node.js
+  confidence_expected: high
+- skill_uri: CUST:plsql
+  label: PL/SQL
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742
+  label: SQL
+  confidence_expected: high
+- skill_uri: CUST:webpack
+  label: Webpack
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389
+  label: Java (computer programming)
+  confidence_expected: high
+- skill_uri: CUST:visual-studio-ide
+  label: Microsoft Visual Studio
+  confidence_expected: high
+- skill_uri: CUST:tailwind
+  label: Tailwind CSS
+  confidence_expected: high
+- skill_uri: CUST:vscode
+  label: Visual Studio Code
+  confidence_expected: high
+- skill_uri: CUST:crud
+  label: CRUD operations
+  confidence_expected: medium
+- skill_uri: CUST:html-css
+  label: HTML/CSS
+  confidence_expected: high
+- skill_uri: CUST:react
+  label: React
+  confidence_expected: high
+- skill_uri: CUST:express
+  label: Express.js
+  confidence_expected: high
+- skill_uri: CUST:cpp
+  label: C++
+  confidence_expected: high
+skills_definitely_not_in_cv:
+- logic
+notes: Reviewed 2026-05-13 against PDF. Candidate 3, ASE-CSIE. 'logic' is too generic to be a real skill (ESCO noise). Added
+  HTML/CSS, React, Express.js, C++ — all explicit in Technical Skills line.

@@ -1,0 +1,75 @@
+cv_id: real_cv8
+gold_skills:
+- skill_uri: http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a
+  label: C#
+  confidence_expected: high
+- skill_uri: CUST:github
+  label: GitHub
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389
+  label: Java (computer programming)
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7
+  label: JavaScript
+  confidence_expected: high
+- skill_uri: CUST:langchain
+  label: LangChain
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d
+  label: Python (computer programming)
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742
+  label: SQL
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/867137fb-ff1b-4ca3-99f3-cb6969aa2c68
+  label: TypeScript
+  confidence_expected: high
+- skill_uri: CUST:database-design
+  label: Database Design
+  confidence_expected: high
+- skill_uri: CUST:lang:english
+  label: English
+  confidence_expected: high
+- skill_uri: CUST:lang:romanian
+  label: Romanian
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/ab1e97ed-2319-4293-a8b7-072d2648822f
+  label: database management systems
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/bec4359e-cb92-468f-a997-8fb28e32fba9
+  label: ICT project management methodologies
+  confidence_expected: medium
+- skill_uri: CUST:software-testing
+  label: Software Testing
+  confidence_expected: high
+- skill_uri: CUST:playwright
+  label: Playwright
+  confidence_expected: high
+- skill_uri: CUST:selenium
+  label: Selenium
+  confidence_expected: high
+- skill_uri: CUST:langgraph
+  label: LangGraph
+  confidence_expected: high
+- skill_uri: CUST:llm
+  label: LLM Integration
+  confidence_expected: high
+- skill_uri: CUST:mcp
+  label: MCP servers
+  confidence_expected: high
+- skill_uri: CUST:html-css
+  label: HTML/CSS
+  confidence_expected: high
+- skill_uri: CUST:cpp
+  label: C/C++
+  confidence_expected: medium
+- skill_uri: CUST:plsql
+  label: PL/SQL
+  confidence_expected: high
+skills_definitely_not_in_cv:
+- use personal organization software
+- communication
+notes: Reviewed 2026-05-13 against PDF. Candidate 8, SWE + AI Automation Engineer. 'use personal organization
+  software' is ESCO noise (probably triggered by Trello / Teams in tools list); 'communication' is a generic soft skill. Promoted
+  Software Testing to high — explicit QA Engineer role. Added Playwright, Selenium, LangGraph, LLM Integration, MCP servers,
+  HTML/CSS, C/C++, PL/SQL.

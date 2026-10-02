@@ -1,0 +1,52 @@
+id: jd11
+title: Software Engineer in Test
+language: en
+location: ''
+category: qa
+seniority: unspecified
+source_anonymized: ''
+raw_text: |-
+  Software Engineer in Test
+  Job description and key responsibilities
+
+
+
+  As a Software Engineer in Test, your role will be to:
+  Develop, document, maintain and execute automated tests using Java tools to verify the quality of the Edenred platform and catch issues as early as possible in the development cycle.
+  Ensure high quality of the deliverables into the testing framework, take ownership and accountability for problem resolution and ensure test automation solutions are successful.
+  Develop a deep understanding of the Edenred products and platform to be able to analyze, specify and construct automated tests which correctly identify issues.
+  Become familiar with legal and regulation aspects of the payment industry.
+  Strive to continually develop and improve test methods, tools and techniques, including the test automation framework.
+
+
+  Required skills & profile
+
+
+
+  You will have to demonstrate:
+  Java automated test frameworks and tools, e.g. JUnit, Cucumber
+  Test analysis skills (ideally ISTQB qualification)
+  API and web services knowledge (REST)
+  Degree in Computer Science or related engineering discipline or equivalent combination of education and experience
+  Well organized – able to plan own work and track progress against a plan
+  Methodical worker, high attention to detail and tenacious problem solver
+  Strong communicator, both written & oral. Able to explain technical issues and solutions to peers.
+
+
+  Experience of the following is also desirable:
+  Knowledge of container technologies (Docker, Swarm)
+  Knowledge of CI/CD processes and the corresponding tools like Maven, Git, SVN, Jenkins
+  Practical experience in Agile frameworks (Scrum) and tools (Jira)
+  Java application frameworks, e.g. Spring, Hibernate
+  General Linux knowledge
+required_skills:
+- Java automated test frameworks and tools, e.g. JUnit, Cucumber
+- Test analysis skills (ideally ISTQB qualification)
+- API and web services knowledge (REST)
+nice_to_have_skills:
+- Knowledge of container technologies (Docker, Swarm)
+- Knowledge of CI/CD processes and the corresponding tools like Maven, Git, SVN, Jenkins
+- Practical experience in Agile frameworks (Scrum) and tools (Jira)
+- Java application frameworks, e.g. Spring, Hibernate
+- General Linux knowledge
+notes: ''

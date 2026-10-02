@@ -1,0 +1,59 @@
+SAP Production Engineer
+DB Global Technology is Deutsche Bank’s technology centre in Central and Eastern Europe. Since its set-up in 2013, Bucharest Technology Centre (BEX) has constantly proven its capacity to deliver global technology products and services, playing a dynamic role in the Bank’s technology transformation.
+We have a robust, hands-on engineering culture dedicated to continuous learning, knowledge-sharing, technical skill development and networking. We are an essential part of the Bank’s technology platform and develop applications for many important business areas.
+
+
+This role is part of Finance (FPI) - RFT Production Support. FPI Production Suzpport team is based out of India, Germany and Cary, US. This role will add to the follow the sun support model.
+
+
+Finance(FPI) IT is an integral function of DB providing end to end support for all Finance related applications . The Current team supports the below Finance domains:
+
+
+Reporting Tribe 
+
+Risk Close
+Local Reg
+CRC
+Group Reporting 
+Accounting Tribe 
+
+Accounting Revenue
+Accounting Close
+
+
+Responsibilities
+
+System Reliability: Ensure the reliability, availability, and performance of production systems by implementing best practices in monitoring, alerting, and incident response.
+System Maintenance: Understand thoroughly the end-to-end application support process and escalation procedures, become fully conversant with all support tools. Maintain an end to end view of the application and infrastructure landscape.
+Automation: Develop and maintain automation tools and scripts to streamline deployment, scaling, and operational tasks.
+Incident Management: Act as a primary responder to system outages and incidents, ensuring rapid resolution and thorough post-mortem analysis to prevent recurrence.
+Monitoring & Alerting: Design and implement robust monitoring and alerting systems to proactively identify and address potential issues.
+Performance Optimization: Identify and resolve performance bottlenecks across the stack, from application code to infrastructure.
+Collaboration: Work closely with development teams and other stakeholders to ensure that new features and services are designed with reliability and scalability in mind.
+Documentation: Maintain comprehensive documentation of systems, processes, and procedures to ensure knowledge sharing and continuity.
+Continuous Improvement: Continuously evaluate and improve our infrastructure, tools, and processes to enhance system reliability and operational efficiency.
+DR Testing and Deployments: Support DR Tests, Patching and Deployments by executing defined Standard Tests / Verification and preparing respective Evidence and uploading them to the respective Portals
+Support Times: There is the Requirement to provide Support also in Shifts outside Standard Business Times like Evening Support on ongoing critical Incidents until other Shift can take over or Weekend in case or DR Exercise, Migration or Patching etc.
+5+ years overall IT experience resource, with the right level of Customer oriented Production Support.
+Ability to work in a fast paced environment with competing and alternating priorities with a constant focus on delivery.
+Ability to balance business demands and IT fulfilment in terms of standardization, reducing risk and increasing IT flexibility.
+
+
+Skills 
+
+Sound understanding of change management processes and controls in large organizations.
+Strong experience of envisioning and driving full stack automation in medium to large sized groups.
+Excellent problem-solving skills in a distributed, multi-technology ecosystem
+Must have experience in SAP Standard Product BCS (Business Consolidation System). System is customized to fulfil the need of DB which requires the need to learn the changes compared to the Standard.
+Basic Knowledge about Financial Accounting in Banks and respective Closure Process (Month, Quarter and Year End).
+Knowledge about the Driver Based Cost Management (DBCM)
+Basis ABAP debugging skills.
+Basic Knowledge about Banking Products (on Balance Sheet, Derivatives etc.) appreciated
+• Experience with Linux/Unix systems and scripting languages such as, Python and shell
+• Automation with tools such as Ansible, SSH, and Shell
+• Monitoring Experience with the design and implementation of AI/ML and RPA/ automation tools or tools like Geneos, Prometheus, Grafana etc.
+• Problem analysis and solving in multiple layers such as hardware, Linux, networking and application
+• Working knowledge of networks and load balancing and ssh keys.
+• Expertise in Unix command line and shell scripting.
+• Deep knowledge of the Incident, Problem and Change Management processes within the ITSM framework at minimum must be ITIL V3 Foundation certified. Proficient at using Service Management tools (e.g. ServiceNow, JIRA, etc.) and service monitoring tools.
+• Exposure to GCP and monitoring tools such as NewRelic will be preferred.

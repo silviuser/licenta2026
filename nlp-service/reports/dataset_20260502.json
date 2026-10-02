@@ -1,0 +1,29 @@
+{
+  "total_count": 10,
+  "avg_pages": 1.14,
+  "layout_distribution": {
+    "single_column": 6,
+    "two_column": 1
+  },
+  "scanned_vs_digital": {
+    "digital": 7
+  },
+  "language_distribution": {
+    "en": 5,
+    "ro": 2
+  },
+  "errors": [
+    {
+      "filename": "corrupt.pdf",
+      "error": "PDFCorruptError: Cannot open PDF: tests\\fixtures\\corrupt.pdf — No /Root object! - Is this really a PDF?"
+    },
+    {
+      "filename": "cv (1).pdf",
+      "error": "PDFCorruptError: pdf2image cannot process PDF: tests\\fixtures\\cv (1).pdf"
+    },
+    {
+      "filename": "minimal.pdf",
+      "error": "PDFCorruptError: pdf2image cannot process PDF: tests\\fixtures\\minimal.pdf"
+    }
+  ]
+}

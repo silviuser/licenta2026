@@ -1,0 +1,91 @@
+cv_id: real_cv5
+gold_skills:
+- skill_uri: CUST:data-structures
+  label: Data Structures
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/43ae58b9-5e56-4524-b45a-b422777a0576
+  label: database
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/ab1e97ed-2319-4293-a8b7-072d2648822f
+  label: database management systems
+  confidence_expected: high
+- skill_uri: CUST:full-stack
+  label: Full-Stack Web Development
+  confidence_expected: high
+- skill_uri: CUST:intellij-idea
+  label: IntelliJ IDEA
+  confidence_expected: high
+- skill_uri: CUST:linux
+  label: Linux
+  confidence_expected: high
+- skill_uri: CUST:memory-management
+  label: Memory Management
+  confidence_expected: high
+- skill_uri: CUST:network-security
+  label: Network Security
+  confidence_expected: high
+- skill_uri: CUST:node
+  label: Node.js
+  confidence_expected: high
+- skill_uri: CUST:oracle-db
+  label: Oracle Database
+  confidence_expected: high
+- skill_uri: CUST:react
+  label: React
+  confidence_expected: high
+- skill_uri: CUST:rest-api
+  label: REST API
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742
+  label: SQL
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/d8829a1d-dbde-435b-b921-29d6462f35c9
+  label: Android (mobile operating systems)
+  confidence_expected: high
+- skill_uri: CUST:visual-studio-ide
+  label: Microsoft Visual Studio
+  confidence_expected: high
+- skill_uri: CUST:operating-systems
+  label: Operating Systems
+  confidence_expected: high
+- skill_uri: CUST:spa
+  label: Single Page Application
+  confidence_expected: high
+- skill_uri: CUST:cryptography
+  label: Cryptography
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/54924a2c-daca-40d3-9716-4b38ceb04f38
+  label: algorithms
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389
+  label: Java (computer programming)
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d
+  label: Python (computer programming)
+  confidence_expected: high
+- skill_uri: CUST:real-time-systems
+  label: Real-Time Systems
+  confidence_expected: high
+- skill_uri: CUST:c
+  label: C
+  confidence_expected: high
+- skill_uri: CUST:cpp
+  label: C++
+  confidence_expected: high
+- skill_uri: CUST:assembly
+  label: Assembly x86
+  confidence_expected: high
+- skill_uri: CUST:git
+  label: Git
+  confidence_expected: high
+- skill_uri: CUST:secure-coding
+  label: Secure Coding
+  confidence_expected: high
+skills_definitely_not_in_cv:
+- logic
+- communication
+- Algorithms
+notes: Reviewed 2026-05-13 against PDF. Candidate 5 final-year (embedded-systems profile). Dropped duplicate 'Algorithms'
+  (CUST) — kept the ESCO 'algorithms' and promoted to high. 'logic' and 'communication' are Module-2 ESCO noise. Promoted
+  Cryptography, Java, Python, Real-Time Systems to high — all explicit in the SKILLS block. Added C, C++, Assembly x86, Git,
+  Secure Coding.

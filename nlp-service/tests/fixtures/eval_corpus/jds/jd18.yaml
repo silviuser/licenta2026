@@ -1,0 +1,34 @@
+id: jd18
+title: Software developer (C++)
+language: en
+location: ''
+category: swe
+seniority: unspecified
+source_anonymized: ''
+raw_text: "Software developer (C++)\nWhat You’ll Do\n\nDesign, build and maintain core C++ modules, following our modular,\
+  \ dynamically loaded architecture\nImplement, write unit/functional tests, and partner with QA to land production grade\
+  \ code on Windows and Linux build targets.\nEnable new platforms and features across the roadmap\nIntegrate with low level\
+  \ services\nOptimize performance and reliability: profile critical paths, reduce startup/scan times, improve logging and\
+  \ error handling, and harden cross platform behavior\nContribute to release quality: fix integration issues, address bottlenecks,\
+  \ and support automated pipelines\nMaintain code quality: perform code reviews, enforce coding guidelines, and improve test\
+  \ coverage and CI reliability across modules and platforms \nCollaborate across teams to clarify requirements, triage issues,\
+  \ and land changes that align with LXCE deliverables \n\nWhat You’ll Bring\n\nGood programming skills in C++ on Windows\
+  \ and Linux, including STL and BOOST\nExperience with CMake or Makefiles to manage complex project dependencies\nBachelor’s\
+  \ degree in Computer Science, Electrical Engineering or equivalent\n\nNice To Have\n\nCross-platform build/debug skills\n\
+  Experience with server management utilities or datacenter tooling\nFamiliarity with UEFI/BIOS configuration, Redfish/REST,\
+  \ XML/JSON parsing, and network file transfer\nCI/CD experience; contribution to release processes and automated testing\
+  \ infrastructure\nExperience with Electron/Node/Vue front ends or wrapping C++ CLIs with GUIs\n"
+required_skills:
+- C++
+- Windows
+- Linux
+- STL
+- BOOST
+- CMake or Makefiles
+nice_to_have_skills:
+- Cross-platform build/debug skills
+- Experience with server management utilities or datacenter tooling
+- Familiarity with UEFI/BIOS configuration, Redfish/REST, XML/JSON parsing, and network file transfer
+- CI/CD experience; contribution to release processes and automated testing infrastructure
+- Experience with Electron/Node/Vue front ends or wrapping C++ CLIs with GUIs
+notes: ''

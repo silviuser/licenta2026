@@ -1,0 +1,55 @@
+Embedded Software Engineer
+
+About the job
+🔹 Embedded Software Engineer | București | Full Onsite | Defense Industry
+
+
+
+We are partnering with a renowned company in the defense industry, based in Bucharest, to identify a talented Embedded Software Engineer who is passionate about building high-performance, mission-critical systems.
+
+
+This is a full onsite role, offering the opportunity to work on complex, multidisciplinary projects with real-world impact.
+
+
+🚀 Your Responsibilities
+
+Design, develop, and maintain embedded software applications for real-time systems
+Implement high-quality code in C++, ensuring performance, reliability, and scalability
+Work with multithreaded architectures and optimize system performance
+Contribute to the full software development lifecycle: design, coding, testing, and debugging
+Collaborate with cross-functional teams (hardware, systems, QA)
+Support integration and validation of software on target hardware
+Participate in code reviews and ensure compliance with industry standards
+Troubleshoot and resolve complex technical issues
+Contribute to continuous improvement of development processes and tool
+
+
+🧩 Your Profile
+
+BSc or higher in Computer Science, Electrical Engineering, or Software Engineering
+Proven experience in object-oriented programming (C++, preferred)
+Strong understanding of multithreading and concurrent programming
+Experience with C++ and CMake – strong advantage
+Experience in real-time embedded systems – strong advantage
+Familiarity with Linux OS – advantage
+Basic knowledge of web technologies – nice to have
+Experience working on multidisciplinary products – advantage
+Highly motivated, proactive, and a fast learner
+Fluent English (written & spoken)
+
+
+🌍 Additional Requirements
+
+Availability to work full onsite in Bucharest
+Willingness to travel internationally for project-related activities
+
+
+💡 What’s in it for you
+
+Opportunity to work in a high-impact, strategic industry (defense)
+Exposure to complex, cutting-edge technologies
+Collaboration with experienced international teams
+Stable, long-term career opportunity
+
+
+📩 If you’re interested or know someone who might be a great fit, feel free to reach out!

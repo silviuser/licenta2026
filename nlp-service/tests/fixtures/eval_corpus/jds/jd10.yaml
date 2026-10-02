@@ -1,0 +1,38 @@
+id: jd10
+title: Python Developer
+language: en
+location: ''
+category: backend
+seniority: unspecified
+source_anonymized: ''
+raw_text: |
+  Python Developer
+
+  Responsibilities:
+
+  Develop and maintain Python-based simulation frameworks and tools
+  Implement and optimize algorithms for large-scale probabilistic simulations
+  Design and integrate cloud-based solutions using AWS services
+  Automate infrastructure provisioning and configuration using Ansible
+  Improve performance, scalability, and reliability of simulation workloads
+  Collaborate with cross-functional teams (engineering, data, DevOps)
+  Write clean, maintainable, and well-documented code
+
+
+  Required Skills:
+
+  Strong experience with Python (core language + performance optimization)
+  Solid understanding of algorithms and data structures
+  Experience working with AWS (e.g., EC2, S3, Lambda, or similar)
+  Hands-on experience with Ansible for automation/configuration management
+  Familiarity with Linux environments and scripting
+  Experience with version control systems (e.g., Git)
+required_skills:
+- Strong experience with Python (core language + performance optimization)
+- Solid understanding of algorithms and data structures
+- Experience working with AWS (e.g., EC2, S3, Lambda, or similar)
+- Hands-on experience with Ansible for automation/configuration management
+- Familiarity with Linux environments and scripting
+- Experience with version control systems (e.g., Git)
+nice_to_have_skills: []
+notes: ''

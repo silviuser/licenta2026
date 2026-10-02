@@ -1,0 +1,58 @@
+cv_id: real_cv6
+gold_skills:
+- skill_uri: http://data.europa.eu/esco/skill/1c460d2d-90c6-4fc9-ad49-febb6e15605a
+  label: pricing strategies
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/ecc4552a-92c5-4222-b18d-faf5ac841080
+  label: deep learning
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/6eff134b-e34f-4d6e-a6e8-5e47cf2228d0
+  label: risk management
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/43ae58b9-5e56-4524-b45a-b422777a0576
+  label: database
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d
+  label: Python (computer programming)
+  confidence_expected: high
+- skill_uri: CUST:sql
+  label: SQL
+  confidence_expected: high
+- skill_uri: CUST:pandas
+  label: Pandas
+  confidence_expected: high
+- skill_uri: CUST:scikit-learn
+  label: scikit-learn
+  confidence_expected: high
+- skill_uri: CUST:pytorch
+  label: PyTorch
+  confidence_expected: high
+- skill_uri: CUST:power-bi
+  label: Power BI
+  confidence_expected: high
+- skill_uri: CUST:dax
+  label: DAX
+  confidence_expected: medium
+- skill_uri: CUST:gbm
+  label: Gradient Boosting (GBM)
+  confidence_expected: high
+- skill_uri: CUST:random-forest
+  label: Random Forest
+  confidence_expected: high
+- skill_uri: CUST:cpp
+  label: C/C++
+  confidence_expected: medium
+skills_definitely_not_in_cv:
+- similitude
+- musical genres
+- perform cleaning duties
+- report facts
+- Source (digital game creation systems)
+- surveying
+- electrical machines
+- hang wallpaper
+- lead others
+notes: 'Reviewed 2026-05-13 against PDF. Candidate 6, Junior Portfolio Analyst @Allianz. Heavy FP cleanup — Module
+  2 hallucinated similitude / musical genres / perform cleaning duties / report facts / Source / surveying / electrical machines
+  / hang wallpaper / lead others, none of which appear in the PDF. Added the real stack from the Technologies line: SQL, Pandas,
+  scikit-learn, PyTorch, Power BI, DAX, GBM, Random Forest, C/C++.'

@@ -1,0 +1,40 @@
+cv_id: real_cv14
+gold_skills:
+- skill_uri: CUST:java
+  label: Java
+  confidence_expected: high
+- skill_uri: CUST:databases
+  label: Databases
+  confidence_expected: high
+- skill_uri: CUST:automation
+  label: Automation
+  confidence_expected: high
+- skill_uri: CUST:rpa
+  label: Robotic Process Automation (RPA)
+  confidence_expected: high
+- skill_uri: CUST:generative-ai
+  label: Generative AI
+  confidence_expected: high
+- skill_uri: CUST:llm
+  label: Large Language Models (LLMs)
+  confidence_expected: high
+- skill_uri: CUST:rag
+  label: RAG (Retrieval-Augmented Generation)
+  confidence_expected: high
+- skill_uri: CUST:arduino
+  label: Arduino
+  confidence_expected: high
+- skill_uri: CUST:iot
+  label: Internet of Things (IoT)
+  confidence_expected: medium
+- skill_uri: CUST:cybersecurity
+  label: Cybersecurity
+  confidence_expected: medium
+- skill_uri: CUST:sql
+  label: SQL
+  confidence_expected: medium
+skills_definitely_not_in_cv: []
+notes: 'Populated 2026-05-13 from PDF review. Candidate 14 - 3rd-year CS student at UPB (FILS/IoT), Technical Support Intern
+  @Adobe. Java + databases explicit in summary; Top Skills (LinkedIn): Automation, RPA, GenAI. Certs: Java 1 Associate, Introduction
+  to Generative AI, Introduction to Automation, Building RAG Agents with LLMs. SQL / IoT / Cybersecurity marked medium - implied
+  via ''databases'', FILS specialization and the iTEC Cybersecurity Hackathon participation rather than explicit listings.'

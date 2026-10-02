@@ -1,0 +1,42 @@
+cv_id: real_cv13
+gold_skills:
+- skill_uri: CUST:react
+  label: React.js
+  confidence_expected: high
+- skill_uri: CUST:nextjs
+  label: Next.js
+  confidence_expected: high
+- skill_uri: CUST:react-query
+  label: React Query
+  confidence_expected: high
+- skill_uri: CUST:docker
+  label: Docker
+  confidence_expected: high
+- skill_uri: CUST:git
+  label: Git
+  confidence_expected: high
+- skill_uri: CUST:mysql
+  label: MySQL
+  confidence_expected: high
+- skill_uri: CUST:azure
+  label: Microsoft Azure
+  confidence_expected: high
+- skill_uri: CUST:frontend-development
+  label: Front-End Development
+  confidence_expected: high
+- skill_uri: CUST:javascript
+  label: JavaScript
+  confidence_expected: medium
+- skill_uri: CUST:agile
+  label: Agile
+  confidence_expected: medium
+- skill_uri: CUST:code-review
+  label: Code Review
+  confidence_expected: medium
+- skill_uri: CUST:3d-printing
+  label: 3D Printing
+  confidence_expected: medium
+skills_definitely_not_in_cv: []
+notes: 'Populated 2026-05-13 from PDF review. Candidate 13 - SWE Intern @Adobe (current), prior internship @METAMINDS using
+  React.js / Next.js / React Query / Docker / Git / Agile. Top Skills (LinkedIn): Front-End Development, MySQL, Microsoft
+  Azure. JavaScript marked medium because it is implicit via the React/Next stack rather than explicitly named.'

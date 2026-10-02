@@ -1,0 +1,36 @@
+id: jd14
+title: Junior Big Data Software Engineer
+language: en
+location: ''
+category: data
+seniority: junior
+source_anonymized: ''
+raw_text: |-
+  Junior Big Data Software Engineer
+  Responsibilities
+
+  Assist in building and maintaining data pipelines using technologies such as Airflow and Apache Spark
+  Support data processing and transformation tasks using Python and/or Scala
+  Work on customer-defined tasks, prioritizing deliverables based on business needs
+  Collaborate with team members to ensure data solutions are reliable, scalable, and efficient
+  Participate in code reviews, testing, and debugging activities
+  Contribute to maintaining and improving cloud-based data environments (AWS)
+  Continuously develop technical skills and follow best practices in data engineering
+
+
+  Requirements
+
+  1+ years of experience in Data Engineering or a related field
+  Basic hands-on experience with Python and/or Scala
+  Familiarity with big data technologies such as Apache Spark and workflow orchestration tools (e.g., Airflow)
+  Understanding of cloud platforms, preferably AWS
+  Willingness to learn and develop in the Big Data ecosystem
+  Analytical thinking and problem-solving skills
+  Good communication skills and ability to work in a team environment
+  Upper-intermediate level of English for daily communication in an international environment
+required_skills:
+- Basic hands-on experience with Python and/or Scala
+- Familiarity with big data technologies such as Apache Spark and workflow orchestration tools (e.g., Airflow)
+- Understanding of cloud platforms, preferably AWS
+nice_to_have_skills: []
+notes: ''

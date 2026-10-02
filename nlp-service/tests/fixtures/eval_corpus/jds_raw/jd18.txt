@@ -1,0 +1,25 @@
+Software developer (C++)
+What You’ll Do
+
+Design, build and maintain core C++ modules, following our modular, dynamically loaded architecture
+Implement, write unit/functional tests, and partner with QA to land production grade code on Windows and Linux build targets.
+Enable new platforms and features across the roadmap
+Integrate with low level services
+Optimize performance and reliability: profile critical paths, reduce startup/scan times, improve logging and error handling, and harden cross platform behavior
+Contribute to release quality: fix integration issues, address bottlenecks, and support automated pipelines
+Maintain code quality: perform code reviews, enforce coding guidelines, and improve test coverage and CI reliability across modules and platforms 
+Collaborate across teams to clarify requirements, triage issues, and land changes that align with LXCE deliverables 
+
+What You’ll Bring
+
+Good programming skills in C++ on Windows and Linux, including STL and BOOST
+Experience with CMake or Makefiles to manage complex project dependencies
+Bachelor’s degree in Computer Science, Electrical Engineering or equivalent
+
+Nice To Have
+
+Cross-platform build/debug skills
+Experience with server management utilities or datacenter tooling
+Familiarity with UEFI/BIOS configuration, Redfish/REST, XML/JSON parsing, and network file transfer
+CI/CD experience; contribution to release processes and automated testing infrastructure
+Experience with Electron/Node/Vue front ends or wrapping C++ CLIs with GUIs

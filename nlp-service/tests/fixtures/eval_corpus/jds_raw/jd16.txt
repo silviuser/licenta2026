@@ -1,0 +1,21 @@
+Junior Embedded Crypto Software Developer (f/m/d) 
+When you join NXP you have the opportunity to broaden your technical knowledge in all of these areas.
+
+Responsibilities
+
+You will develop crypto algorithms (incl. Post Quantum Crypto) based on specifications, being involved from the coding/programming, test, code review, release stages.
+You will align with our innovation team, architectural team, hardware teams and support teams to develop the algorithms which contribute to a complete security subsystem in all of NXP's business lines.
+
+Your Profile
+
+Bachelor + 3-5 years of relevant experience Or 
+You are a graduate with a Master or PhD Degree in Computer Science, Electronics Engineering, Mathematics, Information Technology, Cryptography.
+You have a passion for technology, you bring ideas to the table and you are proud of your results.
+
+We offer
+
+We offer you the opportunity to learn and build on your technical knowledge and experience in some of the following areas:
+algorithm development including post quantum cryptography (DES, AES, RSA, ECC, SHA and many more)
+embedded software development in C and Assembly
+work with ARM Cortex M and RISC V platforms
+Work on hardware and software countermeasures against side channel (SCA) and fault attacks, (FA)

@@ -1,0 +1,41 @@
+id: jd2
+title: Junior Java Backend Developer - Qualitest
+language: en
+location: ''
+category: backend
+seniority: junior
+source_anonymized: ''
+raw_text: "Junior Java Backend Developer - Qualitest\n\nJob description:\n\nAbout the Project: We are building a large-scale\
+  \ Big Data Intelligence Platform based on a distributed microservices architecture.The system ingests and processes high-volume\
+  \ data streams in real time, applies advanced analytics, and provides decision-support capabilities across multiple functional\
+  \ modules. The technical environment includes: Java 17 + Spring Boot microservices, Kafka for event streaming, message orchestration,\
+  \ and distributed processing; Elasticsearch as a primary data store for indexing and search; Docker/Kubernetes for containerization\
+  \ and orchestration; Integrations with external systems and optional AI/ML components.\n \nResponsibilities:\n\n \nDesign,\
+  \ develop, and maintain microservices using Java 21 and Spring Boot.\nBuild and optimize event-driven data pipelines using\
+  \ Kafka (producers, consumers, partitions, schema evolution).\nWork with Elasticsearch to design efficient indexing strategies\
+  \ and fast querying capabilities.\nContribute to system architecture, performance improvements, and scalability initiatives.\n\
+  Implement clean, maintainable, well-tested code following best engineering practices.\nCollaborate with cross-functional\
+  \ teams (DevOps, Data, Frontend, QA).\nParticipate in code reviews, technical discussions, and solution design sessions.\n\
+  \ \nRequirements:\n\n \n1 year of hands-on experience with Java and Spring Boot.\nExperience with Kafka (streams, consumer\
+  \ groups, message delivery guarantees).\nExperience with Elasticsearch (indexing, queries, performance tuning).\nUnderstanding\
+  \ of microservices architecture, distributed systems, and REST APIs.\nExperience with Docker, container-based deployment,\
+  \ and CI/CD pipelines.\nFamiliarity with asynchronous/event-driven systems and messaging patterns.\nAbility to troubleshoot\
+  \ complex issues in distributed environments.\nStrong English communication skills.\n \n \nNice to Have:\n\n \nExperience\
+  \ + desire to integrate features end-to-end in both spring boot backend and react frontend.\nExperience with Kubernetes.\n\
+  Exposure to Python or Node.js services within a distributed ecosystem.\nExperience with AI/ML pipelines or data processing\
+  \ frameworks.\nExperience with security best practices for distributed systems. "
+required_skills:
+- Java
+- Spring Boot
+- Kafka (streams, consumer groups, message delivery guarantees)
+- Elasticsearch (indexing, queries, performance tuning)
+- microservices architecture, distributed systems, and REST APIs
+- Docker, container-based deployment, and CI/CD pipelines
+- asynchronous/event-driven systems and messaging patterns
+nice_to_have_skills:
+- React frontend
+- Kubernetes
+- Python or Node.js services within a distributed ecosystem
+- AI/ML pipelines or data processing frameworks
+- security best practices for distributed systems
+notes: ''

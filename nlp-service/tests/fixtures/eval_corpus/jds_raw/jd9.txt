@@ -1,0 +1,64 @@
+Application Support DevOps Engineer 
+Mission 
+
+Ensure the proper administration, stability, and optimal functioning of applications and services within the assigned technical area. Act as an effective communication link between internal teams and external stakeholders. 
+
+Key Responsibilities
+
+Administer and monitor IT applications and solutions. 
+Resolve incidents in a timely manner for applications within scope. 
+Maintain application stability, perform upgrades and apply security patches. 
+Participate as an active member in project teams. 
+Regularly assess the health of deployed components and take or recommend corrective actions. 
+Create and maintain documentation for procedures related to administered IT solutions. 
+Perform testing activities for applications under support. 
+Provide consultancy and technical assistance for applications in scope. 
+
+Required Technical Skills
+
+Administration of Java and HTTP application servers. 
+Advanced knowledge of Windows, Linux/UNIX operating systems. 
+Experience with databases: Oracle, SQL, RDS, PostgreSQL. 
+Hands‑on experience with cloud platforms (AWS and/or Azure). 
+Basic understanding of Artificial Intelligence and ability to use AI tools. 
+Experience with Web Services: APIs, SOAP, REST. 
+Knowledge of integration concepts (message queues, web services, SCA, databases, etc.). 
+Issue tracking tools (optional): Jira. 
+Strong analytical and problem‑solving skills. 
+Automation tools: Git, Gradle, Jenkins, Artifactory. 
+Tools: Toad, SQL Developer, IBM Data Studio, IBM MQ Explorer, ODI, SFTP clients. 
+Containerization and orchestration: Docker, Kubernetes, OpenShift. 
+Familiarity with CI/CD concepts, microservices, web services, ELK stack. 
+Ability to develop or enhance CI/CD pipelines for modern and legacy systems. 
+Automation‑driven mindset. 
+Basic understanding of AI with openness to developing advanced knowledge. 
+
+Benefits
+
+Fun and collaborative working environment When we say “collaborative,” we truly mean it. We are open to new ideas and initiatives and value everyone’s contribution.
+Competitive compensation We believe remuneration is a basic and essential element, which is why we offer competitive salaries aligned with market standards and your level of expertise.
+Holiday Starting from 23 days of paid leave, increasing up to 27 days per year based on your professional experience.
+13th salary We offer a 13th salary, granted after completing the first year with the company.
+Annual performance bonus As we consistently deliver high-quality work on time, RBI & RBRO also offers an annual performance bonus.
+Group insurance Collective insurance coverage provided through Uniqa.
+Flexible benefits account Monthly benefits budget, including meal vouchers and additional options.
+Personal development & career plan Individual development and career plan, with up to 2 days per month dedicated exclusively to personal and professional growth.
+Private pension – Pillar III Private pension contribution (Pillar III) via Raiffeisen Leasing.
+Private medical health insurance
+Volunteering events
+Team-building activities
+
+Ready to make an impact? Take the initiative and join us! Apply now and let’s build the future of banking together.
+
+At Raiffeisen Bank, we are committed to equal opportunities for all. We celebrate diversity and foster an inclusive environment where everyone can thrive.
+
+Candidate Profile 
+
+3–5 years of experience in application support or development. 
+Fast learner, motivated to stay up to date with new technologies. 
+Strong communication skills. 
+Advanced knowledge of the skills required for the role.
+
+
+Desired Skills and Experience
+Java, SQL, Linux, Jenkins, Microsoft Azure, Artificial Intelligence, Unix

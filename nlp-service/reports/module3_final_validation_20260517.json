@@ -1,0 +1,3791 @@
+{
+  "_meta": {
+    "generated_at": "2026-05-17T17:23:01Z",
+    "missing_sources": [],
+    "rerun_locked": false
+  },
+  "appendices": {
+    "A": [
+      {
+        "change": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "Initial freeze - all 10 defaults approved."
+        },
+        "date": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "2026-05-11"
+        },
+        "step": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "0"
+        }
+      },
+      {
+        "change": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "Config class named `SkillMatcherConfig` (not `MatcherSettings`) for Module 2 symmetry. Pyproject registers `skill_matcher` in wheel packages, pytest cov, coverage source, ruff isort, mypy."
+        },
+        "date": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "2026-05-11"
+        },
+        "step": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "1"
+        }
+      },
+      {
+        "change": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "EscoConcept fields locked: `uri`, `pref_label`, `alt_labels` (tuple), `description`, `skill_type` literal (`knowledge`/`skill/competence`/`language` - Module 2 fidelity preserved per Q2), `is_custom`. `broader_uri` deliberately omitted - Step 6 will add it by lifting the existing hierarchy parser out of `scripts/build_training_dataset.py`."
+        },
+        "date": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "2026-05-16"
+        },
+        "step": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "4"
+        }
+      },
+      {
+        "change": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "Cache-key SHA prefix length = **12 hex chars** (not 8 as in the Step 4 brief). Reuses `skill_extractor.esco.cache.compute_esco_hash` unchanged - avoids a near-duplicate hash helper."
+        },
+        "date": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "2026-05-16"
+        },
+        "step": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "4"
+        }
+      },
+      {
+        "change": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "`torch` CPU wheels installed from `--extra-index-url https://download.pytorch.org/whl/cpu`. Documented as a comment in `pyproject.toml` next to the `ml` extra. Windows install command: `pip install -e \".[ml]\" --extra-index-url https://download.pytorch.org/whl/cpu`."
+        },
+        "date": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "2026-05-16"
+        },
+        "step": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "4"
+        }
+      },
+      {
+        "change": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "`numpy>=1.26,<3` moved out of the `[ml]` extra into base dependencies. Reason: the encoder Protocol's return type and the ESCO embedding matrix make numpy a hard import-time requirement for `skill_matcher`; the previous arrangement would have broken `import skill_matcher` for any contributor who skipped the `[ml]` install."
+        },
+        "date": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "2026-05-16"
+        },
+        "step": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "4"
+        }
+      },
+      {
+        "change": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "Concept-text format: **`bounded-a`** (label + ≤5 sorted altLabels + description[:300]). Beats fmt `b` (label + description) and `c` (label + ≤3 altLabels + description[:300]) at every threshold ≤ 0.60 in the full 8-threshold sweep - peak macro F1 = 0.151 vs 0.134 (b) vs ~0.135 (c). The earlier `--ablation` comparison at the single threshold 0.65 misleadingly favoured `b` because bounded-a's precision had saturated; the full sweep restores the true ordering. altLabels DO help - they add anchor points for the encoder. Revisit after Step 5 fine-tune; the cross-over may shift if the fine-tuned encoder learns to weight altLabels differently."
+        },
+        "date": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "2026-05-16"
+        },
+        "step": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "4"
+        }
+      },
+      {
+        "change": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "Sliding-window stride: **15** (window_size_tokens 30 → 50% overlap). Stride 30 loses 4-5 F1 points at every threshold (e.g. F1 0.036 vs 0.073 on bounded-a at threshold 0.65), exceeding the Q5 3-point adoption gate. Stride 8 is within 1 point of stride 15 but doubles encode cost without a meaningful F1 gain."
+        },
+        "date": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "2026-05-16"
+        },
+        "step": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "4"
+        }
+      },
+      {
+        "change": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "Semantic threshold (Step-4 zero-shot baseline): **0.55**. F1 peaks at 0.55 for both fmt=bounded-a (F1=0.151) and fmt=b (F1=0.134) in the threshold sweep over {0.40, 0.45, 0.50, 0.55, 0.60, 0.65, 0.70, 0.75}; F1 at 0.50 and 0.60 is within 0.005 of the peak (flat plateau). The provisional `SkillMatcherConfig.keep_threshold = 0.65` from Step 1 was tuned without empirical data; Step 6's Linker should adopt 0.55 as the baseline, then re-tune in Step 8."
+        },
+        "date": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "2026-05-16"
+        },
+        "step": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "4"
+        }
+      },
+      {
+        "change": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "Step 4 closed. Headline zero-shot result: bounded-a + stride 15 + threshold 0.55 → **macro F1 = 0.151** (P=0.157, R=0.156) on the 14-CV processed corpus (real_cv2 skipped - Poppler not installed; tracked as a known limitation). Lexical floor on same view = 0.460; semantic reaches 33% of lexical. **Ensemble (lex ∪ sem) actually underperforms lexical alone** (0.306 vs 0.460) - semantic adds more FPs than recovered TPs at zero-shot. This is the strongest motivation for Step 5 fine-tuning: the bi-encoder needs CV→ESCO-specific semantics to push precision high enough for the ensemble to add value."
+        },
+        "date": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "2026-05-16"
+        },
+        "step": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "4"
+        }
+      },
+      {
+        "change": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "**Step 5 round 1 - anchor-mode fine-tune trained on Colab T4 in 313s.** Run name `mnrl_v1_20260516_1610`. Loss: `MultipleNegativesRankingLoss`, batch=32, epochs=3, lr=2e-5, warmup=10%, seed=42. Val MRR@10: pre-training 0.0892 → final 0.4397 (4.93× lift). On the held-out 15-CV eval corpus at the locked threshold 0.55, semantic macro F1 = 0.144 vs zero-shot 0.151 (**slight regression of -0.007**); ensemble F1 = 0.339 (still below lexical floor 0.460). **Step 6 gate F1 ≥ 0.55 FAIL.** Diagnostic: training queries were synthetic `(context_before + text_span + context_after)` strings (~50 chars centered on a skill mention); serving uses 30-token sliding windows over the whole CV. Train/serve task mismatch - the encoder learned anchor -> URI but not \"fluff window -> no match\". Three CVs regressed by >= 0.10 (real_cv5, real_cv7, real_cv8)."
+        },
+        "date": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "2026-05-16"
+        },
+        "step": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "5 (round 1)"
+        }
+      },
+      {
+        "change": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "**Step 5.1 -- threshold re-calibration for Round 1 checkpoint.** Threshold ablation on the fine-tuned `mnrl_v1_20260516_1610` checkpoint showed F1 peak at threshold **0.50** (semantic F1 0.153 vs zero-shot 0.146 at the same threshold). Apples-to-apples comparison at threshold 0.50: fine-tuned 0.1527 vs zero-shot 0.1458, **+0.0069 lift** -- first measurable positive transfer. The locked production threshold remains 0.55 (Step 4 amendment) until Step 5.2 closes; this 0.50 number is recorded as a per-checkpoint hyperparameter, not a global change."
+        },
+        "date": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "2026-05-16"
+        },
+        "step": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "5.1"
+        }
+      },
+      {
+        "change": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "**Step 5.2 -- sliding-window training pairs.** Phase gamma diagnosis (train/serve mismatch) drives a rebuild of the training dataset: each `SkillMatch` span now emits one `TrainingPair` per sliding window that contains it (window size 30 tokens, stride 15 -- identical to serving). The new `TrainingPair.query_text` field carries the window text verbatim. Hard negatives are de-duped per `(cv, span, uri)` and paired with the first window's positive to keep the negatives count from inflating. `skill_matcher` version bumped to 0.3.1. Backward-compat: legacy Step 5 round-1 JSONL files still load (empty `query_text` triggers the old anchor concat in `build_anchor_text`). `compute_window_pair_id` helper added so window-aware pair IDs stay collision-free. The Step 5 Pre-Flight risk register #6 \"F1 in [0.45, 0.55) -> one re-train\" is now this rebuild + retrain (not a hyperparameter sweep)."
+        },
+        "date": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "2026-05-16"
+        },
+        "step": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "5.2"
+        }
+      },
+      {
+        "change": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "**Step 6 -- Linker delivered.** Encoder-agnostic by design: takes any `Encoder` Protocol instance plus a pre-built `EscoIndex` and `concepts_by_uri` map. Three locked decisions: (1) **anchor formula** = `cv_text[max(0, span.start-50) : min(len(cv_text), span.end+50)].strip()` capped at 256 chars (lifted to public `ANCHOR_HARD_CAP_CHARS` in `training_data.py`); (2) **band assignment** = three source values only -- `lexical_kept` / `lexical_dropped` / `expansion`. Ambiguous-band candidates are emitted as `lexical_kept` with a demoted confidence; the `LinkerStats.n_lexical_ambiguous` counter is derived (not a separate `CandidateSource`). Two scalars (`source`, `confidence`) cleanly encode \"whether semantic was confident\" and \"how confident\" -- Step 7's Scorer sees a single boolean source partition. (3) **(uri, span) granularity** = one `MatchCandidate` per `(uri, span)` pair (per `models.py` design intent), not one per URI. Module 2's `SkillMatch` with N spans produces N candidates sharing the same URI; batched encoding keeps cost constant."
+        },
+        "date": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "2026-05-17"
+        },
+        "step": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "6"
+        }
+      },
+      {
+        "change": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "**Boost formula:** `new = clamp(0.5 * orig + 0.5 * sim, 0.0, 1.0)`. Equal-weight blend of Module 2's lexical certainty and Module 3's semantic certainty -- agreement of both gets >= either individual signal. Simple, monotonic in `sim`, defensible in one sentence at viva. **Demote formula:** `new = orig * (sim / keep_threshold)`. Linear in `sim`; at `sim == keep_threshold` returns exactly `orig` (continuity at the band boundary -- no step discontinuity between boosted and demoted formulas as sim crosses the threshold). **Expansion confidence** = raw `sim` (max over windows when multiple fire for the same URI). No discount factor in Step 6 -- expansion has no lexical confirmation so the encoder similarity is the only evidence; Step 8 may revisit empirically."
+        },
+        "date": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "2026-05-17"
+        },
+        "step": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "6"
+        }
+      },
+      {
+        "change": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "`SkillMatcherConfig.keep_threshold` default bumped 0.65 -> **0.55** (the Step 4 amendment-log lock from 2026-05-16 -- F1 peak on the bounded-a + stride-15 zero-shot baseline). Previously a stale Step 1 default. Test pin added in `test_config.py::test_step4_threshold_lock_defaults` so future drift surfaces as a failing test rather than silent regression. New config field `expansion_window_stride: int = 15` (also Step 4 amendment-log lock); promoted from a hard-coded constant inside the baseline runner so the Linker reads it from config -- no drift possible between baseline and serving stride."
+        },
+        "date": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "2026-05-17"
+        },
+        "step": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "6"
+        }
+      },
+      {
+        "change": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "**Encoder placeholder framing.** Step 5 was executed twice on 2026-05-16; both runs regressed on the held-out eval corpus (F1 0.144 and 0.121 vs zero-shot 0.151). Root cause: distantly-supervised bias amplification -- training positives came from Module 2's lexical matches, so the fine-tuned encoder learned to mimic Module 2 rather than close its recall gap. The Step 5 placeholder is used as-is by Step 6 (`models/skill_matcher/<latest>` via `latest.txt`) because the **Linker is encoder-agnostic by design**: when Step 5 is re-done with a larger, less-biased training corpus, only the checkpoint swaps -- no Linker code change. Step 6's sign-off gate is **correctness, not F1**: deterministic behaviour on fixtures, unit-test coverage >= 85%, mypy --strict clean, end-to-end run produces well-formed `EnrichedSkillResult` without exceptions. Quantitative numbers go into `reports/linker_evaluation_<date>.md` honestly with the placeholder disclaimer."
+        },
+        "date": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "2026-05-17"
+        },
+        "step": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "6"
+        }
+      },
+      {
+        "change": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "**Unknown-URI handling.** A Module 2 candidate whose `esco_uri` is absent from the Linker's `concepts_by_uri` map (e.g. a `CUST:` overlay URI added after the index cache was built) is **skipped after a structured WARNING log**, not emitted as a synthetic `lexical_dropped`. Two reasons: (a) without an embedding we cannot honour the `MatchCandidate.similarity_score` field truthfully (zeroing it would mislead Step 7); (b) Module 2 saw it but Module 3 has no semantic view of it -- operationally equivalent to a hard drop. The `LinkerStats.n_unknown_uris` counter makes the count visible in the evaluation report."
+        },
+        "date": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "2026-05-17"
+        },
+        "step": {
+          "source_file": "src/skill_matcher/DECISIONS.md",
+          "source_section": "Amendment Log",
+          "value": "6"
+        }
+      }
+    ],
+    "B": [
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-CV accuracy",
+          "value": 0.4
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.0095
+        },
+        "cv_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].cv_id",
+          "value": "real_cv1"
+        },
+        "gold_no_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum no)",
+          "value": 7
+        },
+        "gold_possible_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum possible)",
+          "value": 11
+        },
+        "gold_strong_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum strong)",
+          "value": 2
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 8
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per CV",
+          "value": 20
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-CV accuracy",
+          "value": 0.85
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.0
+        },
+        "cv_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].cv_id",
+          "value": "real_cv10"
+        },
+        "gold_no_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum no)",
+          "value": 17
+        },
+        "gold_possible_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum possible)",
+          "value": 3
+        },
+        "gold_strong_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum strong)",
+          "value": 0
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 17
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per CV",
+          "value": 20
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-CV accuracy",
+          "value": 0.3
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.0063
+        },
+        "cv_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].cv_id",
+          "value": "real_cv11"
+        },
+        "gold_no_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum no)",
+          "value": 5
+        },
+        "gold_possible_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum possible)",
+          "value": 11
+        },
+        "gold_strong_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum strong)",
+          "value": 4
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 6
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per CV",
+          "value": 20
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-CV accuracy",
+          "value": 0.5
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.0227
+        },
+        "cv_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].cv_id",
+          "value": "real_cv12"
+        },
+        "gold_no_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum no)",
+          "value": 5
+        },
+        "gold_possible_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum possible)",
+          "value": 8
+        },
+        "gold_strong_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum strong)",
+          "value": 7
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 10
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per CV",
+          "value": 20
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-CV accuracy",
+          "value": 0.85
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.0
+        },
+        "cv_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].cv_id",
+          "value": "real_cv13"
+        },
+        "gold_no_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum no)",
+          "value": 17
+        },
+        "gold_possible_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum possible)",
+          "value": 1
+        },
+        "gold_strong_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum strong)",
+          "value": 2
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 17
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per CV",
+          "value": 20
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-CV accuracy",
+          "value": 0.65
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.0
+        },
+        "cv_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].cv_id",
+          "value": "real_cv14"
+        },
+        "gold_no_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum no)",
+          "value": 13
+        },
+        "gold_possible_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum possible)",
+          "value": 6
+        },
+        "gold_strong_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum strong)",
+          "value": 1
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 13
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per CV",
+          "value": 20
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-CV accuracy",
+          "value": 0.75
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.0
+        },
+        "cv_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].cv_id",
+          "value": "real_cv15"
+        },
+        "gold_no_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum no)",
+          "value": 15
+        },
+        "gold_possible_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum possible)",
+          "value": 5
+        },
+        "gold_strong_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum strong)",
+          "value": 0
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 15
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per CV",
+          "value": 20
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-CV accuracy",
+          "value": 0.5
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.0254
+        },
+        "cv_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].cv_id",
+          "value": "real_cv3"
+        },
+        "gold_no_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum no)",
+          "value": 13
+        },
+        "gold_possible_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum possible)",
+          "value": 6
+        },
+        "gold_strong_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum strong)",
+          "value": 1
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 10
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per CV",
+          "value": 20
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-CV accuracy",
+          "value": 0.3
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.0
+        },
+        "cv_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].cv_id",
+          "value": "real_cv4"
+        },
+        "gold_no_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum no)",
+          "value": 6
+        },
+        "gold_possible_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum possible)",
+          "value": 12
+        },
+        "gold_strong_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum strong)",
+          "value": 2
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 6
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per CV",
+          "value": 20
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-CV accuracy",
+          "value": 0.6
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.0284
+        },
+        "cv_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].cv_id",
+          "value": "real_cv5"
+        },
+        "gold_no_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum no)",
+          "value": 6
+        },
+        "gold_possible_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum possible)",
+          "value": 11
+        },
+        "gold_strong_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum strong)",
+          "value": 3
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 12
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per CV",
+          "value": 20
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-CV accuracy",
+          "value": 0.65
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.0024
+        },
+        "cv_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].cv_id",
+          "value": "real_cv6"
+        },
+        "gold_no_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum no)",
+          "value": 14
+        },
+        "gold_possible_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum possible)",
+          "value": 3
+        },
+        "gold_strong_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum strong)",
+          "value": 3
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 13
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per CV",
+          "value": 20
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-CV accuracy",
+          "value": 0.6
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.0028
+        },
+        "cv_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].cv_id",
+          "value": "real_cv7"
+        },
+        "gold_no_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum no)",
+          "value": 13
+        },
+        "gold_possible_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum possible)",
+          "value": 6
+        },
+        "gold_strong_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum strong)",
+          "value": 1
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 12
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per CV",
+          "value": 20
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-CV accuracy",
+          "value": 0.5
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.0363
+        },
+        "cv_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].cv_id",
+          "value": "real_cv8"
+        },
+        "gold_no_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum no)",
+          "value": 6
+        },
+        "gold_possible_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum possible)",
+          "value": 8
+        },
+        "gold_strong_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum strong)",
+          "value": 6
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 10
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per CV",
+          "value": 20
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-CV accuracy",
+          "value": 0.35
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.0064
+        },
+        "cv_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].cv_id",
+          "value": "real_cv9"
+        },
+        "gold_no_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum no)",
+          "value": 6
+        },
+        "gold_possible_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum possible)",
+          "value": 11
+        },
+        "gold_strong_n": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].gold (sum strong)",
+          "value": 3
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 7
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per CV",
+          "value": 20
+        }
+      }
+    ],
+    "C": [
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-JD accuracy",
+          "value": 0.6429
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.0124
+        },
+        "jd_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].jd_id",
+          "value": "jd1"
+        },
+        "max_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (max)",
+          "value": 0.0487
+        },
+        "min_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (min)",
+          "value": 0.0
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 9
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per JD",
+          "value": 14
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-JD accuracy",
+          "value": 0.2857
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.0157
+        },
+        "jd_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].jd_id",
+          "value": "jd10"
+        },
+        "max_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (max)",
+          "value": 0.0649
+        },
+        "min_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (min)",
+          "value": 0.0
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 4
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per JD",
+          "value": 14
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-JD accuracy",
+          "value": 0.4286
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.0047
+        },
+        "jd_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].jd_id",
+          "value": "jd11"
+        },
+        "max_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (max)",
+          "value": 0.0195
+        },
+        "min_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (min)",
+          "value": 0.0
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 6
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per JD",
+          "value": 14
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-JD accuracy",
+          "value": 0.5
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.011
+        },
+        "jd_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].jd_id",
+          "value": "jd12"
+        },
+        "max_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (max)",
+          "value": 0.1011
+        },
+        "min_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (min)",
+          "value": 0.0
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 7
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per JD",
+          "value": 14
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-JD accuracy",
+          "value": 0.6429
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.0065
+        },
+        "jd_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].jd_id",
+          "value": "jd13"
+        },
+        "max_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (max)",
+          "value": 0.0913
+        },
+        "min_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (min)",
+          "value": 0.0
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 9
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per JD",
+          "value": 14
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-JD accuracy",
+          "value": 0.6429
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.0
+        },
+        "jd_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].jd_id",
+          "value": "jd14"
+        },
+        "max_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (max)",
+          "value": 0.0
+        },
+        "min_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (min)",
+          "value": 0.0
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 9
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per JD",
+          "value": 14
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-JD accuracy",
+          "value": 0.5714
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.0029
+        },
+        "jd_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].jd_id",
+          "value": "jd15"
+        },
+        "max_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (max)",
+          "value": 0.0413
+        },
+        "min_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (min)",
+          "value": 0.0
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 8
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per JD",
+          "value": 14
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-JD accuracy",
+          "value": 0.5714
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.003
+        },
+        "jd_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].jd_id",
+          "value": "jd16"
+        },
+        "max_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (max)",
+          "value": 0.0425
+        },
+        "min_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (min)",
+          "value": 0.0
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 8
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per JD",
+          "value": 14
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-JD accuracy",
+          "value": 0.6429
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.0274
+        },
+        "jd_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].jd_id",
+          "value": "jd17"
+        },
+        "max_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (max)",
+          "value": 0.1025
+        },
+        "min_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (min)",
+          "value": 0.0
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 9
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per JD",
+          "value": 14
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-JD accuracy",
+          "value": 0.7143
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.0129
+        },
+        "jd_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].jd_id",
+          "value": "jd18"
+        },
+        "max_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (max)",
+          "value": 0.0649
+        },
+        "min_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (min)",
+          "value": 0.0
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 10
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per JD",
+          "value": 14
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-JD accuracy",
+          "value": 0.7857
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.0044
+        },
+        "jd_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].jd_id",
+          "value": "jd19"
+        },
+        "max_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (max)",
+          "value": 0.0619
+        },
+        "min_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (min)",
+          "value": 0.0
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 11
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per JD",
+          "value": 14
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-JD accuracy",
+          "value": 0.3571
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.0
+        },
+        "jd_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].jd_id",
+          "value": "jd2"
+        },
+        "max_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (max)",
+          "value": 0.0
+        },
+        "min_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (min)",
+          "value": 0.0
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 5
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per JD",
+          "value": 14
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-JD accuracy",
+          "value": 0.7857
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.034
+        },
+        "jd_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].jd_id",
+          "value": "jd20"
+        },
+        "max_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (max)",
+          "value": 0.1121
+        },
+        "min_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (min)",
+          "value": 0.0
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 11
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per JD",
+          "value": 14
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-JD accuracy",
+          "value": 0.5
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.0192
+        },
+        "jd_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].jd_id",
+          "value": "jd3"
+        },
+        "max_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (max)",
+          "value": 0.1116
+        },
+        "min_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (min)",
+          "value": 0.0
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 7
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per JD",
+          "value": 14
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-JD accuracy",
+          "value": 0.4286
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.0047
+        },
+        "jd_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].jd_id",
+          "value": "jd4"
+        },
+        "max_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (max)",
+          "value": 0.0483
+        },
+        "min_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (min)",
+          "value": 0.0
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 6
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per JD",
+          "value": 14
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-JD accuracy",
+          "value": 0.7143
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.011
+        },
+        "jd_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].jd_id",
+          "value": "jd5"
+        },
+        "max_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (max)",
+          "value": 0.0556
+        },
+        "min_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (min)",
+          "value": 0.0
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 10
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per JD",
+          "value": 14
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-JD accuracy",
+          "value": 0.2143
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.0177
+        },
+        "jd_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].jd_id",
+          "value": "jd6"
+        },
+        "max_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (max)",
+          "value": 0.0791
+        },
+        "min_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (min)",
+          "value": 0.0
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 3
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per JD",
+          "value": 14
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-JD accuracy",
+          "value": 0.5714
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.0097
+        },
+        "jd_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].jd_id",
+          "value": "jd7"
+        },
+        "max_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (max)",
+          "value": 0.0487
+        },
+        "min_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (min)",
+          "value": 0.0
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 8
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per JD",
+          "value": 14
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-JD accuracy",
+          "value": 0.7143
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.0
+        },
+        "jd_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].jd_id",
+          "value": "jd8"
+        },
+        "max_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (max)",
+          "value": 0.0
+        },
+        "min_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (min)",
+          "value": 0.0
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 10
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per JD",
+          "value": 14
+        }
+      },
+      {
+        "accuracy": {
+          "source_file": "self",
+          "source_section": "derived per-JD accuracy",
+          "value": 0.4286
+        },
+        "avg_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (mean)",
+          "value": 0.0032
+        },
+        "jd_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].jd_id",
+          "value": "jd9"
+        },
+        "max_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (max)",
+          "value": 0.0233
+        },
+        "min_overall_score": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "cells[*].overall_score (min)",
+          "value": 0.0
+        },
+        "n_agree": {
+          "source_file": "self",
+          "source_section": "derived: gold == predicted_locked",
+          "value": 6
+        },
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "derived: count cells per JD",
+          "value": 14
+        }
+      }
+    ],
+    "D_distribution": [
+      {
+        "P25": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0
+        },
+        "P50": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0
+        },
+        "P75": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0248
+        },
+        "P90": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0485
+        },
+        "P95": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0636
+        },
+        "P99": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0955
+        },
+        "max": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.1085
+        },
+        "mean": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.014
+        },
+        "min": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0
+        },
+        "n": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 280
+        },
+        "stratum": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": "all"
+        }
+      },
+      {
+        "P25": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0
+        },
+        "P50": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0268
+        },
+        "P75": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0553
+        },
+        "P90": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0729
+        },
+        "P95": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0783
+        },
+        "P99": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0806
+        },
+        "max": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0811
+        },
+        "mean": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0313
+        },
+        "min": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0
+        },
+        "n": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 35
+        },
+        "stratum": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": "strong"
+        }
+      },
+      {
+        "P25": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0
+        },
+        "P50": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0
+        },
+        "P75": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0307
+        },
+        "P90": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0481
+        },
+        "P95": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0571
+        },
+        "P99": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0957
+        },
+        "max": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0969
+        },
+        "mean": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0173
+        },
+        "min": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0
+        },
+        "n": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 102
+        },
+        "stratum": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": "possible"
+        }
+      },
+      {
+        "P25": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0
+        },
+        "P50": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0
+        },
+        "P75": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0
+        },
+        "P90": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0297
+        },
+        "P95": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0469
+        },
+        "P99": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0871
+        },
+        "max": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.1085
+        },
+        "mean": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0073
+        },
+        "min": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 0.0
+        },
+        "n": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": 143
+        },
+        "stratum": {
+          "source_file": "reports/threshold_tuning_20260517_full.md",
+          "source_section": "7. Score-distribution snapshot at best combo",
+          "value": "no"
+        }
+      }
+    ],
+    "D_top10": [
+      {
+        "combo": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[0].combo",
+          "value": "drop=0.4 keep=0.5 exp=0.75 perReq=0.085 wReq=0.5 T1=0.06 T2=0.005"
+        },
+        "guards_passed": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[0].guards_passed",
+          "value": true
+        },
+        "macro_f1": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[0].macro_f1",
+          "value": 0.504
+        },
+        "rank": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[0] (1-indexed)",
+          "value": 1
+        },
+        "weighted_f1": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[0].weighted_f1",
+          "value": 0.5827
+        }
+      },
+      {
+        "combo": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[1].combo",
+          "value": "drop=0.4 keep=0.5 exp=0.85 perReq=0.085 wReq=0.5 T1=0.06 T2=0.005"
+        },
+        "guards_passed": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[1].guards_passed",
+          "value": true
+        },
+        "macro_f1": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[1].macro_f1",
+          "value": 0.504
+        },
+        "rank": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[1] (1-indexed)",
+          "value": 2
+        },
+        "weighted_f1": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[1].weighted_f1",
+          "value": 0.5827
+        }
+      },
+      {
+        "combo": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[2].combo",
+          "value": "drop=0.4 keep=0.5 exp=0.65 perReq=0.085 wReq=0.5 T1=0.06 T2=0.005"
+        },
+        "guards_passed": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[2].guards_passed",
+          "value": true
+        },
+        "macro_f1": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[2].macro_f1",
+          "value": 0.5018
+        },
+        "rank": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[2] (1-indexed)",
+          "value": 3
+        },
+        "weighted_f1": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[2].weighted_f1",
+          "value": 0.5797
+        }
+      },
+      {
+        "combo": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[3].combo",
+          "value": "drop=0.4 keep=0.5 exp=0.75 perReq=0.01 wReq=0.5 T1=0.06 T2=0.005"
+        },
+        "guards_passed": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[3].guards_passed",
+          "value": true
+        },
+        "macro_f1": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[3].macro_f1",
+          "value": 0.5018
+        },
+        "rank": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[3] (1-indexed)",
+          "value": 4
+        },
+        "weighted_f1": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[3].weighted_f1",
+          "value": 0.5797
+        }
+      },
+      {
+        "combo": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[4].combo",
+          "value": "drop=0.4 keep=0.5 exp=0.75 perReq=0.035 wReq=0.5 T1=0.06 T2=0.005"
+        },
+        "guards_passed": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[4].guards_passed",
+          "value": true
+        },
+        "macro_f1": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[4].macro_f1",
+          "value": 0.5018
+        },
+        "rank": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[4] (1-indexed)",
+          "value": 5
+        },
+        "weighted_f1": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[4].weighted_f1",
+          "value": 0.5797
+        }
+      },
+      {
+        "combo": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[5].combo",
+          "value": "drop=0.4 keep=0.5 exp=0.75 perReq=0.06 wReq=0.5 T1=0.06 T2=0.005"
+        },
+        "guards_passed": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[5].guards_passed",
+          "value": true
+        },
+        "macro_f1": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[5].macro_f1",
+          "value": 0.5018
+        },
+        "rank": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[5] (1-indexed)",
+          "value": 6
+        },
+        "weighted_f1": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[5].weighted_f1",
+          "value": 0.5797
+        }
+      },
+      {
+        "combo": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[6].combo",
+          "value": "drop=0.4 keep=0.5 exp=0.85 perReq=0.01 wReq=0.5 T1=0.06 T2=0.005"
+        },
+        "guards_passed": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[6].guards_passed",
+          "value": true
+        },
+        "macro_f1": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[6].macro_f1",
+          "value": 0.5018
+        },
+        "rank": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[6] (1-indexed)",
+          "value": 7
+        },
+        "weighted_f1": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[6].weighted_f1",
+          "value": 0.5797
+        }
+      },
+      {
+        "combo": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[7].combo",
+          "value": "drop=0.4 keep=0.5 exp=0.85 perReq=0.035 wReq=0.5 T1=0.06 T2=0.005"
+        },
+        "guards_passed": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[7].guards_passed",
+          "value": true
+        },
+        "macro_f1": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[7].macro_f1",
+          "value": 0.5018
+        },
+        "rank": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[7] (1-indexed)",
+          "value": 8
+        },
+        "weighted_f1": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[7].weighted_f1",
+          "value": 0.5797
+        }
+      },
+      {
+        "combo": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[8].combo",
+          "value": "drop=0.4 keep=0.5 exp=0.85 perReq=0.06 wReq=0.5 T1=0.06 T2=0.005"
+        },
+        "guards_passed": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[8].guards_passed",
+          "value": true
+        },
+        "macro_f1": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[8].macro_f1",
+          "value": 0.5018
+        },
+        "rank": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[8] (1-indexed)",
+          "value": 9
+        },
+        "weighted_f1": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[8].weighted_f1",
+          "value": 0.5797
+        }
+      },
+      {
+        "combo": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[9].combo",
+          "value": "drop=0.45 keep=0.5 exp=0.65 perReq=0.01 wReq=0.9 T1=0.1 T2=0.005"
+        },
+        "guards_passed": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[9].guards_passed",
+          "value": true
+        },
+        "macro_f1": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[9].macro_f1",
+          "value": 0.5016
+        },
+        "rank": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[9] (1-indexed)",
+          "value": 10
+        },
+        "weighted_f1": {
+          "source_file": "reports/threshold_tuning_20260517_full.json",
+          "source_section": "top10[9].weighted_f1",
+          "value": 0.5885
+        }
+      }
+    ]
+  },
+  "sections": {
+    "section_01": {
+      "macro_f1_locked": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.macro_f1",
+        "value": 0.504
+      },
+      "macro_f1_provisional_step7": {
+        "source_file": "reports/matcher_evaluation_20260517.json",
+        "source_section": "headline.macro_f1",
+        "value": 0.2254
+      },
+      "macro_f1_zero_shot_step4": {
+        "source_file": "reports/skill_matcher_baseline_20260516_final.json",
+        "source_section": "headline.semantic_macro.f1",
+        "value": 0.1506
+      },
+      "plain_accuracy_locked": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.plain_accuracy",
+        "value": 0.6036
+      },
+      "weighted_accuracy_locked": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.weighted_accuracy",
+        "value": 0.4936
+      }
+    },
+    "section_03": {
+      "esco": {
+        "concepts_custom": {
+          "source_file": "reports/skill_matcher_baseline_20260516_final.json",
+          "source_section": "environment.concept_counts.custom",
+          "value": 74
+        },
+        "concepts_knowledge": {
+          "source_file": "reports/skill_matcher_baseline_20260516_final.json",
+          "source_section": "environment.concept_counts.knowledge",
+          "value": 3219
+        },
+        "concepts_language": {
+          "source_file": "reports/skill_matcher_baseline_20260516_final.json",
+          "source_section": "environment.concept_counts.language",
+          "value": 359
+        },
+        "concepts_skill_competence": {
+          "source_file": "reports/skill_matcher_baseline_20260516_final.json",
+          "source_section": "environment.concept_counts.skill/competence",
+          "value": 10435
+        },
+        "concepts_total": {
+          "source_file": "reports/skill_matcher_baseline_20260516_final.json",
+          "source_section": "environment.concept_counts.total",
+          "value": 14013
+        },
+        "esco_sha": {
+          "source_file": "reports/skill_matcher_baseline_20260516_final.json",
+          "source_section": "environment.esco_file_sha",
+          "value": "bce83eb3ad4f"
+        }
+      },
+      "eval": {
+        "n_cells": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "n_cells",
+          "value": 280
+        },
+        "n_cvs_skipped": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "skipped_cvs",
+          "value": 1
+        },
+        "n_cvs_total": {
+          "source_file": "self",
+          "source_section": "eval corpus design (Step 2)",
+          "value": 15
+        },
+        "n_jds_total": {
+          "source_file": "self",
+          "source_section": "eval corpus design (Step 2)",
+          "value": 20
+        },
+        "n_pairs_skipped": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "skipped_pairs_count",
+          "value": 20
+        },
+        "skipped_cv_id": {
+          "source_file": "reports/matcher_evaluation_20260517.json",
+          "source_section": "skipped_cvs[0].cv_id",
+          "value": "real_cv2"
+        }
+      },
+      "training": {
+        "language_en_count": {
+          "source_file": "data/training/build_report_20260516_085953.md",
+          "source_section": "Language distribution (positives)",
+          "value": 3458
+        },
+        "n_cvs_contributing_positives": {
+          "source_file": "data/training/build_report_20260516_085953.md",
+          "source_section": "Counts",
+          "value": 119
+        },
+        "n_hard_negatives": {
+          "source_file": "data/training/build_report_20260516_085953.md",
+          "source_section": "Counts",
+          "value": 10374
+        },
+        "n_input_pdfs": {
+          "source_file": "data/training/build_report_20260516_085953.md",
+          "source_section": "Counts",
+          "value": 120
+        },
+        "n_positives": {
+          "source_file": "data/training/build_report_20260516_085953.md",
+          "source_section": "Counts",
+          "value": 3458
+        },
+        "n_surviving_cvs": {
+          "source_file": "data/training/build_report_20260516_085953.md",
+          "source_section": "Counts",
+          "value": 120
+        },
+        "n_train_cvs": {
+          "source_file": "data/training/build_report_20260516_085953.md",
+          "source_section": "Counts",
+          "value": 95
+        },
+        "n_train_pairs": {
+          "source_file": "data/training/build_report_20260516_085953.md",
+          "source_section": "Counts",
+          "value": 11352
+        },
+        "n_val_cvs": {
+          "source_file": "data/training/build_report_20260516_085953.md",
+          "source_section": "Counts",
+          "value": 24
+        },
+        "n_val_pairs": {
+          "source_file": "data/training/build_report_20260516_085953.md",
+          "source_section": "Counts",
+          "value": 2480
+        },
+        "neg_to_pos_ratio": {
+          "source_file": "data/training/build_report_20260516_085953.md",
+          "source_section": "Counts",
+          "value": 3.0
+        }
+      }
+    },
+    "section_04": {
+      "coverage_pct": {
+        "source_file": "reports/extraction_validation_20260502.md",
+        "source_section": "(grep coverage %)",
+        "value": 92.14
+      },
+      "real_cv_pass": {
+        "source_file": "reports/extraction_validation_20260502.md",
+        "source_section": "(grep real CV PASS count)",
+        "value": 5
+      },
+      "real_cv_total": {
+        "source_file": "reports/extraction_validation_20260502.md",
+        "source_section": "(grep real CV PASS count)",
+        "value": 6
+      },
+      "tests_pass": {
+        "source_file": "reports/extraction_validation_20260502.md",
+        "source_section": "(grep tests passing)",
+        "value": 86
+      },
+      "tests_total": {
+        "source_file": "reports/extraction_validation_20260502.md",
+        "source_section": "(grep tests passing)",
+        "value": 86
+      }
+    },
+    "section_05": {
+      "coverage_pct": {
+        "source_file": "reports/skill_extraction_validation_20260511_patch_round.md",
+        "source_section": "(grep coverage %)",
+        "value": 96.18
+      },
+      "lexical_macro_f1_eval15": {
+        "source_file": "reports/skill_matcher_baseline_20260516_final.json",
+        "source_section": "headline.lexical_macro.f1",
+        "value": 0.4603
+      },
+      "macro_f1_labelled_8cv": {
+        "source_file": "reports/skill_extraction_validation_20260511_patch_round.md",
+        "source_section": "(grep Macro new row)",
+        "value": 0.766
+      },
+      "macro_precision_labelled_8cv": {
+        "source_file": "reports/skill_extraction_validation_20260511_patch_round.md",
+        "source_section": "(grep Macro new row)",
+        "value": 0.968
+      },
+      "macro_recall_labelled_8cv": {
+        "source_file": "reports/skill_extraction_validation_20260511_patch_round.md",
+        "source_section": "(grep Macro new row)",
+        "value": 0.648
+      },
+      "tests_total": {
+        "source_file": "reports/skill_extraction_validation_20260511_patch_round.md",
+        "source_section": "(grep test count)",
+        "value": 551
+      }
+    },
+    "section_06": {
+      "concept_text_format": {
+        "source_file": "reports/skill_matcher_baseline_20260516_final.json",
+        "source_section": "config.concept_text_format",
+        "value": "bounded-a"
+      },
+      "device": {
+        "source_file": "reports/skill_matcher_baseline_20260516_final.json",
+        "source_section": "environment.device",
+        "value": "cpu"
+      },
+      "embedding_dim": {
+        "source_file": "reports/skill_matcher_baseline_20260516_final.json",
+        "source_section": "environment.embedding_dim",
+        "value": 384
+      },
+      "encoder_model": {
+        "source_file": "reports/skill_matcher_baseline_20260516_final.json",
+        "source_section": "environment.model_name",
+        "value": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+      },
+      "ensemble_macro_f1": {
+        "source_file": "reports/skill_matcher_baseline_20260516_final.json",
+        "source_section": "headline.ensemble_macro.f1",
+        "value": 0.346
+      },
+      "ensemble_macro_precision": {
+        "source_file": "reports/skill_matcher_baseline_20260516_final.json",
+        "source_section": "headline.ensemble_macro.precision",
+        "value": 0.3029
+      },
+      "ensemble_macro_recall": {
+        "source_file": "reports/skill_matcher_baseline_20260516_final.json",
+        "source_section": "headline.ensemble_macro.recall",
+        "value": 0.4366
+      },
+      "lexical_macro_f1": {
+        "source_file": "reports/skill_matcher_baseline_20260516_final.json",
+        "source_section": "headline.lexical_macro.f1",
+        "value": 0.4603
+      },
+      "lexical_macro_precision": {
+        "source_file": "reports/skill_matcher_baseline_20260516_final.json",
+        "source_section": "headline.lexical_macro.precision",
+        "value": 0.6446
+      },
+      "lexical_macro_recall": {
+        "source_file": "reports/skill_matcher_baseline_20260516_final.json",
+        "source_section": "headline.lexical_macro.recall",
+        "value": 0.3706
+      },
+      "semantic_macro_f1": {
+        "source_file": "reports/skill_matcher_baseline_20260516_final.json",
+        "source_section": "headline.semantic_macro.f1",
+        "value": 0.1506
+      },
+      "semantic_macro_precision": {
+        "source_file": "reports/skill_matcher_baseline_20260516_final.json",
+        "source_section": "headline.semantic_macro.precision",
+        "value": 0.1565
+      },
+      "semantic_macro_recall": {
+        "source_file": "reports/skill_matcher_baseline_20260516_final.json",
+        "source_section": "headline.semantic_macro.recall",
+        "value": 0.1559
+      },
+      "semantic_threshold_step4": {
+        "source_file": "reports/skill_matcher_baseline_20260516_final.json",
+        "source_section": "config.semantic_threshold",
+        "value": 0.55
+      },
+      "window_size_tokens": {
+        "source_file": "reports/skill_matcher_baseline_20260516_final.json",
+        "source_section": "config.window_size_tokens",
+        "value": 30
+      },
+      "window_stride_tokens": {
+        "source_file": "reports/skill_matcher_baseline_20260516_final.json",
+        "source_section": "config.window_stride_tokens",
+        "value": 15
+      }
+    },
+    "section_07": {
+      "diagnostic": {
+        "alignment_verdict": {
+          "source_file": "reports/skill_matcher_step5_diagnostic_20260516.json",
+          "source_section": "alignment.verdict",
+          "value": "aligned"
+        },
+        "coverage_ratio": {
+          "source_file": "reports/skill_matcher_step5_diagnostic_20260516.json",
+          "source_section": "coverage.coverage_ratio",
+          "value": 0.2429
+        },
+        "overlap_uris": {
+          "source_file": "reports/skill_matcher_step5_diagnostic_20260516.json",
+          "source_section": "coverage.overlap_uris",
+          "value": 34
+        }
+      },
+      "round1_anchor": {
+        "fine_tuned_ensemble_f1": {
+          "source_file": "reports/skill_matcher_finetuned_20260516.json",
+          "source_section": "fine_tuned.ensemble_macro_f1",
+          "value": 0.3386
+        },
+        "fine_tuned_f1": {
+          "source_file": "reports/skill_matcher_finetuned_20260516.json",
+          "source_section": "fine_tuned.macro_f1_high_plus_medium",
+          "value": 0.1435
+        },
+        "fine_tuned_lexical_f1": {
+          "source_file": "reports/skill_matcher_finetuned_20260516.json",
+          "source_section": "fine_tuned.lexical_macro_f1",
+          "value": 0.4603
+        },
+        "fine_tuned_precision": {
+          "source_file": "reports/skill_matcher_finetuned_20260516.json",
+          "source_section": "fine_tuned.macro_p_high_plus_medium",
+          "value": 0.1466
+        },
+        "fine_tuned_recall": {
+          "source_file": "reports/skill_matcher_finetuned_20260516.json",
+          "source_section": "fine_tuned.macro_r_high_plus_medium",
+          "value": 0.1557
+        },
+        "run_name": {
+          "source_file": "reports/skill_matcher_finetuned_20260516.json",
+          "source_section": "run_name",
+          "value": "mnrl_v1_20260516_1610"
+        },
+        "zero_shot_ensemble_f1": {
+          "source_file": "reports/skill_matcher_finetuned_20260516.json",
+          "source_section": "zero_shot.ensemble_macro_f1",
+          "value": 0.346
+        },
+        "zero_shot_f1": {
+          "source_file": "reports/skill_matcher_finetuned_20260516.json",
+          "source_section": "zero_shot.macro_f1_high_plus_medium",
+          "value": 0.1506
+        },
+        "zero_shot_lexical_f1": {
+          "source_file": "reports/skill_matcher_finetuned_20260516.json",
+          "source_section": "zero_shot.lexical_macro_f1",
+          "value": 0.4603
+        },
+        "zero_shot_precision": {
+          "source_file": "reports/skill_matcher_finetuned_20260516.json",
+          "source_section": "zero_shot.macro_p_high_plus_medium",
+          "value": 0.1565
+        },
+        "zero_shot_recall": {
+          "source_file": "reports/skill_matcher_finetuned_20260516.json",
+          "source_section": "zero_shot.macro_r_high_plus_medium",
+          "value": 0.1559
+        }
+      },
+      "round1_t050": {
+        "fine_tuned_ensemble_f1": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_t050.json",
+          "source_section": "fine_tuned.ensemble_macro_f1",
+          "value": 0.2793
+        },
+        "fine_tuned_f1": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_t050.json",
+          "source_section": "fine_tuned.macro_f1_high_plus_medium",
+          "value": 0.1527
+        },
+        "fine_tuned_lexical_f1": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_t050.json",
+          "source_section": "fine_tuned.lexical_macro_f1",
+          "value": 0.4603
+        },
+        "fine_tuned_precision": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_t050.json",
+          "source_section": "fine_tuned.macro_p_high_plus_medium",
+          "value": 0.1259
+        },
+        "fine_tuned_recall": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_t050.json",
+          "source_section": "fine_tuned.macro_r_high_plus_medium",
+          "value": 0.2125
+        },
+        "run_name": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_t050.json",
+          "source_section": "run_name",
+          "value": "mnrl_v1_20260516_1610"
+        },
+        "zero_shot_ensemble_f1": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_t050.json",
+          "source_section": "zero_shot.ensemble_macro_f1",
+          "value": 0.2646
+        },
+        "zero_shot_f1": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_t050.json",
+          "source_section": "zero_shot.macro_f1_high_plus_medium",
+          "value": 0.1458
+        },
+        "zero_shot_lexical_f1": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_t050.json",
+          "source_section": "zero_shot.lexical_macro_f1",
+          "value": 0.4603
+        },
+        "zero_shot_precision": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_t050.json",
+          "source_section": "zero_shot.macro_p_high_plus_medium",
+          "value": 0.1104
+        },
+        "zero_shot_recall": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_t050.json",
+          "source_section": "zero_shot.macro_r_high_plus_medium",
+          "value": 0.2205
+        }
+      },
+      "round2_sliding": {
+        "fine_tuned_ensemble_f1": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_sw_v1_t055.json",
+          "source_section": "fine_tuned.ensemble_macro_f1",
+          "value": 0.3992
+        },
+        "fine_tuned_f1": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_sw_v1_t055.json",
+          "source_section": "fine_tuned.macro_f1_high_plus_medium",
+          "value": 0.1211
+        },
+        "fine_tuned_lexical_f1": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_sw_v1_t055.json",
+          "source_section": "fine_tuned.lexical_macro_f1",
+          "value": 0.4603
+        },
+        "fine_tuned_precision": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_sw_v1_t055.json",
+          "source_section": "fine_tuned.macro_p_high_plus_medium",
+          "value": 0.1609
+        },
+        "fine_tuned_recall": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_sw_v1_t055.json",
+          "source_section": "fine_tuned.macro_r_high_plus_medium",
+          "value": 0.0997
+        },
+        "run_name": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_sw_v1_t055.json",
+          "source_section": "run_name",
+          "value": "mnrl_sw_v1_20260516_1953"
+        },
+        "zero_shot_ensemble_f1": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_sw_v1_t055.json",
+          "source_section": "zero_shot.ensemble_macro_f1",
+          "value": 0.346
+        },
+        "zero_shot_f1": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_sw_v1_t055.json",
+          "source_section": "zero_shot.macro_f1_high_plus_medium",
+          "value": 0.1506
+        },
+        "zero_shot_lexical_f1": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_sw_v1_t055.json",
+          "source_section": "zero_shot.lexical_macro_f1",
+          "value": 0.4603
+        },
+        "zero_shot_precision": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_sw_v1_t055.json",
+          "source_section": "zero_shot.macro_p_high_plus_medium",
+          "value": 0.1565
+        },
+        "zero_shot_recall": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_sw_v1_t055.json",
+          "source_section": "zero_shot.macro_r_high_plus_medium",
+          "value": 0.1559
+        }
+      },
+      "round2_t050": {
+        "fine_tuned_ensemble_f1": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_sw_v1_t050.json",
+          "source_section": "fine_tuned.ensemble_macro_f1",
+          "value": 0.317
+        },
+        "fine_tuned_f1": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_sw_v1_t050.json",
+          "source_section": "fine_tuned.macro_f1_high_plus_medium",
+          "value": 0.1449
+        },
+        "fine_tuned_lexical_f1": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_sw_v1_t050.json",
+          "source_section": "fine_tuned.lexical_macro_f1",
+          "value": 0.4603
+        },
+        "fine_tuned_precision": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_sw_v1_t050.json",
+          "source_section": "fine_tuned.macro_p_high_plus_medium",
+          "value": 0.1397
+        },
+        "fine_tuned_recall": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_sw_v1_t050.json",
+          "source_section": "fine_tuned.macro_r_high_plus_medium",
+          "value": 0.1586
+        },
+        "run_name": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_sw_v1_t050.json",
+          "source_section": "run_name",
+          "value": "mnrl_sw_v1_20260516_1953"
+        },
+        "zero_shot_ensemble_f1": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_sw_v1_t050.json",
+          "source_section": "zero_shot.ensemble_macro_f1",
+          "value": 0.2646
+        },
+        "zero_shot_f1": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_sw_v1_t050.json",
+          "source_section": "zero_shot.macro_f1_high_plus_medium",
+          "value": 0.1458
+        },
+        "zero_shot_lexical_f1": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_sw_v1_t050.json",
+          "source_section": "zero_shot.lexical_macro_f1",
+          "value": 0.4603
+        },
+        "zero_shot_precision": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_sw_v1_t050.json",
+          "source_section": "zero_shot.macro_p_high_plus_medium",
+          "value": 0.1104
+        },
+        "zero_shot_recall": {
+          "source_file": "reports/skill_matcher_finetuned_20260516_sw_v1_t050.json",
+          "source_section": "zero_shot.macro_r_high_plus_medium",
+          "value": 0.2205
+        }
+      }
+    },
+    "section_08": {
+      "expansion_macro_f1": {
+        "source_file": "reports/linker_evaluation_20260517.json",
+        "source_section": "aggregates.expansion.macro.f1",
+        "value": 0.0
+      },
+      "expansion_macro_precision": {
+        "source_file": "reports/linker_evaluation_20260517.json",
+        "source_section": "aggregates.expansion.macro.precision",
+        "value": 0.9286
+      },
+      "expansion_macro_recall": {
+        "source_file": "reports/linker_evaluation_20260517.json",
+        "source_section": "aggregates.expansion.macro.recall",
+        "value": 0.0
+      },
+      "kept_macro_f1": {
+        "source_file": "reports/linker_evaluation_20260517.json",
+        "source_section": "aggregates.kept.macro.f1",
+        "value": 0.2968
+      },
+      "kept_macro_precision": {
+        "source_file": "reports/linker_evaluation_20260517.json",
+        "source_section": "aggregates.kept.macro.precision",
+        "value": 0.7037
+      },
+      "kept_macro_recall": {
+        "source_file": "reports/linker_evaluation_20260517.json",
+        "source_section": "aggregates.kept.macro.recall",
+        "value": 0.2024
+      },
+      "kept_plus_expansion_macro_f1": {
+        "source_file": "reports/linker_evaluation_20260517.json",
+        "source_section": "aggregates.kept_plus_expansion.macro.f1",
+        "value": 0.2964
+      },
+      "kept_plus_expansion_macro_precision": {
+        "source_file": "reports/linker_evaluation_20260517.json",
+        "source_section": "aggregates.kept_plus_expansion.macro.precision",
+        "value": 0.7005
+      },
+      "kept_plus_expansion_macro_recall": {
+        "source_file": "reports/linker_evaluation_20260517.json",
+        "source_section": "aggregates.kept_plus_expansion.macro.recall",
+        "value": 0.2024
+      },
+      "lexical_dropped_fraction": {
+        "source_file": "reports/linker_evaluation_20260517.json",
+        "source_section": "derived: dropped / (kept+ambig+dropped)",
+        "value": 0.3264
+      },
+      "lexical_macro_f1": {
+        "source_file": "reports/linker_evaluation_20260517.json",
+        "source_section": "aggregates.lexical.macro.f1",
+        "value": 0.4603
+      },
+      "lexical_macro_precision": {
+        "source_file": "reports/linker_evaluation_20260517.json",
+        "source_section": "aggregates.lexical.macro.precision",
+        "value": 0.6446
+      },
+      "lexical_macro_recall": {
+        "source_file": "reports/linker_evaluation_20260517.json",
+        "source_section": "aggregates.lexical.macro.recall",
+        "value": 0.3706
+      },
+      "n_expansion_total": {
+        "source_file": "reports/linker_evaluation_20260517.json",
+        "source_section": "per_cv[*].stats.n_expansion (sum)",
+        "value": 1
+      },
+      "n_lexical_ambiguous_total": {
+        "source_file": "reports/linker_evaluation_20260517.json",
+        "source_section": "per_cv[*].stats.n_lexical_ambiguous (sum)",
+        "value": 62
+      },
+      "n_lexical_dropped_total": {
+        "source_file": "reports/linker_evaluation_20260517.json",
+        "source_section": "per_cv[*].stats.n_lexical_dropped (sum)",
+        "value": 79
+      },
+      "n_lexical_kept_total": {
+        "source_file": "reports/linker_evaluation_20260517.json",
+        "source_section": "per_cv[*].stats.n_lexical_kept (sum)",
+        "value": 101
+      }
+    },
+    "section_09": {
+      "accuracy": {
+        "source_file": "reports/matcher_evaluation_20260517.json",
+        "source_section": "headline.accuracy",
+        "value": 0.5107
+      },
+      "confusion": {
+        "source_file": "reports/matcher_evaluation_20260517.json",
+        "source_section": "headline.confusion",
+        "value": [
+          [
+            0,
+            0,
+            35
+          ],
+          [
+            0,
+            0,
+            102
+          ],
+          [
+            0,
+            0,
+            143
+          ]
+        ]
+      },
+      "macro_f1": {
+        "source_file": "reports/matcher_evaluation_20260517.json",
+        "source_section": "headline.macro_f1",
+        "value": 0.2254
+      },
+      "no_f1": {
+        "source_file": "reports/matcher_evaluation_20260517.json",
+        "source_section": "headline.per_class_f1.no",
+        "value": 0.6761
+      },
+      "no_precision": {
+        "source_file": "reports/matcher_evaluation_20260517.json",
+        "source_section": "headline.per_class_precision.no",
+        "value": 0.5107
+      },
+      "no_recall": {
+        "source_file": "reports/matcher_evaluation_20260517.json",
+        "source_section": "headline.per_class_recall.no",
+        "value": 1.0
+      },
+      "possible_f1": {
+        "source_file": "reports/matcher_evaluation_20260517.json",
+        "source_section": "headline.per_class_f1.possible",
+        "value": 0.0
+      },
+      "possible_precision": {
+        "source_file": "reports/matcher_evaluation_20260517.json",
+        "source_section": "headline.per_class_precision.possible",
+        "value": 0.0
+      },
+      "possible_recall": {
+        "source_file": "reports/matcher_evaluation_20260517.json",
+        "source_section": "headline.per_class_recall.possible",
+        "value": 0.0
+      },
+      "strong_f1": {
+        "source_file": "reports/matcher_evaluation_20260517.json",
+        "source_section": "headline.per_class_f1.strong",
+        "value": 0.0
+      },
+      "strong_precision": {
+        "source_file": "reports/matcher_evaluation_20260517.json",
+        "source_section": "headline.per_class_precision.strong",
+        "value": 0.0
+      },
+      "strong_recall": {
+        "source_file": "reports/matcher_evaluation_20260517.json",
+        "source_section": "headline.per_class_recall.strong",
+        "value": 0.0
+      },
+      "t1_provisional": {
+        "source_file": "reports/matcher_evaluation_20260517.json",
+        "source_section": "projection.t1",
+        "value": 0.55
+      },
+      "t2_provisional": {
+        "source_file": "reports/matcher_evaluation_20260517.json",
+        "source_section": "projection.t2",
+        "value": 0.25
+      },
+      "weighted_accuracy": {
+        "source_file": "reports/matcher_evaluation_20260517.json",
+        "source_section": "headline.weighted_accuracy",
+        "value": 0.3333
+      }
+    },
+    "section_10": {
+      "confusion": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.confusion",
+        "value": {
+          "no__no": 116,
+          "no__possible": 23,
+          "no__strong": 4,
+          "possible__no": 52,
+          "possible__possible": 45,
+          "possible__strong": 5,
+          "strong__no": 11,
+          "strong__possible": 16,
+          "strong__strong": 8
+        }
+      },
+      "f1_no": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.f1_no",
+        "value": 0.7205
+      },
+      "f1_possible": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.f1_possible",
+        "value": 0.4839
+      },
+      "f1_strong": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.f1_strong",
+        "value": 0.3077
+      },
+      "locked_drop_threshold": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.combo.drop_threshold",
+        "value": 0.4
+      },
+      "locked_expansion_threshold": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.combo.expansion_threshold",
+        "value": 0.75
+      },
+      "locked_keep_threshold": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.combo.keep_threshold",
+        "value": 0.5
+      },
+      "locked_per_requirement_keep_threshold": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.combo.per_requirement_keep_threshold",
+        "value": 0.085
+      },
+      "locked_required_weight": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.combo.required_weight",
+        "value": 0.5
+      },
+      "locked_t1": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.combo.t1",
+        "value": 0.06
+      },
+      "locked_t2": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.combo.t2",
+        "value": 0.005
+      },
+      "macro_f1": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.macro_f1",
+        "value": 0.504
+      },
+      "n_combos_evaluated": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "config_used.n_metrics_computed",
+        "value": 928800
+      },
+      "n_gold_cells": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "config_used.n_gold_cells",
+        "value": 300
+      },
+      "n_predicted_no": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.n_predicted.no",
+        "value": 179
+      },
+      "n_predicted_possible": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.n_predicted.possible",
+        "value": 84
+      },
+      "n_predicted_strong": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.n_predicted.strong",
+        "value": 17
+      },
+      "n_strict_passing": {
+        "source_file": "reports/threshold_tuning_20260517_full.md",
+        "source_section": "8. Guard outcomes",
+        "value": 11739
+      },
+      "n_strict_total": {
+        "source_file": "reports/threshold_tuning_20260517_full.md",
+        "source_section": "8. Guard outcomes",
+        "value": 928800
+      },
+      "plain_accuracy": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.plain_accuracy",
+        "value": 0.6036
+      },
+      "precision_no": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.precision_no",
+        "value": 0.648
+      },
+      "precision_possible": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.precision_possible",
+        "value": 0.5357
+      },
+      "precision_strong": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.precision_strong",
+        "value": 0.4706
+      },
+      "recall_no": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.recall_no",
+        "value": 0.8112
+      },
+      "recall_possible": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.recall_possible",
+        "value": 0.4412
+      },
+      "recall_strong": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.recall_strong",
+        "value": 0.2286
+      },
+      "tier10_elapsed_seconds": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "elapsed_seconds (Tier 1+0 sweep)",
+        "value": 2928.9
+      },
+      "tier2_elapsed_seconds": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "tier2_timings (sum)",
+        "value": 2918.7
+      },
+      "total_wall_clock_seconds": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "derived: elapsed_seconds + sum(tier2_timings)",
+        "value": 5847.6
+      },
+      "weighted_accuracy": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.weighted_accuracy",
+        "value": 0.4936
+      },
+      "weighted_f1": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.weighted_f1",
+        "value": 0.5827
+      }
+    },
+    "section_11": {
+      "confusion": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.confusion",
+        "value": {
+          "no__no": 116,
+          "no__possible": 23,
+          "no__strong": 4,
+          "possible__no": 52,
+          "possible__possible": 45,
+          "possible__strong": 5,
+          "strong__no": 11,
+          "strong__possible": 16,
+          "strong__strong": 8
+        }
+      },
+      "f1_no": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.f1_no",
+        "value": 0.7205
+      },
+      "f1_possible": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.f1_possible",
+        "value": 0.4839
+      },
+      "f1_strong": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.f1_strong",
+        "value": 0.3077
+      },
+      "locked_drop_threshold": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.combo.drop_threshold",
+        "value": 0.4
+      },
+      "locked_expansion_threshold": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.combo.expansion_threshold",
+        "value": 0.75
+      },
+      "locked_keep_threshold": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.combo.keep_threshold",
+        "value": 0.5
+      },
+      "locked_per_requirement_keep_threshold": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.combo.per_requirement_keep_threshold",
+        "value": 0.085
+      },
+      "locked_required_weight": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.combo.required_weight",
+        "value": 0.5
+      },
+      "locked_t1": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.combo.t1",
+        "value": 0.06
+      },
+      "locked_t2": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.combo.t2",
+        "value": 0.005
+      },
+      "macro_f1": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.macro_f1",
+        "value": 0.504
+      },
+      "n_combos_evaluated": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "config_used.n_metrics_computed",
+        "value": 928800
+      },
+      "n_gold_cells": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "config_used.n_gold_cells",
+        "value": 300
+      },
+      "n_predicted_no": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.n_predicted.no",
+        "value": 179
+      },
+      "n_predicted_possible": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.n_predicted.possible",
+        "value": 84
+      },
+      "n_predicted_strong": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.n_predicted.strong",
+        "value": 17
+      },
+      "n_strict_passing": {
+        "source_file": "reports/threshold_tuning_20260517_full.md",
+        "source_section": "8. Guard outcomes",
+        "value": 11739
+      },
+      "n_strict_total": {
+        "source_file": "reports/threshold_tuning_20260517_full.md",
+        "source_section": "8. Guard outcomes",
+        "value": 928800
+      },
+      "plain_accuracy": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.plain_accuracy",
+        "value": 0.6036
+      },
+      "precision_no": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.precision_no",
+        "value": 0.648
+      },
+      "precision_possible": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.precision_possible",
+        "value": 0.5357
+      },
+      "precision_strong": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.precision_strong",
+        "value": 0.4706
+      },
+      "recall_no": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.recall_no",
+        "value": 0.8112
+      },
+      "recall_possible": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.recall_possible",
+        "value": 0.4412
+      },
+      "recall_strong": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.recall_strong",
+        "value": 0.2286
+      },
+      "tier10_elapsed_seconds": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "elapsed_seconds (Tier 1+0 sweep)",
+        "value": 2928.9
+      },
+      "tier2_elapsed_seconds": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "tier2_timings (sum)",
+        "value": 2918.7
+      },
+      "total_wall_clock_seconds": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "derived: elapsed_seconds + sum(tier2_timings)",
+        "value": 5847.6
+      },
+      "weighted_accuracy": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.weighted_accuracy",
+        "value": 0.4936
+      },
+      "weighted_f1": {
+        "source_file": "reports/threshold_tuning_20260517_full.json",
+        "source_section": "best.weighted_f1",
+        "value": 0.5827
+      }
+    },
+    "section_12": {
+      "top_disagreements": [
+        {
+          "cv_id": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd1].cv_id",
+            "value": "real_cv11"
+          },
+          "gold": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd1].gold",
+            "value": "strong"
+          },
+          "jd_id": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd1].jd_id",
+            "value": "jd1"
+          },
+          "n_matched_required": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd1].n_matched_required",
+            "value": 0
+          },
+          "n_unmatched_required": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd1].n_unmatched_required",
+            "value": 8
+          },
+          "overall_score": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd1].overall_score",
+            "value": 0.0
+          },
+          "predicted_locked": {
+            "source_file": "self",
+            "source_section": "derived projection at locked T1/T2",
+            "value": "no"
+          }
+        },
+        {
+          "cv_id": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd2].cv_id",
+            "value": "real_cv11"
+          },
+          "gold": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd2].gold",
+            "value": "strong"
+          },
+          "jd_id": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd2].jd_id",
+            "value": "jd2"
+          },
+          "n_matched_required": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd2].n_matched_required",
+            "value": 0
+          },
+          "n_unmatched_required": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd2].n_unmatched_required",
+            "value": 7
+          },
+          "overall_score": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd2].overall_score",
+            "value": 0.0
+          },
+          "predicted_locked": {
+            "source_file": "self",
+            "source_section": "derived projection at locked T1/T2",
+            "value": "no"
+          }
+        },
+        {
+          "cv_id": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd4].cv_id",
+            "value": "real_cv11"
+          },
+          "gold": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd4].gold",
+            "value": "strong"
+          },
+          "jd_id": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd4].jd_id",
+            "value": "jd4"
+          },
+          "n_matched_required": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd4].n_matched_required",
+            "value": 0
+          },
+          "n_unmatched_required": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd4].n_unmatched_required",
+            "value": 5
+          },
+          "overall_score": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd4].overall_score",
+            "value": 0.0
+          },
+          "predicted_locked": {
+            "source_file": "self",
+            "source_section": "derived projection at locked T1/T2",
+            "value": "no"
+          }
+        },
+        {
+          "cv_id": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd6].cv_id",
+            "value": "real_cv11"
+          },
+          "gold": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd6].gold",
+            "value": "strong"
+          },
+          "jd_id": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd6].jd_id",
+            "value": "jd6"
+          },
+          "n_matched_required": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd6].n_matched_required",
+            "value": 0
+          },
+          "n_unmatched_required": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd6].n_unmatched_required",
+            "value": 5
+          },
+          "overall_score": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd6].overall_score",
+            "value": 0.0
+          },
+          "predicted_locked": {
+            "source_file": "self",
+            "source_section": "derived projection at locked T1/T2",
+            "value": "no"
+          }
+        },
+        {
+          "cv_id": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv12,jd15].cv_id",
+            "value": "real_cv12"
+          },
+          "gold": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv12,jd15].gold",
+            "value": "strong"
+          },
+          "jd_id": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv12,jd15].jd_id",
+            "value": "jd15"
+          },
+          "n_matched_required": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv12,jd15].n_matched_required",
+            "value": 0
+          },
+          "n_unmatched_required": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv12,jd15].n_unmatched_required",
+            "value": 6
+          },
+          "overall_score": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv12,jd15].overall_score",
+            "value": 0.0
+          },
+          "predicted_locked": {
+            "source_file": "self",
+            "source_section": "derived projection at locked T1/T2",
+            "value": "no"
+          }
+        },
+        {
+          "cv_id": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv12,jd16].cv_id",
+            "value": "real_cv12"
+          },
+          "gold": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv12,jd16].gold",
+            "value": "strong"
+          },
+          "jd_id": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv12,jd16].jd_id",
+            "value": "jd16"
+          },
+          "n_matched_required": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv12,jd16].n_matched_required",
+            "value": 0
+          },
+          "n_unmatched_required": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv12,jd16].n_unmatched_required",
+            "value": 6
+          },
+          "overall_score": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv12,jd16].overall_score",
+            "value": 0.0
+          },
+          "predicted_locked": {
+            "source_file": "self",
+            "source_section": "derived projection at locked T1/T2",
+            "value": "no"
+          }
+        },
+        {
+          "cv_id": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv13,jd3].cv_id",
+            "value": "real_cv13"
+          },
+          "gold": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv13,jd3].gold",
+            "value": "strong"
+          },
+          "jd_id": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv13,jd3].jd_id",
+            "value": "jd3"
+          },
+          "n_matched_required": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv13,jd3].n_matched_required",
+            "value": 0
+          },
+          "n_unmatched_required": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv13,jd3].n_unmatched_required",
+            "value": 7
+          },
+          "overall_score": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv13,jd3].overall_score",
+            "value": 0.0
+          },
+          "predicted_locked": {
+            "source_file": "self",
+            "source_section": "derived projection at locked T1/T2",
+            "value": "no"
+          }
+        },
+        {
+          "cv_id": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv13,jd9].cv_id",
+            "value": "real_cv13"
+          },
+          "gold": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv13,jd9].gold",
+            "value": "strong"
+          },
+          "jd_id": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv13,jd9].jd_id",
+            "value": "jd9"
+          },
+          "n_matched_required": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv13,jd9].n_matched_required",
+            "value": 0
+          },
+          "n_unmatched_required": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv13,jd9].n_unmatched_required",
+            "value": 11
+          },
+          "overall_score": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv13,jd9].overall_score",
+            "value": 0.0
+          },
+          "predicted_locked": {
+            "source_file": "self",
+            "source_section": "derived projection at locked T1/T2",
+            "value": "no"
+          }
+        },
+        {
+          "cv_id": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv14,jd19].cv_id",
+            "value": "real_cv14"
+          },
+          "gold": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv14,jd19].gold",
+            "value": "strong"
+          },
+          "jd_id": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv14,jd19].jd_id",
+            "value": "jd19"
+          },
+          "n_matched_required": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv14,jd19].n_matched_required",
+            "value": 0
+          },
+          "n_unmatched_required": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv14,jd19].n_unmatched_required",
+            "value": 4
+          },
+          "overall_score": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv14,jd19].overall_score",
+            "value": 0.0
+          },
+          "predicted_locked": {
+            "source_file": "self",
+            "source_section": "derived projection at locked T1/T2",
+            "value": "no"
+          }
+        },
+        {
+          "cv_id": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv4,jd10].cv_id",
+            "value": "real_cv4"
+          },
+          "gold": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv4,jd10].gold",
+            "value": "strong"
+          },
+          "jd_id": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv4,jd10].jd_id",
+            "value": "jd10"
+          },
+          "n_matched_required": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv4,jd10].n_matched_required",
+            "value": 0
+          },
+          "n_unmatched_required": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv4,jd10].n_unmatched_required",
+            "value": 6
+          },
+          "overall_score": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv4,jd10].overall_score",
+            "value": 0.0
+          },
+          "predicted_locked": {
+            "source_file": "self",
+            "source_section": "derived projection at locked T1/T2",
+            "value": "no"
+          }
+        }
+      ],
+      "walkthrough_examples": [
+        {
+          "cv_id": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv1,jd20].cv_id",
+            "value": "real_cv1"
+          },
+          "gold": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv1,jd20].gold",
+            "value": "strong"
+          },
+          "jd_id": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv1,jd20].jd_id",
+            "value": "jd20"
+          },
+          "kind": {
+            "source_file": "self",
+            "source_section": "curated walk-through label",
+            "value": "right"
+          },
+          "n_matched_required": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv1,jd20].n_matched_required",
+            "value": 1
+          },
+          "n_unmatched_required": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv1,jd20].n_unmatched_required",
+            "value": 2
+          },
+          "overall_score": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv1,jd20].overall_score",
+            "value": 0.0848
+          },
+          "predicted_locked": {
+            "source_file": "self",
+            "source_section": "derived projection at locked T1/T2",
+            "value": "strong"
+          }
+        },
+        {
+          "cv_id": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv1,jd1].cv_id",
+            "value": "real_cv1"
+          },
+          "gold": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv1,jd1].gold",
+            "value": "possible"
+          },
+          "jd_id": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv1,jd1].jd_id",
+            "value": "jd1"
+          },
+          "kind": {
+            "source_file": "self",
+            "source_section": "curated walk-through label",
+            "value": "near"
+          },
+          "n_matched_required": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv1,jd1].n_matched_required",
+            "value": 0
+          },
+          "n_unmatched_required": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv1,jd1].n_unmatched_required",
+            "value": 8
+          },
+          "overall_score": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv1,jd1].overall_score",
+            "value": 0.0
+          },
+          "predicted_locked": {
+            "source_file": "self",
+            "source_section": "derived projection at locked T1/T2",
+            "value": "no"
+          }
+        },
+        {
+          "cv_id": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv1,jd10].cv_id",
+            "value": "real_cv1"
+          },
+          "gold": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv1,jd10].gold",
+            "value": "possible"
+          },
+          "jd_id": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv1,jd10].jd_id",
+            "value": "jd10"
+          },
+          "kind": {
+            "source_file": "self",
+            "source_section": "curated walk-through label",
+            "value": "near"
+          },
+          "n_matched_required": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv1,jd10].n_matched_required",
+            "value": 0
+          },
+          "n_unmatched_required": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv1,jd10].n_unmatched_required",
+            "value": 6
+          },
+          "overall_score": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv1,jd10].overall_score",
+            "value": 0.0
+          },
+          "predicted_locked": {
+            "source_file": "self",
+            "source_section": "derived projection at locked T1/T2",
+            "value": "no"
+          }
+        },
+        {
+          "cv_id": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd1].cv_id",
+            "value": "real_cv11"
+          },
+          "gold": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd1].gold",
+            "value": "strong"
+          },
+          "jd_id": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd1].jd_id",
+            "value": "jd1"
+          },
+          "kind": {
+            "source_file": "self",
+            "source_section": "curated walk-through label",
+            "value": "wrong"
+          },
+          "n_matched_required": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd1].n_matched_required",
+            "value": 0
+          },
+          "n_unmatched_required": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd1].n_unmatched_required",
+            "value": 8
+          },
+          "overall_score": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd1].overall_score",
+            "value": 0.0
+          },
+          "predicted_locked": {
+            "source_file": "self",
+            "source_section": "derived projection at locked T1/T2",
+            "value": "no"
+          }
+        },
+        {
+          "cv_id": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd2].cv_id",
+            "value": "real_cv11"
+          },
+          "gold": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd2].gold",
+            "value": "strong"
+          },
+          "jd_id": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd2].jd_id",
+            "value": "jd2"
+          },
+          "kind": {
+            "source_file": "self",
+            "source_section": "curated walk-through label",
+            "value": "wrong"
+          },
+          "n_matched_required": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd2].n_matched_required",
+            "value": 0
+          },
+          "n_unmatched_required": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd2].n_unmatched_required",
+            "value": 7
+          },
+          "overall_score": {
+            "source_file": "reports/matcher_evaluation_20260517.json",
+            "source_section": "cells[real_cv11,jd2].overall_score",
+            "value": 0.0
+          },
+          "predicted_locked": {
+            "source_file": "self",
+            "source_section": "derived projection at locked T1/T2",
+            "value": "no"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+Junior Java Developer - Luxsoft Romania
+
+Project Description:
+
+
+
+The project is a rapidly growing engagement with a solid leader in the FinTech industry developing software solutions for trading, risk management and data processing. Join our Development Center in Luxoft Romania and become a member of our open minded, progressive and professional team. The software development is based on SAFe/Scrum methodology and uses Continuous Integration/Continuous Deployment processes supported by the adoption of DevOps, best engineering principles and XP practices like TDD and BDD. You will have a chance to grow your technical and soft skills, grow professionally and build a thorough expertise of the industry of our client. On top of attractive salary and benefits package, Luxoft will invest into your professional training including business domain knowledge, and allow you to grow your professional career.
+Our client software platform is used by the world's leading investment banks, asset managers, hedge funds, commodity houses and corporations to price, analyze and manage their derivative exposures for foreign exchange, interest rate, equity, commodity, inflation and credit derivatives.
+
+
+How we work:
+ - The development processes are completely Agile. We are implementing SAFe, the most widely used scaling agile framework
+- You will be deeply involved in controlling the development workflow by defining, planning, building, testing and deploying the new solution functionalities
+- Once every 10 weeks the new business requirements are provided by the clients and development teams clarify, estimate and plan the work needed for the next period
+- Our strong focus is on building high quality software by investing in Continuous Integration, Continuous Deployment, multi-tier testing, code quality, Non Functional Requirements etc.
+- The results of your work will be used by the most important organizations in the Investment Banking industry
+- Every 4 Sprints you will have the chance to work on completely innovative ideas using any cutting edge technologies or frameworks for a whole Sprint
+- We are investing constantly in your professional, business domain and personal development by offering career path guidance and access to a wide variety of trainings.
+- You will be supported by our technical mentors, agile coaches, pair working with your colleagues and will benefit on a friendly atmosphere and a dedicated space for games and relaxation
+
+
+Responsibilities:
+
+
+
+The candidate will work in development team closely with the Paris and Bucharest consultancy teams to develop new functionality, rapidly solve problems and enhance existing aspects of the application.
+
+
+The main purpose is to develop applications in order to integrate with external financial providers and platforms and to model the functional flows involved in the communication between the Client's solution and these external systems.
+
+
+Mandatory Skills Description:
+
+
+
+- Mandatory Computer Science Faculty / Cybernetics / Mathematics / Informatics graduated
+- Java
+- Dependency Injection/ Inversion of Control (Spring)
+- Unit and Mock Testing (JUnit, Mockito)
+- Strong understanding of Design and Architectural Patterns
+- Apache Maven
+- GIT Repository Management
+- Continuous Integration tools (Jenkins or similar)
+- Basic Linux operating system knowledge
+- Spoken English language is a must
+
+
+Nice-to-Have Skills Description:
+
+
+
+- Apache Camel
+- Enterprise Integration Patterns
+- Java Architecture for XML Binding (JAXB)
+- XML Transformations (XSLT, XSD, DTD)
+- Java Message Service (JMS)
+- Drools
+- Agile Methodologies (SCRUM and Kanban)
+- Additional knowledge of financial products is a plus

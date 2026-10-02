@@ -1,0 +1,72 @@
+cv_id: real_cv7
+gold_skills:
+- skill_uri: CUST:linux
+  label: Linux
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/1ce4cddd-4a74-458e-a2d4-152ca939475a
+  label: OWASP ZAP
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d
+  label: Python (computer programming)
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/8fa510d0-a8a6-4932-a361-00f8442cfe23
+  label: Wireshark
+  confidence_expected: high
+- skill_uri: CUST:lang:english
+  label: English
+  confidence_expected: high
+- skill_uri: CUST:lang:french
+  label: French
+  confidence_expected: high
+- skill_uri: CUST:lang:japanese
+  label: Japanese
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/21d2f96d-35f7-4e3f-9745-c533d2dd6e97
+  label: computer programming
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/7bf4539a-3f2e-4485-876b-1c9306b181af
+  label: John The Ripper (penetration testing tool)
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/902fb91c-3113-4004-9b4f-79aa86b638b7
+  label: web application security threats
+  confidence_expected: high
+- skill_uri: http://data.europa.eu/esco/skill/43ae58b9-5e56-4524-b45a-b422777a0576
+  label: database
+  confidence_expected: medium
+- skill_uri: http://data.europa.eu/esco/skill/50597e96-9b6a-4736-ac79-dd80f36c0269
+  label: Metasploit
+  confidence_expected: high
+- skill_uri: CUST:secure-coding
+  label: Secure Coding
+  confidence_expected: high
+- skill_uri: CUST:burp-suite
+  label: Burp Suite
+  confidence_expected: high
+- skill_uri: CUST:nmap
+  label: Nmap
+  confidence_expected: high
+- skill_uri: CUST:penetration-testing
+  label: Penetration Testing
+  confidence_expected: high
+- skill_uri: CUST:vulnerability-assessment
+  label: Vulnerability Assessment
+  confidence_expected: high
+- skill_uri: CUST:threat-modeling
+  label: Threat Modeling
+  confidence_expected: high
+- skill_uri: CUST:react
+  label: React
+  confidence_expected: high
+- skill_uri: CUST:tailwind
+  label: Tailwind CSS
+  confidence_expected: high
+skills_definitely_not_in_cv:
+- dies
+- process qualitative information
+- sales department processes
+- optimise production
+notes: 'Reviewed 2026-05-13 against PDF. Candidate 7, Cybersecurity specialist. Cleaned obvious Module
+  2 FPs: ''dies'' (likely from ''verify… die''), ''process qualitative information'' (soft), ''sales department processes''
+  (retail side-job, not a tech skill), ''optimise production'' (furniture job). Promoted Metasploit + Secure Coding to high.
+  Added the explicit security stack from TECHNICAL SKILLS: Burp Suite, Nmap, Penetration Testing, Vulnerability Assessment,
+  Threat Modeling, React, Tailwind CSS.'

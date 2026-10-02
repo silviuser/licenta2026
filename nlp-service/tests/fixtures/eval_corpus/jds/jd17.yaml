@@ -1,0 +1,42 @@
+id: jd17
+title: C# Developer
+language: en
+location: ''
+category: swe
+seniority: unspecified
+source_anonymized: ''
+raw_text: |-
+  C# Developer
+  Role Overview:
+
+  We are seeking a skilled Developer to join the team. The ideal candidate will have strong programming skills and experience in web technologies, scripting, and database fundamentals.
+
+
+  Key Responsibilities:
+
+  Develop and maintain applications using C# within Visual Studio.
+  Build responsive web interfaces using HTML and JavaScript.
+  Create and optimize PowerShell scripts for automation tasks.
+  Collaborate with team members to ensure high-quality deliverables.
+  Work in an Agile environment, actively participating in sprints and stand-ups.
+  Document technical solutions and maintain code repositories.
+
+
+  Required Skills:
+
+  Proficiency in C# development.
+  Strong knowledge of HTML and JavaScript.
+  Experience with PowerShell scripting.
+  Familiarity with Visual Studio IDE.
+  Basic understanding of database concepts.
+  Exposure to Jira for task management.
+  Excellent teamworking and communication skills.
+required_skills:
+- Proficiency in C# development.
+- Strong knowledge of HTML and JavaScript.
+- Experience with PowerShell scripting.
+- Familiarity with Visual Studio IDE.
+- Basic understanding of database concepts.
+- Exposure to Jira for task management.
+nice_to_have_skills: []
+notes: ''

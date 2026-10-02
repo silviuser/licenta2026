@@ -1,0 +1,5216 @@
+{
+  "alignment": {
+    "n_differs": 0,
+    "n_sampled": 5,
+    "notes": [],
+    "samples": [
+      {
+        "differs": false,
+        "index_side": "build networks. building effective relationships. create networks. establish contacts. liaise with others. maintain contact with others. Demonstrate the ability to build effective relationships, to develop and maintain alliances, contacts or partnerships, and to exchange information with others.",
+        "train_side": "build networks. building effective relationships. create networks. establish contacts. liaise with others. maintain contact with others. Demonstrate the ability to build effective relationships, to develop and maintain alliances, contacts or partnerships, and to exchange information with others.",
+        "uri": "http://data.europa.eu/esco/skill/bf983f2a-e941-4646-811d-cc81060cb53f"
+      },
+      {
+        "differs": false,
+        "index_side": "compose digital game story. write digital game story. Create a digital game story by writing out a detailed plot and storyboard with descriptions and gameplay objectives.",
+        "train_side": "compose digital game story. write digital game story. Create a digital game story by writing out a detailed plot and storyboard with descriptions and gameplay objectives.",
+        "uri": "http://data.europa.eu/esco/skill/208b41bd-3b61-4439-b3ca-d39628dd7fe3"
+      },
+      {
+        "differs": false,
+        "index_side": "advise on consumer rights. commend consumer rights. commend customer rights. help with consumer rights. help with customer rights. instruct on consumer rights. Advise consumers as well as retailers and service providers on the legislation concerning consumer rights, what actions consumers may undertake in order to ensure their rights are adhered to, how businesses may improve compliance to consumer rights legislation, and the correct manner to handle dispu",
+        "train_side": "advise on consumer rights. commend consumer rights. commend customer rights. help with consumer rights. help with customer rights. instruct on consumer rights. Advise consumers as well as retailers and service providers on the legislation concerning consumer rights, what actions consumers may undertake in order to ensure their rights are adhered to, how businesses may improve compliance to consumer rights legislation, and the correct manner to handle dispu",
+        "uri": "http://data.europa.eu/esco/skill/0719ac4d-9d0f-44ae-9067-5c29c2c343ef"
+      },
+      {
+        "differs": false,
+        "index_side": "clean up spilled oil. clean up of oil spill. clean up spilt oil. cleaning up of oil spill. cleaning up of spilled oil. cleaning up spilled oil. Safely clean up and dispose of spilled oil.",
+        "train_side": "clean up spilled oil. clean up of oil spill. clean up spilt oil. cleaning up of oil spill. cleaning up of spilled oil. cleaning up spilled oil. Safely clean up and dispose of spilled oil.",
+        "uri": "http://data.europa.eu/esco/skill/de4ae0ae-0c82-4295-a724-8c0a27ea1a05"
+      },
+      {
+        "differs": false,
+        "index_side": "operate stage movement control system. operate a system to control stage movement. operate control systems for stage movement. operate safe stage technology. use stage control systems for movement. Operate control systems for stage movement, e.g. flying mechanisms. Use manual or electric systems.",
+        "train_side": "operate stage movement control system. operate a system to control stage movement. operate control systems for stage movement. operate safe stage technology. use stage control systems for movement. Operate control systems for stage movement, e.g. flying mechanisms. Use manual or electric systems.",
+        "uri": "http://data.europa.eu/esco/skill/50deacaa-7789-407d-afc0-b217a39fc7a8"
+      }
+    ],
+    "verdict": "aligned"
+  },
+  "coverage": {
+    "coverage_ratio": 0.24285714285714285,
+    "notes": [
+      "train.jsonl build_timestamp is the 19:43 build (mnrl_sw_v1's training data). Lens A coverage against `mnrl_v1` is best-effort \u2014 the 08:59 build it trained on was overwritten on disk."
+    ],
+    "overlap_uris": 34,
+    "per_cv": [
+      {
+        "cv_id": "real_cv1",
+        "gold_count": 14,
+        "gold_in_training": 11,
+        "gold_unseen": 3,
+        "unseen_uris": [
+          "CUST:cpp",
+          "CUST:object-oriented-programming",
+          "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389"
+        ]
+      },
+      {
+        "cv_id": "real_cv10",
+        "gold_count": 5,
+        "gold_in_training": 2,
+        "gold_unseen": 3,
+        "unseen_uris": [
+          "CUST:c",
+          "CUST:html-css",
+          "CUST:javascript"
+        ]
+      },
+      {
+        "cv_id": "real_cv11",
+        "gold_count": 13,
+        "gold_in_training": 4,
+        "gold_unseen": 9,
+        "unseen_uris": [
+          "CUST:cpp",
+          "CUST:deepseek-api",
+          "CUST:openai-api",
+          "CUST:react",
+          "CUST:spring-boot",
+          "CUST:vite",
+          "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+          "http://data.europa.eu/esco/skill/a8d07b5a-c1a1-42c6-9d53-db9c7a2ca996",
+          "http://data.europa.eu/esco/skill/d8829a1d-dbde-435b-b921-29d6462f35c9"
+        ]
+      },
+      {
+        "cv_id": "real_cv12",
+        "gold_count": 29,
+        "gold_in_training": 13,
+        "gold_unseen": 16,
+        "unseen_uris": [
+          "CUST:blender",
+          "CUST:c",
+          "CUST:canva",
+          "CUST:cmake",
+          "CUST:cpp",
+          "CUST:full-stack",
+          "CUST:glsl",
+          "CUST:jira",
+          "CUST:lang:romanian",
+          "CUST:opengl",
+          "CUST:pytorch",
+          "CUST:react",
+          "CUST:unity",
+          "CUST:vite",
+          "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+          "http://data.europa.eu/esco/skill/5608d5a0-6d5e-43b7-be37-616501729bb4"
+        ]
+      },
+      {
+        "cv_id": "real_cv13",
+        "gold_count": 12,
+        "gold_in_training": 0,
+        "gold_unseen": 12,
+        "unseen_uris": [
+          "CUST:3d-printing",
+          "CUST:agile",
+          "CUST:azure",
+          "CUST:code-review",
+          "CUST:docker",
+          "CUST:frontend-development",
+          "CUST:git",
+          "CUST:javascript",
+          "CUST:mysql",
+          "CUST:nextjs",
+          "CUST:react",
+          "CUST:react-query"
+        ]
+      },
+      {
+        "cv_id": "real_cv14",
+        "gold_count": 11,
+        "gold_in_training": 0,
+        "gold_unseen": 11,
+        "unseen_uris": [
+          "CUST:arduino",
+          "CUST:automation",
+          "CUST:cybersecurity",
+          "CUST:databases",
+          "CUST:generative-ai",
+          "CUST:iot",
+          "CUST:java",
+          "CUST:llm",
+          "CUST:rag",
+          "CUST:rpa",
+          "CUST:sql"
+        ]
+      },
+      {
+        "cv_id": "real_cv15",
+        "gold_count": 12,
+        "gold_in_training": 0,
+        "gold_unseen": 12,
+        "unseen_uris": [
+          "CUST:bug-bounty",
+          "CUST:cybersecurity",
+          "CUST:data-manipulation",
+          "CUST:data-visualization",
+          "CUST:incident-response",
+          "CUST:pandas",
+          "CUST:programming",
+          "CUST:python",
+          "CUST:scripting",
+          "CUST:siem",
+          "CUST:soc-analyst",
+          "CUST:threat-detection"
+        ]
+      },
+      {
+        "cv_id": "real_cv2",
+        "gold_count": 16,
+        "gold_in_training": 7,
+        "gold_unseen": 9,
+        "unseen_uris": [
+          "CUST:canva",
+          "CUST:cpp",
+          "CUST:data-structures",
+          "CUST:data-visualization",
+          "CUST:oop",
+          "CUST:signal-processing",
+          "CUST:streamlit",
+          "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+          "http://data.europa.eu/esco/skill/7fb699d9-182a-430e-b7a0-6d8ed05c284b"
+        ]
+      },
+      {
+        "cv_id": "real_cv3",
+        "gold_count": 19,
+        "gold_in_training": 10,
+        "gold_unseen": 9,
+        "unseen_uris": [
+          "CUST:cpp",
+          "CUST:crud",
+          "CUST:html-css",
+          "CUST:react",
+          "CUST:tailwind",
+          "CUST:visual-studio-ide",
+          "CUST:vscode",
+          "CUST:webpack",
+          "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389"
+        ]
+      },
+      {
+        "cv_id": "real_cv4",
+        "gold_count": 23,
+        "gold_in_training": 9,
+        "gold_unseen": 14,
+        "unseen_uris": [
+          "CUST:beautifulsoup",
+          "CUST:cpp",
+          "CUST:django",
+          "CUST:flask",
+          "CUST:git",
+          "CUST:kotlin",
+          "CUST:mongodb",
+          "CUST:openai-api",
+          "CUST:random-forest",
+          "CUST:selenium",
+          "CUST:tensorflow",
+          "CUST:web-scraping",
+          "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+          "http://data.europa.eu/esco/skill/d8829a1d-dbde-435b-b921-29d6462f35c9"
+        ]
+      },
+      {
+        "cv_id": "real_cv5",
+        "gold_count": 27,
+        "gold_in_training": 15,
+        "gold_unseen": 12,
+        "unseen_uris": [
+          "CUST:c",
+          "CUST:cpp",
+          "CUST:data-structures",
+          "CUST:full-stack",
+          "CUST:git",
+          "CUST:operating-systems",
+          "CUST:react",
+          "CUST:real-time-systems",
+          "CUST:secure-coding",
+          "CUST:visual-studio-ide",
+          "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+          "http://data.europa.eu/esco/skill/d8829a1d-dbde-435b-b921-29d6462f35c9"
+        ]
+      },
+      {
+        "cv_id": "real_cv6",
+        "gold_count": 14,
+        "gold_in_training": 3,
+        "gold_unseen": 11,
+        "unseen_uris": [
+          "CUST:cpp",
+          "CUST:dax",
+          "CUST:gbm",
+          "CUST:pandas",
+          "CUST:power-bi",
+          "CUST:pytorch",
+          "CUST:random-forest",
+          "CUST:scikit-learn",
+          "CUST:sql",
+          "http://data.europa.eu/esco/skill/1c460d2d-90c6-4fc9-ad49-febb6e15605a",
+          "http://data.europa.eu/esco/skill/ecc4552a-92c5-4222-b18d-faf5ac841080"
+        ]
+      },
+      {
+        "cv_id": "real_cv7",
+        "gold_count": 20,
+        "gold_in_training": 6,
+        "gold_unseen": 14,
+        "unseen_uris": [
+          "CUST:burp-suite",
+          "CUST:lang:french",
+          "CUST:lang:japanese",
+          "CUST:nmap",
+          "CUST:penetration-testing",
+          "CUST:react",
+          "CUST:secure-coding",
+          "CUST:tailwind",
+          "CUST:threat-modeling",
+          "CUST:vulnerability-assessment",
+          "http://data.europa.eu/esco/skill/1ce4cddd-4a74-458e-a2d4-152ca939475a",
+          "http://data.europa.eu/esco/skill/50597e96-9b6a-4736-ac79-dd80f36c0269",
+          "http://data.europa.eu/esco/skill/7bf4539a-3f2e-4485-876b-1c9306b181af",
+          "http://data.europa.eu/esco/skill/902fb91c-3113-4004-9b4f-79aa86b638b7"
+        ]
+      },
+      {
+        "cv_id": "real_cv8",
+        "gold_count": 22,
+        "gold_in_training": 11,
+        "gold_unseen": 11,
+        "unseen_uris": [
+          "CUST:cpp",
+          "CUST:html-css",
+          "CUST:lang:romanian",
+          "CUST:langchain",
+          "CUST:langgraph",
+          "CUST:llm",
+          "CUST:mcp",
+          "CUST:playwright",
+          "CUST:selenium",
+          "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+          "http://data.europa.eu/esco/skill/867137fb-ff1b-4ca3-99f3-cb6969aa2c68"
+        ]
+      },
+      {
+        "cv_id": "real_cv9",
+        "gold_count": 22,
+        "gold_in_training": 9,
+        "gold_unseen": 13,
+        "unseen_uris": [
+          "CUST:cpp",
+          "CUST:django",
+          "CUST:full-stack",
+          "CUST:numpy",
+          "CUST:pandas",
+          "CUST:scikit-learn",
+          "CUST:sql",
+          "CUST:uml",
+          "http://data.europa.eu/esco/skill/02e22093-3436-46a8-8dc5-b041bc4800cc",
+          "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+          "http://data.europa.eu/esco/skill/3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+          "http://data.europa.eu/esco/skill/76ef6ed3-1658-4a1a-9593-204d799c6d0c",
+          "http://data.europa.eu/esco/skill/98301d4a-2cc3-439d-8d7f-0b6ac76302bb"
+        ]
+      }
+    ],
+    "total_eval_uris": 140,
+    "train_build_timestamp": "2026-05-16T19:43:28.434439+00:00",
+    "train_uri_set_size": 320
+  },
+  "dynamics": {
+    "curves": [
+      {
+        "epoch_mrr": [
+          [
+            1.0,
+            0.11903548471730292
+          ],
+          [
+            2.0,
+            0.15354781582054294
+          ],
+          [
+            3.0,
+            0.1604119113210022
+          ]
+        ],
+        "final_mrr": 0.1604119113210022,
+        "final_vs_peak_gap": 0.0,
+        "manifest_final_mrr": 0.1604119113210022,
+        "monotonic": true,
+        "peak_epoch": 3.0,
+        "peak_mrr": 0.1604119113210022,
+        "run_name": "mnrl_sw_v1_20260516_1953"
+      },
+      {
+        "epoch_mrr": [
+          [
+            1.0,
+            0.2941107503607504
+          ],
+          [
+            2.0,
+            0.4115659142444854
+          ],
+          [
+            3.0,
+            0.43974309420738006
+          ]
+        ],
+        "final_mrr": 0.43974309420738006,
+        "final_vs_peak_gap": 0.0,
+        "manifest_final_mrr": 0.43974309420738006,
+        "monotonic": true,
+        "peak_epoch": 3.0,
+        "peak_mrr": 0.43974309420738006,
+        "run_name": "mnrl_v1_20260516_1610"
+      }
+    ],
+    "figure_path": null,
+    "notes": []
+  },
+  "environment": {
+    "cvs_skipped": [
+      "real_cv2"
+    ],
+    "eval_corpus_size": 15,
+    "notes": [
+      "train.jsonl build_timestamp is the 19:43 build (mnrl_sw_v1's training data). Lens A coverage against `mnrl_v1` is best-effort \u2014 the 08:59 build it trained on was overwritten on disk."
+    ],
+    "on_disk_train_jsonl_timestamp": "2026-05-16T19:43:28.434439+00:00",
+    "run_date": "2026-05-16",
+    "runs_analysed": [
+      "mnrl_v1_20260516_1610",
+      "mnrl_sw_v1_20260516_1953"
+    ],
+    "seed": 42
+  },
+  "fp": {
+    "histograms": [
+      {
+        "bin_counts": [
+          97,
+          3,
+          0,
+          5,
+          1,
+          0,
+          0
+        ],
+        "bin_edges": [
+          0,
+          1,
+          3,
+          6,
+          11,
+          26,
+          101
+        ],
+        "encoder": "mnrl_sw_v1_20260516_1953",
+        "mean_freq": 0.6509433962264151,
+        "median_freq": 0.0,
+        "total_fp": 106
+      },
+      {
+        "bin_counts": [
+          192,
+          7,
+          5,
+          3,
+          1,
+          1,
+          2
+        ],
+        "bin_edges": [
+          0,
+          1,
+          3,
+          6,
+          11,
+          26,
+          101
+        ],
+        "encoder": "mnrl_v1_20260516_1610",
+        "mean_freq": 1.8815165876777251,
+        "median_freq": 0.0,
+        "total_fp": 211
+      },
+      {
+        "bin_counts": [
+          191,
+          13,
+          4,
+          4,
+          4,
+          3,
+          0
+        ],
+        "bin_edges": [
+          0,
+          1,
+          3,
+          6,
+          11,
+          26,
+          101
+        ],
+        "encoder": "zero_shot",
+        "mean_freq": 1.1506849315068493,
+        "median_freq": 0.0,
+        "total_fp": 219
+      }
+    ],
+    "notes": []
+  },
+  "fp_records": [
+    {
+      "cv_id": "real_cv1",
+      "encoder": "zero_shot",
+      "fp_uri": "CUST:data-structures",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/29fb0fb5-dfc4-4098-ac9b-3a712000f48f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/3af687cb-8c7a-46ea-a730-32dbaed040c6",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/43ec6db6-33f7-449b-a566-5779a7e8997a",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/4463a721-69f3-413d-8321-43e3af13a4f1",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/5b9cde20-f1b9-4adc-bfb3-dbf70b14138d",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/6c08403c-a5bb-4868-b8c2-b7d039c0e511",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/7369f779-4b71-4aab-8836-48b69c676eec",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/7d10fcb2-b368-48ab-996b-7c9fafcf68ed",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/84f58e3d-8669-4d83-8c1d-5dd1e73a654f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/9ef0f3a0-9ce2-4ef1-a987-0366b5cb2dbe",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/b633eb55-8f1f-4ae6-ab4c-2022ffe2cb7f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/bf4d884f-c848-402a-b130-69c266b04164",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/de9f85ba-e77f-48fd-8c66-f5ebaf32d655",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/f9670490-8aa4-4540-b121-d440a8294aab",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/0ab03c6c-281b-48f4-83e0-10eeb27a1bae",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/1c582939-d981-4325-a2ac-f87fc6cf2315",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/29fb0fb5-dfc4-4098-ac9b-3a712000f48f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/4463a721-69f3-413d-8321-43e3af13a4f1",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/52e53619-fa77-4f72-b237-5e4aae784dc2",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/5b9cde20-f1b9-4adc-bfb3-dbf70b14138d",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/5be3d306-6cf1-4b49-aa1d-01651dd4ba4c",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/6c08403c-a5bb-4868-b8c2-b7d039c0e511",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/71a6ac5f-f220-4bdc-95b7-b1b2e640fec5",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/7369f779-4b71-4aab-8836-48b69c676eec",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/7b5cce4d-c7fe-4119-b48f-70aa05391787",
+      "train_freq": 2
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/84f58e3d-8669-4d83-8c1d-5dd1e73a654f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/a5826fe3-8df6-4fa8-adad-b7116864588f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/b1ef509e-f191-405a-8419-51663b08922e",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/b5c7e0dc-dda3-4790-a7d1-d6d8023b3089",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/b633eb55-8f1f-4ae6-ab4c-2022ffe2cb7f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/fb82ae25-b59f-43fd-aacf-a8308afbe85e",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/fc5818b4-66f9-498b-a1bc-ff651db2af68",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/ff599c4c-f7bc-44fc-b75f-eea4b7178692",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/29fb0fb5-dfc4-4098-ac9b-3a712000f48f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/2a0efd9a-4a60-4edc-8561-f2754d24eeb8",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/5b9cde20-f1b9-4adc-bfb3-dbf70b14138d",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/6c08403c-a5bb-4868-b8c2-b7d039c0e511",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/7e796b51-49d7-4e73-95af-2e7323763f15",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv1",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/84f58e3d-8669-4d83-8c1d-5dd1e73a654f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv10",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/0839eea4-c57b-4c14-b19b-923fbedb5d88",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv10",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/41bf7ede-fc84-4a57-8c89-b548d11b0ba1",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv10",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/b21e2984-c6b2-4352-bbe8-8f3b03bd50f6",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv10",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/fb82ae25-b59f-43fd-aacf-a8308afbe85e",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv10",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/fc5818b4-66f9-498b-a1bc-ff651db2af68",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv10",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/4d3f3068-9b6a-4f33-bfa5-a7b298bfd303",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "zero_shot",
+      "fp_uri": "CUST:data-structures",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "zero_shot",
+      "fp_uri": "CUST:object-oriented-programming",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "zero_shot",
+      "fp_uri": "CUST:rest-api",
+      "train_freq": 4
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "zero_shot",
+      "fp_uri": "CUST:streamlit",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/09f2f811-a3fb-4de3-a70f-6420a6935575",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/4f5c1208-62fd-4e5a-a51e-306c06947e11",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/5b9cde20-f1b9-4adc-bfb3-dbf70b14138d",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/5f5e9350-1d13-4391-b9e1-07f6b2047fc5",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/7253d98c-4a6d-4e37-8b6c-accca9f4b639",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/7b5cce4d-c7fe-4119-b48f-70aa05391787",
+      "train_freq": 2
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/b6d14ab8-3441-4cbe-8a0e-5b4f7f994730",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/bf4d884f-c848-402a-b130-69c266b04164",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/c31a222b-de0b-490c-82b8-472167cb0ba5",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/c624c6a3-b0ba-4a31-a296-0d433fe47e41",
+      "train_freq": 20
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/c95c29fe-3971-46b7-80e9-1f7e75ba99b3",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/f7e2eb04-3e50-4561-bce1-7e51a1fec308",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "CUST:object-oriented-programming",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "CUST:rest-api",
+      "train_freq": 4
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/09f2f811-a3fb-4de3-a70f-6420a6935575",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/1c582939-d981-4325-a2ac-f87fc6cf2315",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/4339176e-3acd-4f7f-a5d9-445bee3d23f2",
+      "train_freq": 4
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742",
+      "train_freq": 142
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/5b9cde20-f1b9-4adc-bfb3-dbf70b14138d",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/5be3d306-6cf1-4b49-aa1d-01651dd4ba4c",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/71a6ac5f-f220-4bdc-95b7-b1b2e640fec5",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/7b5cce4d-c7fe-4119-b48f-70aa05391787",
+      "train_freq": 2
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/a5826fe3-8df6-4fa8-adad-b7116864588f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/fc5818b4-66f9-498b-a1bc-ff651db2af68",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "CUST:kotlin",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/20a8fe89-d4eb-4698-8521-8881c13377e0",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/5b9cde20-f1b9-4adc-bfb3-dbf70b14138d",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/71a6ac5f-f220-4bdc-95b7-b1b2e640fec5",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/7253d98c-4a6d-4e37-8b6c-accca9f4b639",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/7af6e9e8-1e11-4c0b-b7c6-ac96bbbbc674",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/a5b0cd5c-e13a-4ab3-8d93-4d242adcfb01",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/b8c01891-e3df-4a4b-948d-95b45e1788f5",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/eab3bafa-eebb-47bf-85ce-e336c5019108",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv11",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/f28617ad-afdd-4041-814c-216153a38998",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "CUST:figma",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "CUST:rest-api",
+      "train_freq": 4
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "CUST:zustand",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/04473991-161d-46db-8684-0d5ed6cb6c66",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/0620ecd1-e4b1-4dfa-972b-38a93e5ebd9d",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/07dd856d-6141-48a7-a228-918f88494812",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/0a30e5a8-60a8-4fda-9f89-8e9cee38da5a",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/1d3c5ca3-e154-4a43-883e-7496e8886cd6",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/29fb0fb5-dfc4-4098-ac9b-3a712000f48f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/3140d979-2d6a-4c10-add9-f7091103829f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/37a438f3-e28c-4e32-83c5-299f047c1dc9",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/3bddfd7c-ab6d-40c2-883d-5e97fb7640ba",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/4659e742-7568-4b16-86df-57cb66fdd926",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/4b9f1ae5-0ee6-4738-8999-9b8191fba808",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/4dfda994-f9a2-4cbd-b224-0ab036e69d6e",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/5b353529-0100-416a-b347-6076ae1ccbad",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/5b9cde20-f1b9-4adc-bfb3-dbf70b14138d",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/5ef0c719-5bcb-49f8-b8eb-824388225333",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/6c08403c-a5bb-4868-b8c2-b7d039c0e511",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/719d8699-a221-4b5a-8fc3-68a8645cbe03",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/7d10fcb2-b368-48ab-996b-7c9fafcf68ed",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/7d5ff73e-7bea-436d-974f-3a51ce24a138",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/7e796b51-49d7-4e73-95af-2e7323763f15",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/84f58e3d-8669-4d83-8c1d-5dd1e73a654f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/966f2fd3-3de6-42da-b87c-da924c6d7960",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/a71577b2-7550-4222-88ee-dcbd2d881516",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/a8797f21-1af0-4c5e-98ca-bf1442929363",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/c8c283af-3d77-4212-93ab-1b3de6a79e96",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/cb668e89-6ef5-4ff3-ab4a-506010e7e70b",
+      "train_freq": 4
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/d1a86399-24d8-415f-98b9-e8cbb6b04a26",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/db36f7f1-5900-45bd-9ffb-f2b19c4362ac",
+      "train_freq": 2
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/ea876ec3-4382-478c-b8b3-600c6b23ae85",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/f5b33464-4df9-4cf3-b468-b0a2d6b3ee85",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/fbca4e43-3816-44cf-81a5-d7b5ae320c00",
+      "train_freq": 18
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/00c04e40-35ea-4ed1-824c-82f936c8f876",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/0620ecd1-e4b1-4dfa-972b-38a93e5ebd9d",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/1d3c5ca3-e154-4a43-883e-7496e8886cd6",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/2b7a79e5-84d8-4880-be66-3d9bb05bea17",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/4659e742-7568-4b16-86df-57cb66fdd926",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/4b9f1ae5-0ee6-4738-8999-9b8191fba808",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/4dfda994-f9a2-4cbd-b224-0ab036e69d6e",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/4f418fd8-2509-46b2-a5b1-722a4d2a382a",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/5b9cde20-f1b9-4adc-bfb3-dbf70b14138d",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/614c627b-2ec9-4a0d-811e-de14be4362f2",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/6c08403c-a5bb-4868-b8c2-b7d039c0e511",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/7d5ff73e-7bea-436d-974f-3a51ce24a138",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/7e796b51-49d7-4e73-95af-2e7323763f15",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/97965983-0da4-4902-9daf-d5cd2693ef73",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/ae72f370-469d-44fa-9f09-408b1c994d2e",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/bb2a71c4-ff2e-47cf-ab44-684797a1ee5d",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/be59c6bd-0e88-4ffe-bc81-50b86be815e6",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/c8c283af-3d77-4212-93ab-1b3de6a79e96",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/dbd3e193-6a61-43d1-ab00-b34bae73e82a",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/e3145bd7-7f35-44ec-a5dc-4417c5c9ab9a",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/e63da991-d405-4463-9874-3555c80082d9",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/e8171178-9a60-40a6-ad3b-510e10cfebad",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/ea876ec3-4382-478c-b8b3-600c6b23ae85",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/fc5818b4-66f9-498b-a1bc-ff651db2af68",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/fcc0a1c8-d36e-4f8e-b928-00d5bca10a47",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/0620ecd1-e4b1-4dfa-972b-38a93e5ebd9d",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/11430d93-c835-48ed-8e70-285fa69c9ae6",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/2b7a79e5-84d8-4880-be66-3d9bb05bea17",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/3bddfd7c-ab6d-40c2-883d-5e97fb7640ba",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/47a2917b-a771-4687-90fc-5562523cf4a6",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/6c08403c-a5bb-4868-b8c2-b7d039c0e511",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/7e796b51-49d7-4e73-95af-2e7323763f15",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/7fa93d7f-8ff9-4878-9ad0-1968d75476aa",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/87b1c959-236d-4761-b3be-b1c729497f75",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/97965983-0da4-4902-9daf-d5cd2693ef73",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/bb2a71c4-ff2e-47cf-ab44-684797a1ee5d",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/be59c6bd-0e88-4ffe-bc81-50b86be815e6",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv12",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/e63da991-d405-4463-9874-3555c80082d9",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv13",
+      "encoder": "zero_shot",
+      "fp_uri": "CUST:zustand",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv13",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/3c42d13b-d6e4-4ed9-bdc4-991251461dc4",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv13",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/8ee39fb7-8b46-490e-ae21-6e8b32854dd6",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv13",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/bf1f763e-c505-46e7-8af3-e48f13ec5f44",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv13",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/ccb2e5f2-4279-48fd-9d85-a1db42ff1e13",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv13",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/de0be6e8-644c-4cc9-9c8d-925dd98dda56",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv13",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "CUST:github",
+      "train_freq": 4
+    },
+    {
+      "cv_id": "real_cv13",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "CUST:gitlab",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv13",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "CUST:react-native",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv13",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "CUST:zustand",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv13",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/3c42d13b-d6e4-4ed9-bdc4-991251461dc4",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv13",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/7229b6dc-e2ef-44fe-b9a1-06b1c1075d8f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv13",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/b916d60e-38e9-4241-914a-4e2144bda711",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv13",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/bf1f763e-c505-46e7-8af3-e48f13ec5f44",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv13",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/f4a6e9f7-5cff-46c0-894c-59c20bb78694",
+      "train_freq": 10
+    },
+    {
+      "cv_id": "real_cv13",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/3c42d13b-d6e4-4ed9-bdc4-991251461dc4",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv13",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/4ff549c3-daa5-4def-9916-301c7bdf13b8",
+      "train_freq": 10
+    },
+    {
+      "cv_id": "real_cv13",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/7229b6dc-e2ef-44fe-b9a1-06b1c1075d8f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv13",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/b916d60e-38e9-4241-914a-4e2144bda711",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv13",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/f4a6e9f7-5cff-46c0-894c-59c20bb78694",
+      "train_freq": 10
+    },
+    {
+      "cv_id": "real_cv14",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/e87ec79a-c9ff-46f5-84fa-7a0f394cdf40",
+      "train_freq": 8
+    },
+    {
+      "cv_id": "real_cv14",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv14",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/27b913f0-3c52-448b-ad27-fc6ef08fb326",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv14",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/5b353529-0100-416a-b347-6076ae1ccbad",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv14",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/719d8699-a221-4b5a-8fc3-68a8645cbe03",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv14",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/c5c51528-ccfc-4c53-b409-c200aaa44222",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv14",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/e465a154-93f7-4973-9ce1-31659fe16dd2",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv14",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/e975b791-b488-4935-be44-06f2f9a443bb",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv14",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/0f5374e3-0b9b-4b16-af7a-49654ce0bb15",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv14",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/7ffae77a-93ce-40a3-af99-fae5729e8b15",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv14",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/e87ec79a-c9ff-46f5-84fa-7a0f394cdf40",
+      "train_freq": 8
+    },
+    {
+      "cv_id": "real_cv14",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/e975b791-b488-4935-be44-06f2f9a443bb",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv15",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/1a63b1a7-2cac-4372-8760-7bb6afb36949",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv15",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/2a3a96a3-709e-4d60-81f6-d247d6933f13",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv15",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/2daec0e6-f0c1-43e8-8178-aedba99130ec",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv15",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/41bf7ede-fc84-4a57-8c89-b548d11b0ba1",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv15",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/5b9cde20-f1b9-4adc-bfb3-dbf70b14138d",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv15",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/65e58886-bd1e-4c5b-8ca5-8d9b353c8aa1",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv15",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/7b5cce4d-c7fe-4119-b48f-70aa05391787",
+      "train_freq": 2
+    },
+    {
+      "cv_id": "real_cv15",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/7d10fcb2-b368-48ab-996b-7c9fafcf68ed",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv15",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/7f27f1ff-2e17-4b69-990e-c23334478313",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv15",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/8181aa4c-42bc-4036-a3d2-5cb6bbb34239",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv15",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/c0326e27-5fa8-4dca-aecb-ed89ab491513",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv15",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv15",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/f69d330a-c343-433f-9532-fed6b8654b0e",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv15",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/f9670490-8aa4-4540-b121-d440a8294aab",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv15",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/07c29939-d5fe-4f7f-8546-f1d02fd352db",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv15",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/54d774a3-de3b-4425-b0d7-c03bc99a0937",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv15",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/6430eb0d-c6de-46b7-a7fc-3dd2e8e62a69",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv15",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/65e58886-bd1e-4c5b-8ca5-8d9b353c8aa1",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv15",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/960c4aae-82d5-4820-a583-c3bf2908a357",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv15",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/c0326e27-5fa8-4dca-aecb-ed89ab491513",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv15",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv15",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/f69d330a-c343-433f-9532-fed6b8654b0e",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv15",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/1a63b1a7-2cac-4372-8760-7bb6afb36949",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv15",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/7f27f1ff-2e17-4b69-990e-c23334478313",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv15",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/84295dbe-16b0-47e8-af9e-67ee1801673d",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv15",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/a4fd17bf-6309-47c5-b7fa-ae5560673acf",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv15",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/f6100198-9398-4c31-9003-d976c37d5022",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv15",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/f69d330a-c343-433f-9532-fed6b8654b0e",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "zero_shot",
+      "fp_uri": "CUST:full-stack",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "zero_shot",
+      "fp_uri": "CUST:vue",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/062320e5-79d1-45e8-8b7e-5deeb53279a2",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/1c8a92d4-18b9-4279-898c-ad89233bb511",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/385479b7-5da5-4367-9763-0d15b41bb65b",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/3d957fb2-b8f4-4b4c-b955-23299c761ad5",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/4321478b-3e6f-4b47-88be-fc9b04c8f3f1",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/55cc1f3f-69fc-46ec-b24a-9708f6bd92b4",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/6a7792a9-888a-46ad-afc9-2c0d94c8fde6",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/6ad40ca3-dc34-4442-b23f-0b1b28936f56",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/70de94f5-9575-4edd-bca7-c797b023b9d6",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/7d10fcb2-b368-48ab-996b-7c9fafcf68ed",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/8764d4b1-e069-44f2-8baa-fb1eee1850ec",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/8c88d336-c249-4537-b26e-d679a85c4b9b",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/93e65de1-923c-437e-aa5b-e6002967ce71",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/942948af-0959-418b-966a-732762f88519",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/9b9de2a4-d8af-4a7b-933a-a8334ae60067",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/ab196e50-eca7-469b-b844-5e00d36c4372",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/dc298fac-7ab4-4feb-9b43-33d947d7703e",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/ff207c62-ccd0-4788-b99a-996a14320fad",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "CUST:websockets",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/04b90037-ae21-48dc-9448-f0b3eef05b33",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/05281013-f5ae-4bf2-ad23-d5d6f7573b46",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/202d6f30-e630-4b27-a437-ce4e2b8a5d75",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/22134337-8baa-4879-adec-d9cdbc02cc27",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/35718973-913e-447b-a968-83e66e6c8872",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/49f90f22-80b4-438a-a673-7abbbe7c5447",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/6338e1e5-1cce-47ab-9e55-8914d8adc2f0",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/698d7dd3-1192-4f8c-9d1b-478b573b4994",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/7193cb6d-8334-494f-86e5-21e6d03a47c3",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/8550a96d-3970-46e1-83e1-371c59473ec4",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/8785ccda-6f9f-4cf3-9033-fda10653d0be",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/97272b3e-d497-4420-893d-612b15d377d9",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/9b9de2a4-d8af-4a7b-933a-a8334ae60067",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/a551ec45-db14-4d5a-84ee-20abef51e739",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/a5a146a4-a2e5-4d47-a982-192c42f5d449",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/aa5428e2-5464-45bc-ad2b-928775051258",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/ab6265f2-a9bf-49e8-a9a5-67cbab4de38b",
+      "train_freq": 2
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/c39677dc-8a4f-4433-b678-1097eaec65da",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/fc1eae96-01cb-4d97-b594-d5040913675e",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/fc5818b4-66f9-498b-a1bc-ff651db2af68",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/04b90037-ae21-48dc-9448-f0b3eef05b33",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/1c8a92d4-18b9-4279-898c-ad89233bb511",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/7193cb6d-8334-494f-86e5-21e6d03a47c3",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/942948af-0959-418b-966a-732762f88519",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/9b9de2a4-d8af-4a7b-933a-a8334ae60067",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv3",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/dd0b5280-3894-46b7-8ad4-fbd16398f4d4",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv4",
+      "encoder": "zero_shot",
+      "fp_uri": "CUST:fastapi",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv4",
+      "encoder": "zero_shot",
+      "fp_uri": "CUST:streamlit",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv4",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/13bdd41a-2a18-441f-96db-41252c519413",
+      "train_freq": 31
+    },
+    {
+      "cv_id": "real_cv4",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/58783f72-5098-4807-b1d1-954ec2ae94c4",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv4",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/7d10fcb2-b368-48ab-996b-7c9fafcf68ed",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv4",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/8300443c-c793-4102-bff5-aa917a0cb39f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv4",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/901105f8-3a08-453e-b1dc-23619e317fd3",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv4",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/bec4359e-cb92-468f-a997-8fb28e32fba9",
+      "train_freq": 44
+    },
+    {
+      "cv_id": "real_cv4",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/d5a59ca8-2e91-472e-8571-d12ce4478679",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv4",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/3d294b92-1024-48bc-999e-5c5d687659d9",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv4",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/4a874516-eb34-4dc1-833d-864c5a448db2",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv4",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/7111b95d-0ce3-441a-9d92-4c75d05c4388",
+      "train_freq": 42
+    },
+    {
+      "cv_id": "real_cv4",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/7b5cce4d-c7fe-4119-b48f-70aa05391787",
+      "train_freq": 2
+    },
+    {
+      "cv_id": "real_cv4",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/7f1a7abb-9208-48b7-8b84-2c1f283a50a0",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv4",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/901105f8-3a08-453e-b1dc-23619e317fd3",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv4",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/94dd823c-148e-4614-a6e8-99249b16357d",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv4",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/969caeb0-cfc5-42aa-9c44-0ca3c09305fe",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv4",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/a46b6220-7313-4b3b-9bdb-cca897aff546",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv4",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/abb9c7f1-6d69-4feb-913e-6e577d426ea4",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv4",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/cd5efa8c-e44d-4cbc-91c6-796018dbed68",
+      "train_freq": 4
+    },
+    {
+      "cv_id": "real_cv4",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/eb44d926-143f-4921-8150-4e537434b904",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv4",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/f0a84d52-91fd-45ec-9fe9-e363d9318b9e",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv4",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/02c1a369-f1e7-4f8e-8882-d7ded57f9cf4",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv4",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/0900073c-85f9-4f81-b178-ad9a12371bc3",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv4",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/4a874516-eb34-4dc1-833d-864c5a448db2",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv4",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a",
+      "train_freq": 20
+    },
+    {
+      "cv_id": "real_cv4",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/996243ee-543f-4c36-a31a-e0f2403c0c5d",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv4",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/a65fb963-6faf-47b2-a3d9-c4e5e4d833c5",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv4",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/c65b5463-64bd-4c90-af45-2c0cca6f55ac",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv4",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/d9cc828c-61fc-422d-91e7-b2e8e4aa48a5",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv4",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/f0a84d52-91fd-45ec-9fe9-e363d9318b9e",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "zero_shot",
+      "fp_uri": "CUST:database-design",
+      "train_freq": 10
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "zero_shot",
+      "fp_uri": "CUST:express",
+      "train_freq": 8
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "zero_shot",
+      "fp_uri": "CUST:vue",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/1bba98a7-92b9-450b-9235-e0c905f8f3c4",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/2180bd8c-86de-4889-8165-adac902eee9d",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/2857540c-180b-4208-9127-e94a01871966",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/29fb0fb5-dfc4-4098-ac9b-3a712000f48f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/3ff589b7-68df-4ea5-ae41-b395bdb2378f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/41bf7ede-fc84-4a57-8c89-b548d11b0ba1",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/4463a721-69f3-413d-8321-43e3af13a4f1",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/47b9bbcf-356c-4782-83a4-7f5a1b2b51a3",
+      "train_freq": 12
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/64db87c7-2360-4e20-88d3-d222402e477c",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/6c08403c-a5bb-4868-b8c2-b7d039c0e511",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/7369f779-4b71-4aab-8836-48b69c676eec",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/76ef6ed3-1658-4a1a-9593-204d799c6d0c",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/7b5cce4d-c7fe-4119-b48f-70aa05391787",
+      "train_freq": 2
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/84f58e3d-8669-4d83-8c1d-5dd1e73a654f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/8b94aa1e-89c9-459d-b3b4-1dfab8dec2df",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/9d2e926f-53d9-41f5-98f3-19dfaa687f3f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/adcca622-b933-4ba3-bc43-bf371879edc3",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/b633eb55-8f1f-4ae6-ab4c-2022ffe2cb7f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/bf6c5ed4-84af-440f-abcc-7fa5ba19c738",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/cdaf66a1-eaf3-4fef-af6e-2e9bbe2c326c",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/d32db06e-bd06-4415-a7ab-1b0ee68caa9a",
+      "train_freq": 2
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/e043aeeb-78f5-4049-afbf-12bba52225bc",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/e5beeff8-7c98-490a-ae2c-16fbb6a87305",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/ec85cc63-4e24-4631-bf92-8789db2605c0",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/f7e2eb04-3e50-4561-bce1-7e51a1fec308",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "CUST:database-design",
+      "train_freq": 10
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "CUST:react-native",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "CUST:zustand",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/0f00f63f-3ab4-4057-b92f-500584b51757",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/165d3ca5-ca47-40d2-a450-cd2ae18deb05",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/2180bd8c-86de-4889-8165-adac902eee9d",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/29fb0fb5-dfc4-4098-ac9b-3a712000f48f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/2a0efd9a-4a60-4edc-8561-f2754d24eeb8",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/2feeef46-05cf-445c-9ca1-c96a30e10106",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/41bf7ede-fc84-4a57-8c89-b548d11b0ba1",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/4463a721-69f3-413d-8321-43e3af13a4f1",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/47b9bbcf-356c-4782-83a4-7f5a1b2b51a3",
+      "train_freq": 12
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/6b9194f0-f8bb-4b9a-96a5-2203c9c2671b",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/6c08403c-a5bb-4868-b8c2-b7d039c0e511",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/7b5cce4d-c7fe-4119-b48f-70aa05391787",
+      "train_freq": 2
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/84f58e3d-8669-4d83-8c1d-5dd1e73a654f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/b21e2984-c6b2-4352-bbe8-8f3b03bd50f6",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/e043aeeb-78f5-4049-afbf-12bba52225bc",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/e73c5d59-5e54-4238-bd2a-9aded8083107",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/eb44d926-143f-4921-8150-4e537434b904",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/fb82ae25-b59f-43fd-aacf-a8308afbe85e",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "CUST:database-design",
+      "train_freq": 10
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/29fb0fb5-dfc4-4098-ac9b-3a712000f48f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/2a0efd9a-4a60-4edc-8561-f2754d24eeb8",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/3d294b92-1024-48bc-999e-5c5d687659d9",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/6c08403c-a5bb-4868-b8c2-b7d039c0e511",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/7b5cce4d-c7fe-4119-b48f-70aa05391787",
+      "train_freq": 2
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/7e796b51-49d7-4e73-95af-2e7323763f15",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/84f58e3d-8669-4d83-8c1d-5dd1e73a654f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/eb44d926-143f-4921-8150-4e537434b904",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/f0163b63-6794-4eb7-b17b-f91d11b2602d",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv5",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/fe30a4b0-1a99-4fc7-afff-b162b8c834ba",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/05bd9f18-370a-4a88-98c7-473cffb7b2ca",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/0d6714c6-720e-4985-9791-5ab85d28da79",
+      "train_freq": 2
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/0df2e216-68ae-4952-b9dc-3c2f2bc04fe3",
+      "train_freq": 2
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/12b7d5a1-1ad4-45dc-b0fa-b31d1eb2c79a",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/22902bf9-cc3f-495b-811a-c441e28e23f6",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/29fb0fb5-dfc4-4098-ac9b-3a712000f48f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/4463a721-69f3-413d-8321-43e3af13a4f1",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/48db96bf-3314-45c6-bad8-fdb6e20e5639",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/64db87c7-2360-4e20-88d3-d222402e477c",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/713fb616-118e-40bc-9366-4a69879a49d5",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/7369f779-4b71-4aab-8836-48b69c676eec",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/76ef6ed3-1658-4a1a-9593-204d799c6d0c",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/8baf47f3-322d-4270-b9ee-6ae76642dff7",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/90c0e266-c9ea-4036-802e-475ea50b9c7b",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/9ba8fd27-275d-4bad-8c48-f668aa99a578",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/9ef0f3a0-9ce2-4ef1-a987-0366b5cb2dbe",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/9fe18ec3-08c3-4830-bca2-6f025216ac76",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/b74fd765-e1ae-4f56-a188-45cd782bca01",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/be20d05c-f6b4-4580-9fcf-f00f4baab562",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/d6cdef49-b669-4507-91d1-3f959cf98e47",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/e801aa2a-6288-4612-b6f9-54b03d3045e0",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/0a53f6b2-9205-4505-93fb-480e163cdc2f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/0ebd8359-48bc-4b28-adb1-450774e5f683",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/183134a2-3f8e-4a38-9e81-35c2bec0272b",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/2b87f4e6-c4cf-4b4c-8157-e2794d136617",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/2e7a8114-3e1b-4ca5-98a4-e0dc5abfe827",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/34982b79-842f-4835-8598-d27793731d26",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/36bca324-45b8-4a90-925c-9f61f6b7bed4",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/3b902a0e-b729-49ac-8f5f-f2ac312a3c64",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/44aa3a70-2022-4a5e-8b79-e0485737d29a",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/484d048c-a5d1-46a5-b57f-45b69c0ac552",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/5279200c-d6ed-4099-877c-a8100bb31d86",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/544ba15f-0719-45cf-bcf2-6453052e2647",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742",
+      "train_freq": 142
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/5fa6cd2f-9bab-4afa-a184-2d2f1401b770",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/637ca2e2-0624-48b1-be6e-9ff4580344ac",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/697dcc9f-ae92-4506-b5f2-e770d7589f74",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/75f839c2-fd9a-4ad3-8921-6e734608568d",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/78b1de70-0930-462f-9a7e-bf9b4135e1e2",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/7dc3d869-2a60-425f-8557-ad40eaaefc80",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/7f18c3a2-f1ce-4db2-a354-9417691b5a43",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/8360f128-ef04-41f6-8fd0-203f41dc05dc",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/90c0e266-c9ea-4036-802e-475ea50b9c7b",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/9d2f77af-4307-4ac5-bc50-a9980cec7e83",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/9fe18ec3-08c3-4830-bca2-6f025216ac76",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/b3c0fdc1-14e3-4ccd-aeab-6816e409c3a0",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/c0c0a69c-8040-4cc6-9c66-75fe398d9cf3",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/c2432314-940b-43a0-bb99-7abe069ddb37",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/cd990eab-c6a9-4c11-b17d-b12a98f6573b",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/db706041-f830-4799-9b11-c75ce2178e03",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/e2fb1ee4-fbf9-4690-b677-3e6ff7cfdc48",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/e819cc1e-09d9-47f2-b418-93972852daef",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/e81d7bed-b7c7-41bf-a30a-e3201e8f09b3",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/fc5818b4-66f9-498b-a1bc-ff651db2af68",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/05bd9f18-370a-4a88-98c7-473cffb7b2ca",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/183134a2-3f8e-4a38-9e81-35c2bec0272b",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/7f18c3a2-f1ce-4db2-a354-9417691b5a43",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/90c0e266-c9ea-4036-802e-475ea50b9c7b",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/9fe18ec3-08c3-4830-bca2-6f025216ac76",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/b3c0fdc1-14e3-4ccd-aeab-6816e409c3a0",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/b74fd765-e1ae-4f56-a188-45cd782bca01",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/d2ee5710-a332-4fe7-868c-a350d121950c",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv6",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/db706041-f830-4799-9b11-c75ce2178e03",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "zero_shot",
+      "fp_uri": "CUST:cryptography",
+      "train_freq": 4
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/0ffdb6ac-03b5-4f1c-bfcc-3d9cb874fdf9",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/2239694b-771a-4586-8b54-2794e361a9ae",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/2a3a96a3-709e-4d60-81f6-d247d6933f13",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/501537a7-9d63-491d-ae02-09f04767ff1e",
+      "train_freq": 1
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/54d774a3-de3b-4425-b0d7-c03bc99a0937",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/5898d99a-62a4-4e10-a2e3-0d815ce44248",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/5acf6408-e084-4202-9442-ffcf0119811c",
+      "train_freq": 6
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/7253d98c-4a6d-4e37-8b6c-accca9f4b639",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/8088750d-8388-4170-a76f-48354c469c44",
+      "train_freq": 23
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/913e7e83-b8f8-4574-b1ca-1b38f3fd974a",
+      "train_freq": 2
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/a4fd17bf-6309-47c5-b7fa-ae5560673acf",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/af313ba1-a39e-49ac-99ec-94630fbe4f7f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/bb664ebf-2e54-4a88-ab97-158c3d321af9",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/dad7e408-162f-46a4-8567-db560e19e2fc",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/de586dcf-d7e5-4340-bf5b-d59026f1b436",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/ec66b111-d8d0-4516-88ba-ee0b6fe6f695",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/f4a85869-1855-45d5-a43c-7ee8cd451996",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/f69d330a-c343-433f-9532-fed6b8654b0e",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/fe1c2b32-7fe9-4668-affa-07ff658a68cf",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "CUST:github",
+      "train_freq": 4
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "CUST:gitlab",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/0ffdb6ac-03b5-4f1c-bfcc-3d9cb874fdf9",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/501537a7-9d63-491d-ae02-09f04767ff1e",
+      "train_freq": 1
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/54d774a3-de3b-4425-b0d7-c03bc99a0937",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/5898d99a-62a4-4e10-a2e3-0d815ce44248",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/5acf6408-e084-4202-9442-ffcf0119811c",
+      "train_freq": 6
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/67b169f0-8468-4cb7-a5ae-f227fe25f13e",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/7f27f1ff-2e17-4b69-990e-c23334478313",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/8181aa4c-42bc-4036-a3d2-5cb6bbb34239",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/84295dbe-16b0-47e8-af9e-67ee1801673d",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/873f205a-05f8-45f8-b544-fe963a3edc1e",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/9263f0d8-7266-4782-b0ee-38f62656e97e",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/9da7bfb1-9e1a-46de-8374-dac1a7cfa86c",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/a4c40f64-e8d4-4677-a741-ec04e63fa284",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/a4fd17bf-6309-47c5-b7fa-ae5560673acf",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/a88c4bdc-73f8-437d-b268-02cb813a99ca",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/c44fb412-b830-425e-9371-5451780fa973",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/de586dcf-d7e5-4340-bf5b-d59026f1b436",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/e43cb15d-b48c-43f9-a995-0dfd87b903b9",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/ec410bec-db3c-4950-9f42-d4b3221868a7",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/efc8bf52-f724-4dc6-bd22-93d9e9253eed",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/f69d330a-c343-433f-9532-fed6b8654b0e",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/fc5818b4-66f9-498b-a1bc-ff651db2af68",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/fe1c2b32-7fe9-4668-affa-07ff658a68cf",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/0ffdb6ac-03b5-4f1c-bfcc-3d9cb874fdf9",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/501537a7-9d63-491d-ae02-09f04767ff1e",
+      "train_freq": 1
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/5acf6408-e084-4202-9442-ffcf0119811c",
+      "train_freq": 6
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/67b169f0-8468-4cb7-a5ae-f227fe25f13e",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/78845d0c-e56f-4318-a9c6-bf75931dd520",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/84295dbe-16b0-47e8-af9e-67ee1801673d",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/9da7bfb1-9e1a-46de-8374-dac1a7cfa86c",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/a4c40f64-e8d4-4677-a741-ec04e63fa284",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/a4fd17bf-6309-47c5-b7fa-ae5560673acf",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/a88c4bdc-73f8-437d-b268-02cb813a99ca",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/e43cb15d-b48c-43f9-a995-0dfd87b903b9",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/efc8bf52-f724-4dc6-bd22-93d9e9253eed",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/f69d330a-c343-433f-9532-fed6b8654b0e",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv7",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/fe1c2b32-7fe9-4668-affa-07ff658a68cf",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "zero_shot",
+      "fp_uri": "CUST:oracle-db",
+      "train_freq": 2
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "zero_shot",
+      "fp_uri": "CUST:streamlit",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/13bdd41a-2a18-441f-96db-41252c519413",
+      "train_freq": 31
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/21d2f96d-35f7-4e3f-9745-c533d2dd6e97",
+      "train_freq": 2
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/3bddfd7c-ab6d-40c2-883d-5e97fb7640ba",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/3d957fb2-b8f4-4b4c-b955-23299c761ad5",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/438ff259-d086-4004-acda-1ec3e1631bc6",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/446d29ed-9eaa-4798-bb91-5f196651ad0a",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/5b9cde20-f1b9-4adc-bfb3-dbf70b14138d",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/6a322874-e32f-4cd8-9683-badce67a7f73",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/6c08403c-a5bb-4868-b8c2-b7d039c0e511",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/7253d98c-4a6d-4e37-8b6c-accca9f4b639",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/7557f0f4-b8bc-4ac0-b91e-222ab1ba744f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/7d10fcb2-b368-48ab-996b-7c9fafcf68ed",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/84f58e3d-8669-4d83-8c1d-5dd1e73a654f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/913e7e83-b8f8-4574-b1ca-1b38f3fd974a",
+      "train_freq": 2
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/af313ba1-a39e-49ac-99ec-94630fbe4f7f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/be0ff6d8-5e61-4021-9c89-e40cf0b75cc6",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/c4b626c1-e71c-44ec-9f88-042766f37fcc",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/ce8ae6ca-61d8-4174-b457-641de96cbff4",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/f5b33464-4df9-4cf3-b468-b0a2d6b3ee85",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "CUST:anthropic-api",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/5b9cde20-f1b9-4adc-bfb3-dbf70b14138d",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/5beedc50-d136-4240-9bad-db55dc0ab571",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/97bdd757-29d4-4126-92a6-07608825aa3b",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/c2aacac0-5a16-4493-b769-e7c052916d39",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/cae47cdb-5b26-4d9b-95e2-e4bce31b6d8c",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/e465a154-93f7-4973-9ce1-31659fe16dd2",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/5beedc50-d136-4240-9bad-db55dc0ab571",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/6c08403c-a5bb-4868-b8c2-b7d039c0e511",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/7e796b51-49d7-4e73-95af-2e7323763f15",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/84f58e3d-8669-4d83-8c1d-5dd1e73a654f",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/be99117b-49a1-4ec2-a670-e9baac66c1bd",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv8",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/dba46f87-0831-49cd-a1c7-340a653c0221",
+      "train_freq": 2
+    },
+    {
+      "cv_id": "real_cv9",
+      "encoder": "zero_shot",
+      "fp_uri": "CUST:fastapi",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv9",
+      "encoder": "zero_shot",
+      "fp_uri": "CUST:openai-api",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv9",
+      "encoder": "zero_shot",
+      "fp_uri": "CUST:streamlit",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv9",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/2daec0e6-f0c1-43e8-8178-aedba99130ec",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv9",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/48db96bf-3314-45c6-bad8-fdb6e20e5639",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv9",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/58d7a289-dafd-4363-833f-d1dc4140885e",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv9",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/5ef0c719-5bcb-49f8-b8eb-824388225333",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv9",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/65e58886-bd1e-4c5b-8ca5-8d9b353c8aa1",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv9",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/7b5cce4d-c7fe-4119-b48f-70aa05391787",
+      "train_freq": 2
+    },
+    {
+      "cv_id": "real_cv9",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/bf4d884f-c848-402a-b130-69c266b04164",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv9",
+      "encoder": "zero_shot",
+      "fp_uri": "http://data.europa.eu/esco/skill/edebd83d-35f6-4ed5-a940-6c203d178c01",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv9",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/36ff57b0-637d-4a83-a0e8-d14f86f9f078",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv9",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/48db96bf-3314-45c6-bad8-fdb6e20e5639",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv9",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/4e87c852-602a-4a0e-b8d8-20709ce14ac5",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv9",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/65e58886-bd1e-4c5b-8ca5-8d9b353c8aa1",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv9",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/7193cb6d-8334-494f-86e5-21e6d03a47c3",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv9",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/7b5cce4d-c7fe-4119-b48f-70aa05391787",
+      "train_freq": 2
+    },
+    {
+      "cv_id": "real_cv9",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/c95c29fe-3971-46b7-80e9-1f7e75ba99b3",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv9",
+      "encoder": "mnrl_v1_20260516_1610",
+      "fp_uri": "http://data.europa.eu/esco/skill/edebd83d-35f6-4ed5-a940-6c203d178c01",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv9",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "CUST:streamlit",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv9",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/2a0efd9a-4a60-4edc-8561-f2754d24eeb8",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv9",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/48db96bf-3314-45c6-bad8-fdb6e20e5639",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv9",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/4e87c852-602a-4a0e-b8d8-20709ce14ac5",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv9",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/65e58886-bd1e-4c5b-8ca5-8d9b353c8aa1",
+      "train_freq": 0
+    },
+    {
+      "cv_id": "real_cv9",
+      "encoder": "mnrl_sw_v1_20260516_1953",
+      "fp_uri": "http://data.europa.eu/esco/skill/edebd83d-35f6-4ed5-a940-6c203d178c01",
+      "train_freq": 0
+    }
+  ],
+  "negative_quality": {
+    "figure_path": null,
+    "mean_gap": 0.17046174796837602,
+    "negatives": {
+      "mean": 0.15777910017800298,
+      "median": 0.14363524317741394,
+      "n": 183,
+      "p25": 0.08307023346424103,
+      "p75": 0.22508173435926437
+    },
+    "notes": [],
+    "positives": {
+      "mean": 0.328240848146379,
+      "median": 0.32001563906669617,
+      "n": 200,
+      "p25": 0.23896269500255585,
+      "p75": 0.4185561239719391
+    }
+  },
+  "per_uri_records": [
+    {
+      "cv_id": "real_cv1",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.6403785943984985,
+      "sim_mnrl_v1": 0.607452392578125,
+      "sim_zero_shot": 0.69681316614151,
+      "uri": "CUST:database-design"
+    },
+    {
+      "cv_id": "real_cv1",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.5747727155685425,
+      "sim_mnrl_v1": 0.5592472553253174,
+      "sim_zero_shot": 0.6103459000587463,
+      "uri": "CUST:dotnet"
+    },
+    {
+      "cv_id": "real_cv1",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.5773940682411194,
+      "sim_mnrl_v1": 0.6734749674797058,
+      "sim_zero_shot": 0.5705806612968445,
+      "uri": "CUST:intellij-idea"
+    },
+    {
+      "cv_id": "real_cv1",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.4832857847213745,
+      "sim_mnrl_v1": 0.7223788499832153,
+      "sim_zero_shot": 0.6189008951187134,
+      "uri": "CUST:object-oriented-programming"
+    },
+    {
+      "cv_id": "real_cv1",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.5872708559036255,
+      "sim_mnrl_v1": 0.6790934801101685,
+      "sim_zero_shot": 0.798248291015625,
+      "uri": "CUST:oracle-db"
+    },
+    {
+      "cv_id": "real_cv1",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.60849529504776,
+      "sim_mnrl_v1": 0.5969905853271484,
+      "sim_zero_shot": 0.6639502048492432,
+      "uri": "CUST:plsql"
+    },
+    {
+      "cv_id": "real_cv1",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.5042712092399597,
+      "sim_mnrl_v1": 0.48795825242996216,
+      "sim_zero_shot": 0.6023097038269043,
+      "uri": "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389"
+    },
+    {
+      "cv_id": "real_cv1",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.5105141401290894,
+      "sim_mnrl_v1": 0.5959905385971069,
+      "sim_zero_shot": 0.6449647545814514,
+      "uri": "http://data.europa.eu/esco/skill/43ae58b9-5e56-4524-b45a-b422777a0576"
+    },
+    {
+      "cv_id": "real_cv1",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.629774808883667,
+      "sim_mnrl_v1": 0.6969910264015198,
+      "sim_zero_shot": 0.5479723215103149,
+      "uri": "http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a"
+    },
+    {
+      "cv_id": "real_cv1",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.41650548577308655,
+      "sim_mnrl_v1": 0.4388965666294098,
+      "sim_zero_shot": 0.4365119934082031,
+      "uri": "http://data.europa.eu/esco/skill/54924a2c-daca-40d3-9716-4b38ceb04f38"
+    },
+    {
+      "cv_id": "real_cv1",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.4475645422935486,
+      "sim_mnrl_v1": 0.677238404750824,
+      "sim_zero_shot": 0.6155691146850586,
+      "uri": "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742"
+    },
+    {
+      "cv_id": "real_cv1",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.5385603904724121,
+      "sim_mnrl_v1": 0.6036256551742554,
+      "sim_zero_shot": 0.6560223698616028,
+      "uri": "http://data.europa.eu/esco/skill/ab1e97ed-2319-4293-a8b7-072d2648822f"
+    },
+    {
+      "cv_id": "real_cv1",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.2439366579055786,
+      "sim_mnrl_v1": 0.2161274552345276,
+      "sim_zero_shot": 0.424247145652771,
+      "uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d"
+    },
+    {
+      "cv_id": "real_cv10",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.4589616358280182,
+      "sim_mnrl_v1": 0.853345513343811,
+      "sim_zero_shot": 0.6165076494216919,
+      "uri": "http://data.europa.eu/esco/skill/7b5cce4d-c7fe-4119-b48f-70aa05391787"
+    },
+    {
+      "cv_id": "real_cv10",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.3120656907558441,
+      "sim_mnrl_v1": 0.32280415296554565,
+      "sim_zero_shot": 0.48172539472579956,
+      "uri": "http://data.europa.eu/esco/skill/f683ae1d-cb7c-4aa1-b9fe-205e1bd23535"
+    },
+    {
+      "cv_id": "real_cv11",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.28219833970069885,
+      "sim_mnrl_v1": 0.31952640414237976,
+      "sim_zero_shot": 0.5192698240280151,
+      "uri": "CUST:openai-api"
+    },
+    {
+      "cv_id": "real_cv11",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.39706718921661377,
+      "sim_mnrl_v1": 0.456707239151001,
+      "sim_zero_shot": 0.3880641460418701,
+      "uri": "CUST:plsql"
+    },
+    {
+      "cv_id": "real_cv11",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.4346849322319031,
+      "sim_mnrl_v1": 0.42630261182785034,
+      "sim_zero_shot": 0.3956613838672638,
+      "uri": "CUST:react"
+    },
+    {
+      "cv_id": "real_cv11",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.4251789152622223,
+      "sim_mnrl_v1": 0.4661795496940613,
+      "sim_zero_shot": 0.5285005569458008,
+      "uri": "CUST:vite"
+    },
+    {
+      "cv_id": "real_cv11",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.5744996070861816,
+      "sim_mnrl_v1": 0.4713078439235687,
+      "sim_zero_shot": 0.5107315182685852,
+      "uri": "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389"
+    },
+    {
+      "cv_id": "real_cv11",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.3961242437362671,
+      "sim_mnrl_v1": 0.28227347135543823,
+      "sim_zero_shot": 0.38250795006752014,
+      "uri": "http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7"
+    },
+    {
+      "cv_id": "real_cv11",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.5630345940589905,
+      "sim_mnrl_v1": 0.514441728591919,
+      "sim_zero_shot": 0.4414868652820587,
+      "uri": "http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a"
+    },
+    {
+      "cv_id": "real_cv11",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.30386918783187866,
+      "sim_mnrl_v1": 0.5692987442016602,
+      "sim_zero_shot": 0.42544540762901306,
+      "uri": "http://data.europa.eu/esco/skill/a8d07b5a-c1a1-42c6-9d53-db9c7a2ca996"
+    },
+    {
+      "cv_id": "real_cv11",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.25158894062042236,
+      "sim_mnrl_v1": 0.23139014840126038,
+      "sim_zero_shot": 0.4003989100456238,
+      "uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d"
+    },
+    {
+      "cv_id": "real_cv11",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.5008568167686462,
+      "sim_mnrl_v1": 0.624651312828064,
+      "sim_zero_shot": 0.5873470306396484,
+      "uri": "http://data.europa.eu/esco/skill/d8829a1d-dbde-435b-b921-29d6462f35c9"
+    },
+    {
+      "cv_id": "real_cv12",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.2922806441783905,
+      "sim_mnrl_v1": 0.29422274231910706,
+      "sim_zero_shot": 0.4725218117237091,
+      "uri": "CUST:assembly"
+    },
+    {
+      "cv_id": "real_cv12",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.4030214548110962,
+      "sim_mnrl_v1": 0.4560278654098511,
+      "sim_zero_shot": 0.47902947664260864,
+      "uri": "CUST:canva"
+    },
+    {
+      "cv_id": "real_cv12",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.6670908331871033,
+      "sim_mnrl_v1": 0.6433175802230835,
+      "sim_zero_shot": 0.7197812795639038,
+      "uri": "CUST:database-design"
+    },
+    {
+      "cv_id": "real_cv12",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.40037617087364197,
+      "sim_mnrl_v1": 0.35508498549461365,
+      "sim_zero_shot": 0.47883033752441406,
+      "uri": "CUST:full-stack"
+    },
+    {
+      "cv_id": "real_cv12",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.4189710021018982,
+      "sim_mnrl_v1": 0.4420488476753235,
+      "sim_zero_shot": 0.4948737919330597,
+      "uri": "CUST:github"
+    },
+    {
+      "cv_id": "real_cv12",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.4418460726737976,
+      "sim_mnrl_v1": 0.3758128881454468,
+      "sim_zero_shot": 0.5563703775405884,
+      "uri": "CUST:linux"
+    },
+    {
+      "cv_id": "real_cv12",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.4993293881416321,
+      "sim_mnrl_v1": 0.674826443195343,
+      "sim_zero_shot": 0.5267232656478882,
+      "uri": "CUST:node"
+    },
+    {
+      "cv_id": "real_cv12",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.4046946167945862,
+      "sim_mnrl_v1": 0.6103522777557373,
+      "sim_zero_shot": 0.570421040058136,
+      "uri": "CUST:pytorch"
+    },
+    {
+      "cv_id": "real_cv12",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.450692355632782,
+      "sim_mnrl_v1": 0.40276142954826355,
+      "sim_zero_shot": 0.46096596121788025,
+      "uri": "CUST:react"
+    },
+    {
+      "cv_id": "real_cv12",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.35653284192085266,
+      "sim_mnrl_v1": 0.3818485140800476,
+      "sim_zero_shot": 0.5204113721847534,
+      "uri": "CUST:vite"
+    },
+    {
+      "cv_id": "real_cv12",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.4911678433418274,
+      "sim_mnrl_v1": 0.5269530415534973,
+      "sim_zero_shot": 0.6106289625167847,
+      "uri": "http://data.europa.eu/esco/skill/14ced458-5f4b-495f-bd3d-9c240614bda0"
+    },
+    {
+      "cv_id": "real_cv12",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.4296288788318634,
+      "sim_mnrl_v1": 0.4304024577140808,
+      "sim_zero_shot": 0.38715022802352905,
+      "uri": "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389"
+    },
+    {
+      "cv_id": "real_cv12",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.3872350752353668,
+      "sim_mnrl_v1": 0.4038364291191101,
+      "sim_zero_shot": 0.47236496210098267,
+      "uri": "http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7"
+    },
+    {
+      "cv_id": "real_cv12",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.5987799167633057,
+      "sim_mnrl_v1": 0.5632044076919556,
+      "sim_zero_shot": 0.4804117679595947,
+      "uri": "http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a"
+    },
+    {
+      "cv_id": "real_cv12",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.4472535252571106,
+      "sim_mnrl_v1": 0.4553564786911011,
+      "sim_zero_shot": 0.41836515069007874,
+      "uri": "http://data.europa.eu/esco/skill/5608d5a0-6d5e-43b7-be37-616501729bb4"
+    },
+    {
+      "cv_id": "real_cv12",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.3532487154006958,
+      "sim_mnrl_v1": 0.44383418560028076,
+      "sim_zero_shot": 0.5197383165359497,
+      "uri": "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742"
+    },
+    {
+      "cv_id": "real_cv12",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.30873972177505493,
+      "sim_mnrl_v1": 0.2648732662200928,
+      "sim_zero_shot": 0.5142675638198853,
+      "uri": "http://data.europa.eu/esco/skill/ab1e97ed-2319-4293-a8b7-072d2648822f"
+    },
+    {
+      "cv_id": "real_cv12",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.3366626501083374,
+      "sim_mnrl_v1": 0.31431666016578674,
+      "sim_zero_shot": 0.42400944232940674,
+      "uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d"
+    },
+    {
+      "cv_id": "real_cv12",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.20170950889587402,
+      "sim_mnrl_v1": 0.13978728652000427,
+      "sim_zero_shot": 0.3271324038505554,
+      "uri": "http://data.europa.eu/esco/skill/f683ae1d-cb7c-4aa1-b9fe-205e1bd23535"
+    },
+    {
+      "cv_id": "real_cv13",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.32973814010620117,
+      "sim_mnrl_v1": 0.40223634243011475,
+      "sim_zero_shot": 0.4514687955379486,
+      "uri": "CUST:docker"
+    },
+    {
+      "cv_id": "real_cv13",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.5987836122512817,
+      "sim_mnrl_v1": 0.7529899477958679,
+      "sim_zero_shot": 0.6551845669746399,
+      "uri": "CUST:git"
+    },
+    {
+      "cv_id": "real_cv13",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.560665488243103,
+      "sim_mnrl_v1": 0.8217356204986572,
+      "sim_zero_shot": 0.6571909189224243,
+      "uri": "CUST:react"
+    },
+    {
+      "cv_id": "real_cv14",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.3513745069503784,
+      "sim_mnrl_v1": 0.4983498752117157,
+      "sim_zero_shot": 0.27611029148101807,
+      "uri": "CUST:rag"
+    },
+    {
+      "cv_id": "real_cv15",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.5272090435028076,
+      "sim_mnrl_v1": 0.6902985572814941,
+      "sim_zero_shot": 0.6835211515426636,
+      "uri": "CUST:data-visualization"
+    },
+    {
+      "cv_id": "real_cv3",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.3773302137851715,
+      "sim_mnrl_v1": 0.528689444065094,
+      "sim_zero_shot": 0.43110907077789307,
+      "uri": "CUST:crud"
+    },
+    {
+      "cv_id": "real_cv3",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.4401300549507141,
+      "sim_mnrl_v1": 0.2369244247674942,
+      "sim_zero_shot": 0.46912193298339844,
+      "uri": "CUST:database-design"
+    },
+    {
+      "cv_id": "real_cv3",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.4891471862792969,
+      "sim_mnrl_v1": 0.5330334901809692,
+      "sim_zero_shot": 0.5065048336982727,
+      "uri": "CUST:express"
+    },
+    {
+      "cv_id": "real_cv3",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.5548601150512695,
+      "sim_mnrl_v1": 0.5575481653213501,
+      "sim_zero_shot": 0.480613112449646,
+      "uri": "CUST:github"
+    },
+    {
+      "cv_id": "real_cv3",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.550631046295166,
+      "sim_mnrl_v1": 0.5401985049247742,
+      "sim_zero_shot": 0.5774357318878174,
+      "uri": "CUST:intellij-idea"
+    },
+    {
+      "cv_id": "real_cv3",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.47835731506347656,
+      "sim_mnrl_v1": 0.28764837980270386,
+      "sim_zero_shot": 0.401466965675354,
+      "uri": "CUST:linux"
+    },
+    {
+      "cv_id": "real_cv3",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.5243341326713562,
+      "sim_mnrl_v1": 0.6383609771728516,
+      "sim_zero_shot": 0.48066776990890503,
+      "uri": "CUST:node"
+    },
+    {
+      "cv_id": "real_cv3",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.5553919672966003,
+      "sim_mnrl_v1": 0.25623196363449097,
+      "sim_zero_shot": 0.43879878520965576,
+      "uri": "CUST:plsql"
+    },
+    {
+      "cv_id": "real_cv3",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.6035428047180176,
+      "sim_mnrl_v1": 0.5616008639335632,
+      "sim_zero_shot": 0.5906810760498047,
+      "uri": "CUST:react"
+    },
+    {
+      "cv_id": "real_cv3",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.4231497645378113,
+      "sim_mnrl_v1": 0.4136916995048523,
+      "sim_zero_shot": 0.464336633682251,
+      "uri": "CUST:tailwind"
+    },
+    {
+      "cv_id": "real_cv3",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.3480594754219055,
+      "sim_mnrl_v1": 0.3634209632873535,
+      "sim_zero_shot": 0.5086969137191772,
+      "uri": "CUST:visual-studio-ide"
+    },
+    {
+      "cv_id": "real_cv3",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.39300811290740967,
+      "sim_mnrl_v1": 0.37720367312431335,
+      "sim_zero_shot": 0.5072030425071716,
+      "uri": "CUST:vscode"
+    },
+    {
+      "cv_id": "real_cv3",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.5313042402267456,
+      "sim_mnrl_v1": 0.4817279279232025,
+      "sim_zero_shot": 0.5008125901222229,
+      "uri": "CUST:webpack"
+    },
+    {
+      "cv_id": "real_cv3",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.444379597902298,
+      "sim_mnrl_v1": 0.4045639634132385,
+      "sim_zero_shot": 0.43633049726486206,
+      "uri": "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389"
+    },
+    {
+      "cv_id": "real_cv3",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.5347055792808533,
+      "sim_mnrl_v1": 0.5552018284797668,
+      "sim_zero_shot": 0.6376336812973022,
+      "uri": "http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7"
+    },
+    {
+      "cv_id": "real_cv3",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.320613294839859,
+      "sim_mnrl_v1": 0.24067610502243042,
+      "sim_zero_shot": 0.3385202884674072,
+      "uri": "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742"
+    },
+    {
+      "cv_id": "real_cv3",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.229468435049057,
+      "sim_mnrl_v1": 0.17489662766456604,
+      "sim_zero_shot": 0.3955375850200653,
+      "uri": "http://data.europa.eu/esco/skill/ab1e97ed-2319-4293-a8b7-072d2648822f"
+    },
+    {
+      "cv_id": "real_cv4",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.23281830549240112,
+      "sim_mnrl_v1": 0.16000400483608246,
+      "sim_zero_shot": 0.09731635451316833,
+      "uri": "CUST:bash"
+    },
+    {
+      "cv_id": "real_cv4",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.38915321230888367,
+      "sim_mnrl_v1": 0.562705397605896,
+      "sim_zero_shot": 0.45747244358062744,
+      "uri": "CUST:beautifulsoup"
+    },
+    {
+      "cv_id": "real_cv4",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.3941987156867981,
+      "sim_mnrl_v1": 0.36372464895248413,
+      "sim_zero_shot": 0.5140956044197083,
+      "uri": "CUST:django"
+    },
+    {
+      "cv_id": "real_cv4",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.4466942250728607,
+      "sim_mnrl_v1": 0.443539559841156,
+      "sim_zero_shot": 0.5381324291229248,
+      "uri": "CUST:dotnet"
+    },
+    {
+      "cv_id": "real_cv4",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.5041527152061462,
+      "sim_mnrl_v1": 0.4826784133911133,
+      "sim_zero_shot": 0.5508711338043213,
+      "uri": "CUST:express"
+    },
+    {
+      "cv_id": "real_cv4",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.4895571768283844,
+      "sim_mnrl_v1": 0.4296148419380188,
+      "sim_zero_shot": 0.5110788345336914,
+      "uri": "CUST:flask"
+    },
+    {
+      "cv_id": "real_cv4",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.3765527606010437,
+      "sim_mnrl_v1": 0.32488715648651123,
+      "sim_zero_shot": 0.40902799367904663,
+      "uri": "CUST:git"
+    },
+    {
+      "cv_id": "real_cv4",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.38396477699279785,
+      "sim_mnrl_v1": 0.5547851920127869,
+      "sim_zero_shot": 0.5087852478027344,
+      "uri": "CUST:intellij-idea"
+    },
+    {
+      "cv_id": "real_cv4",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.5497953295707703,
+      "sim_mnrl_v1": 0.45452815294265747,
+      "sim_zero_shot": 0.5059981942176819,
+      "uri": "CUST:kotlin"
+    },
+    {
+      "cv_id": "real_cv4",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.40452146530151367,
+      "sim_mnrl_v1": 0.5732907056808472,
+      "sim_zero_shot": 0.5274958610534668,
+      "uri": "CUST:mongodb"
+    },
+    {
+      "cv_id": "real_cv4",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.503493070602417,
+      "sim_mnrl_v1": 0.5143239498138428,
+      "sim_zero_shot": 0.4752540588378906,
+      "uri": "CUST:node"
+    },
+    {
+      "cv_id": "real_cv4",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.45416802167892456,
+      "sim_mnrl_v1": 0.5865346193313599,
+      "sim_zero_shot": 0.6625856757164001,
+      "uri": "CUST:openai-api"
+    },
+    {
+      "cv_id": "real_cv4",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.6093207597732544,
+      "sim_mnrl_v1": 0.7366974353790283,
+      "sim_zero_shot": 0.6383886933326721,
+      "uri": "CUST:random-forest"
+    },
+    {
+      "cv_id": "real_cv4",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.3848557472229004,
+      "sim_mnrl_v1": 0.42800194025039673,
+      "sim_zero_shot": 0.394301176071167,
+      "uri": "CUST:selenium"
+    },
+    {
+      "cv_id": "real_cv4",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.47960981726646423,
+      "sim_mnrl_v1": 0.6467702984809875,
+      "sim_zero_shot": 0.45732581615448,
+      "uri": "CUST:tensorflow"
+    },
+    {
+      "cv_id": "real_cv4",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.3574552536010742,
+      "sim_mnrl_v1": 0.34018829464912415,
+      "sim_zero_shot": 0.36115771532058716,
+      "uri": "CUST:web-scraping"
+    },
+    {
+      "cv_id": "real_cv4",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.5284926891326904,
+      "sim_mnrl_v1": 0.3450776934623718,
+      "sim_zero_shot": 0.478779137134552,
+      "uri": "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389"
+    },
+    {
+      "cv_id": "real_cv4",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.3769437372684479,
+      "sim_mnrl_v1": 0.35429471731185913,
+      "sim_zero_shot": 0.429784893989563,
+      "uri": "http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7"
+    },
+    {
+      "cv_id": "real_cv4",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.3091212511062622,
+      "sim_mnrl_v1": 0.23118078708648682,
+      "sim_zero_shot": 0.27703335881233215,
+      "uri": "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742"
+    },
+    {
+      "cv_id": "real_cv4",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.3010808229446411,
+      "sim_mnrl_v1": 0.24044926464557648,
+      "sim_zero_shot": 0.33228185772895813,
+      "uri": "http://data.europa.eu/esco/skill/ab1e97ed-2319-4293-a8b7-072d2648822f"
+    },
+    {
+      "cv_id": "real_cv4",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.418874591588974,
+      "sim_mnrl_v1": 0.39109015464782715,
+      "sim_zero_shot": 0.5337646007537842,
+      "uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d"
+    },
+    {
+      "cv_id": "real_cv4",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.28601717948913574,
+      "sim_mnrl_v1": 0.33837777376174927,
+      "sim_zero_shot": 0.5709537863731384,
+      "uri": "http://data.europa.eu/esco/skill/d8829a1d-dbde-435b-b921-29d6462f35c9"
+    },
+    {
+      "cv_id": "real_cv5",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.45861682295799255,
+      "sim_mnrl_v1": 0.6353147029876709,
+      "sim_zero_shot": 0.6295074820518494,
+      "uri": "CUST:assembly"
+    },
+    {
+      "cv_id": "real_cv5",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.7307166457176208,
+      "sim_mnrl_v1": 0.5351725816726685,
+      "sim_zero_shot": 0.6189374923706055,
+      "uri": "CUST:cryptography"
+    },
+    {
+      "cv_id": "real_cv5",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.5131974816322327,
+      "sim_mnrl_v1": 0.45728152990341187,
+      "sim_zero_shot": 0.5617513656616211,
+      "uri": "CUST:data-structures"
+    },
+    {
+      "cv_id": "real_cv5",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.42302021384239197,
+      "sim_mnrl_v1": 0.4925912022590637,
+      "sim_zero_shot": 0.5816277861595154,
+      "uri": "CUST:full-stack"
+    },
+    {
+      "cv_id": "real_cv5",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.47140470147132874,
+      "sim_mnrl_v1": 0.3684503436088562,
+      "sim_zero_shot": 0.5080841779708862,
+      "uri": "CUST:git"
+    },
+    {
+      "cv_id": "real_cv5",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.3669561445713043,
+      "sim_mnrl_v1": 0.39302852749824524,
+      "sim_zero_shot": 0.49544110894203186,
+      "uri": "CUST:intellij-idea"
+    },
+    {
+      "cv_id": "real_cv5",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.4224061071872711,
+      "sim_mnrl_v1": 0.3109781742095947,
+      "sim_zero_shot": 0.4489280581474304,
+      "uri": "CUST:linux"
+    },
+    {
+      "cv_id": "real_cv5",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.6467033624649048,
+      "sim_mnrl_v1": 0.5045283436775208,
+      "sim_zero_shot": 0.5203276872634888,
+      "uri": "CUST:memory-management"
+    },
+    {
+      "cv_id": "real_cv5",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.44935521483421326,
+      "sim_mnrl_v1": 0.31962358951568604,
+      "sim_zero_shot": 0.5621541738510132,
+      "uri": "CUST:network-security"
+    },
+    {
+      "cv_id": "real_cv5",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.5448052883148193,
+      "sim_mnrl_v1": 0.4407634735107422,
+      "sim_zero_shot": 0.4932907819747925,
+      "uri": "CUST:node"
+    },
+    {
+      "cv_id": "real_cv5",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.26063409447669983,
+      "sim_mnrl_v1": 0.441040575504303,
+      "sim_zero_shot": 0.48305588960647583,
+      "uri": "CUST:operating-systems"
+    },
+    {
+      "cv_id": "real_cv5",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.6007214784622192,
+      "sim_mnrl_v1": 0.618389368057251,
+      "sim_zero_shot": 0.7939653396606445,
+      "uri": "CUST:oracle-db"
+    },
+    {
+      "cv_id": "real_cv5",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.5215362906455994,
+      "sim_mnrl_v1": 0.874306857585907,
+      "sim_zero_shot": 0.6785513758659363,
+      "uri": "CUST:react"
+    },
+    {
+      "cv_id": "real_cv5",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.3545689880847931,
+      "sim_mnrl_v1": 0.3890560269355774,
+      "sim_zero_shot": 0.5479859113693237,
+      "uri": "CUST:real-time-systems"
+    },
+    {
+      "cv_id": "real_cv5",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.4986727833747864,
+      "sim_mnrl_v1": 0.432492733001709,
+      "sim_zero_shot": 0.544552206993103,
+      "uri": "CUST:rest-api"
+    },
+    {
+      "cv_id": "real_cv5",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.4739193618297577,
+      "sim_mnrl_v1": 0.44734010100364685,
+      "sim_zero_shot": 0.6314883232116699,
+      "uri": "CUST:secure-coding"
+    },
+    {
+      "cv_id": "real_cv5",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.41893264651298523,
+      "sim_mnrl_v1": 0.30780598521232605,
+      "sim_zero_shot": 0.4613921642303467,
+      "uri": "CUST:spa"
+    },
+    {
+      "cv_id": "real_cv5",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.38377660512924194,
+      "sim_mnrl_v1": 0.30539101362228394,
+      "sim_zero_shot": 0.47907155752182007,
+      "uri": "CUST:visual-studio-ide"
+    },
+    {
+      "cv_id": "real_cv5",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.36334532499313354,
+      "sim_mnrl_v1": 0.3528570532798767,
+      "sim_zero_shot": 0.41341495513916016,
+      "uri": "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389"
+    },
+    {
+      "cv_id": "real_cv5",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.5031048655509949,
+      "sim_mnrl_v1": 0.6672694087028503,
+      "sim_zero_shot": 0.6365501880645752,
+      "uri": "http://data.europa.eu/esco/skill/43ae58b9-5e56-4524-b45a-b422777a0576"
+    },
+    {
+      "cv_id": "real_cv5",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.40867316722869873,
+      "sim_mnrl_v1": 0.38303253054618835,
+      "sim_zero_shot": 0.41757476329803467,
+      "uri": "http://data.europa.eu/esco/skill/54924a2c-daca-40d3-9716-4b38ceb04f38"
+    },
+    {
+      "cv_id": "real_cv5",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.3854295611381531,
+      "sim_mnrl_v1": 0.3894885182380676,
+      "sim_zero_shot": 0.521915078163147,
+      "uri": "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742"
+    },
+    {
+      "cv_id": "real_cv5",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.49950677156448364,
+      "sim_mnrl_v1": 0.5600351691246033,
+      "sim_zero_shot": 0.6365998983383179,
+      "uri": "http://data.europa.eu/esco/skill/ab1e97ed-2319-4293-a8b7-072d2648822f"
+    },
+    {
+      "cv_id": "real_cv5",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.29931318759918213,
+      "sim_mnrl_v1": 0.3156381845474243,
+      "sim_zero_shot": 0.47593948245048523,
+      "uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d"
+    },
+    {
+      "cv_id": "real_cv5",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.2657996714115143,
+      "sim_mnrl_v1": 0.2676127552986145,
+      "sim_zero_shot": 0.46884387731552124,
+      "uri": "http://data.europa.eu/esco/skill/d8829a1d-dbde-435b-b921-29d6462f35c9"
+    },
+    {
+      "cv_id": "real_cv6",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.2908600866794586,
+      "sim_mnrl_v1": 0.24960249662399292,
+      "sim_zero_shot": 0.36392346024513245,
+      "uri": "CUST:pytorch"
+    },
+    {
+      "cv_id": "real_cv6",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.5539851784706116,
+      "sim_mnrl_v1": 0.4938039183616638,
+      "sim_zero_shot": 0.4698583781719208,
+      "uri": "CUST:random-forest"
+    },
+    {
+      "cv_id": "real_cv6",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.4649498760700226,
+      "sim_mnrl_v1": 0.37378305196762085,
+      "sim_zero_shot": 0.5036170482635498,
+      "uri": "CUST:scikit-learn"
+    },
+    {
+      "cv_id": "real_cv6",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.5839893221855164,
+      "sim_mnrl_v1": 0.6168490648269653,
+      "sim_zero_shot": 0.5210888385772705,
+      "uri": "http://data.europa.eu/esco/skill/1c460d2d-90c6-4fc9-ad49-febb6e15605a"
+    },
+    {
+      "cv_id": "real_cv6",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.47493278980255127,
+      "sim_mnrl_v1": 0.5983456969261169,
+      "sim_zero_shot": 0.6814823150634766,
+      "uri": "http://data.europa.eu/esco/skill/43ae58b9-5e56-4524-b45a-b422777a0576"
+    },
+    {
+      "cv_id": "real_cv6",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.39382821321487427,
+      "sim_mnrl_v1": 0.37125471234321594,
+      "sim_zero_shot": 0.43584543466567993,
+      "uri": "http://data.europa.eu/esco/skill/6eff134b-e34f-4d6e-a6e8-5e47cf2228d0"
+    },
+    {
+      "cv_id": "real_cv6",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.3660583198070526,
+      "sim_mnrl_v1": 0.20349624752998352,
+      "sim_zero_shot": 0.3152354657649994,
+      "uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d"
+    },
+    {
+      "cv_id": "real_cv6",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.38575035333633423,
+      "sim_mnrl_v1": 0.4792236089706421,
+      "sim_zero_shot": 0.45958876609802246,
+      "uri": "http://data.europa.eu/esco/skill/ecc4552a-92c5-4222-b18d-faf5ac841080"
+    },
+    {
+      "cv_id": "real_cv7",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.31360357999801636,
+      "sim_mnrl_v1": 0.14551883935928345,
+      "sim_zero_shot": 0.25934797525405884,
+      "uri": "CUST:linux"
+    },
+    {
+      "cv_id": "real_cv7",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.2941833734512329,
+      "sim_mnrl_v1": 0.31131672859191895,
+      "sim_zero_shot": 0.3359067440032959,
+      "uri": "CUST:react"
+    },
+    {
+      "cv_id": "real_cv7",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.4737917184829712,
+      "sim_mnrl_v1": 0.4682447612285614,
+      "sim_zero_shot": 0.6122236251831055,
+      "uri": "CUST:secure-coding"
+    },
+    {
+      "cv_id": "real_cv7",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.3482564091682434,
+      "sim_mnrl_v1": 0.31833887100219727,
+      "sim_zero_shot": 0.4969283938407898,
+      "uri": "CUST:tailwind"
+    },
+    {
+      "cv_id": "real_cv7",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.4325249493122101,
+      "sim_mnrl_v1": 0.47639939188957214,
+      "sim_zero_shot": 0.5644993782043457,
+      "uri": "http://data.europa.eu/esco/skill/1ce4cddd-4a74-458e-a2d4-152ca939475a"
+    },
+    {
+      "cv_id": "real_cv7",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.26725995540618896,
+      "sim_mnrl_v1": 0.31276121735572815,
+      "sim_zero_shot": 0.3853633999824524,
+      "uri": "http://data.europa.eu/esco/skill/21d2f96d-35f7-4e3f-9745-c533d2dd6e97"
+    },
+    {
+      "cv_id": "real_cv7",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.46802768111228943,
+      "sim_mnrl_v1": 0.30951160192489624,
+      "sim_zero_shot": 0.3888518214225769,
+      "uri": "http://data.europa.eu/esco/skill/43ae58b9-5e56-4524-b45a-b422777a0576"
+    },
+    {
+      "cv_id": "real_cv7",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.45017513632774353,
+      "sim_mnrl_v1": 0.6210644841194153,
+      "sim_zero_shot": 0.6281323432922363,
+      "uri": "http://data.europa.eu/esco/skill/50597e96-9b6a-4736-ac79-dd80f36c0269"
+    },
+    {
+      "cv_id": "real_cv7",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.31759294867515564,
+      "sim_mnrl_v1": 0.4107762575149536,
+      "sim_zero_shot": 0.4780169725418091,
+      "uri": "http://data.europa.eu/esco/skill/7bf4539a-3f2e-4485-876b-1c9306b181af"
+    },
+    {
+      "cv_id": "real_cv7",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.44276273250579834,
+      "sim_mnrl_v1": 0.30720585584640503,
+      "sim_zero_shot": 0.49806174635887146,
+      "uri": "http://data.europa.eu/esco/skill/8fa510d0-a8a6-4932-a361-00f8442cfe23"
+    },
+    {
+      "cv_id": "real_cv7",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.6222891807556152,
+      "sim_mnrl_v1": 0.5252969264984131,
+      "sim_zero_shot": 0.6716971397399902,
+      "uri": "http://data.europa.eu/esco/skill/902fb91c-3113-4004-9b4f-79aa86b638b7"
+    },
+    {
+      "cv_id": "real_cv7",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.3596263825893402,
+      "sim_mnrl_v1": 0.33069807291030884,
+      "sim_zero_shot": 0.3886134624481201,
+      "uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d"
+    },
+    {
+      "cv_id": "real_cv8",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.6292324066162109,
+      "sim_mnrl_v1": 0.28684142231941223,
+      "sim_zero_shot": 0.6129040718078613,
+      "uri": "CUST:database-design"
+    },
+    {
+      "cv_id": "real_cv8",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.43205010890960693,
+      "sim_mnrl_v1": 0.4983522891998291,
+      "sim_zero_shot": 0.4654724895954132,
+      "uri": "CUST:github"
+    },
+    {
+      "cv_id": "real_cv8",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.4949038624763489,
+      "sim_mnrl_v1": 0.3813071548938751,
+      "sim_zero_shot": 0.48545122146606445,
+      "uri": "CUST:langchain"
+    },
+    {
+      "cv_id": "real_cv8",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.5140823125839233,
+      "sim_mnrl_v1": 0.29249370098114014,
+      "sim_zero_shot": 0.5799894332885742,
+      "uri": "CUST:plsql"
+    },
+    {
+      "cv_id": "real_cv8",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.4074471890926361,
+      "sim_mnrl_v1": 0.45852604508399963,
+      "sim_zero_shot": 0.5574533939361572,
+      "uri": "CUST:selenium"
+    },
+    {
+      "cv_id": "real_cv8",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.3807326555252075,
+      "sim_mnrl_v1": 0.5304672718048096,
+      "sim_zero_shot": 0.600129246711731,
+      "uri": "CUST:software-testing"
+    },
+    {
+      "cv_id": "real_cv8",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.44606536626815796,
+      "sim_mnrl_v1": 0.5382483601570129,
+      "sim_zero_shot": 0.5389938354492188,
+      "uri": "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389"
+    },
+    {
+      "cv_id": "real_cv8",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.47879958152770996,
+      "sim_mnrl_v1": 0.4321194887161255,
+      "sim_zero_shot": 0.518603503704071,
+      "uri": "http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7"
+    },
+    {
+      "cv_id": "real_cv8",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.6654559373855591,
+      "sim_mnrl_v1": 0.4510883390903473,
+      "sim_zero_shot": 0.5645414590835571,
+      "uri": "http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a"
+    },
+    {
+      "cv_id": "real_cv8",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.41869622468948364,
+      "sim_mnrl_v1": 0.29855698347091675,
+      "sim_zero_shot": 0.5520404577255249,
+      "uri": "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742"
+    },
+    {
+      "cv_id": "real_cv8",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.43225759267807007,
+      "sim_mnrl_v1": 0.5842368006706238,
+      "sim_zero_shot": 0.48786401748657227,
+      "uri": "http://data.europa.eu/esco/skill/867137fb-ff1b-4ca3-99f3-cb6969aa2c68"
+    },
+    {
+      "cv_id": "real_cv8",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.39732182025909424,
+      "sim_mnrl_v1": 0.2236160933971405,
+      "sim_zero_shot": 0.46898722648620605,
+      "uri": "http://data.europa.eu/esco/skill/ab1e97ed-2319-4293-a8b7-072d2648822f"
+    },
+    {
+      "cv_id": "real_cv8",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.5151123404502869,
+      "sim_mnrl_v1": 0.3701212704181671,
+      "sim_zero_shot": 0.5089661478996277,
+      "uri": "http://data.europa.eu/esco/skill/bec4359e-cb92-468f-a997-8fb28e32fba9"
+    },
+    {
+      "cv_id": "real_cv8",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.4655430316925049,
+      "sim_mnrl_v1": 0.3506886661052704,
+      "sim_zero_shot": 0.4542856216430664,
+      "uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d"
+    },
+    {
+      "cv_id": "real_cv9",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.5497226119041443,
+      "sim_mnrl_v1": 0.514594554901123,
+      "sim_zero_shot": 0.5375990867614746,
+      "uri": "CUST:django"
+    },
+    {
+      "cv_id": "real_cv9",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.4690183997154236,
+      "sim_mnrl_v1": 0.5049577951431274,
+      "sim_zero_shot": 0.49170467257499695,
+      "uri": "CUST:express"
+    },
+    {
+      "cv_id": "real_cv9",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.3106721043586731,
+      "sim_mnrl_v1": 0.2998051047325134,
+      "sim_zero_shot": 0.3669540286064148,
+      "uri": "CUST:full-stack"
+    },
+    {
+      "cv_id": "real_cv9",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.4133121967315674,
+      "sim_mnrl_v1": 0.377309113740921,
+      "sim_zero_shot": 0.3802737593650818,
+      "uri": "CUST:node"
+    },
+    {
+      "cv_id": "real_cv9",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.5340679883956909,
+      "sim_mnrl_v1": 0.33536937832832336,
+      "sim_zero_shot": 0.4641872048377991,
+      "uri": "CUST:plsql"
+    },
+    {
+      "cv_id": "real_cv9",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.34000101685523987,
+      "sim_mnrl_v1": 0.5372594594955444,
+      "sim_zero_shot": 0.456012487411499,
+      "uri": "CUST:rest-api"
+    },
+    {
+      "cv_id": "real_cv9",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.46796107292175293,
+      "sim_mnrl_v1": 0.5248919725418091,
+      "sim_zero_shot": 0.517744243144989,
+      "uri": "CUST:scikit-learn"
+    },
+    {
+      "cv_id": "real_cv9",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.445387601852417,
+      "sim_mnrl_v1": 0.38840949535369873,
+      "sim_zero_shot": 0.4272680878639221,
+      "uri": "http://data.europa.eu/esco/skill/02e22093-3436-46a8-8dc5-b041bc4800cc"
+    },
+    {
+      "cv_id": "real_cv9",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.3288639187812805,
+      "sim_mnrl_v1": 0.19087174534797668,
+      "sim_zero_shot": 0.38920947909355164,
+      "uri": "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389"
+    },
+    {
+      "cv_id": "real_cv9",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.3267093598842621,
+      "sim_mnrl_v1": 0.38581424951553345,
+      "sim_zero_shot": 0.35484981536865234,
+      "uri": "http://data.europa.eu/esco/skill/3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43"
+    },
+    {
+      "cv_id": "real_cv9",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.3688967525959015,
+      "sim_mnrl_v1": 0.3194418251514435,
+      "sim_zero_shot": 0.43591588735580444,
+      "uri": "http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7"
+    },
+    {
+      "cv_id": "real_cv9",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.5269283056259155,
+      "sim_mnrl_v1": 0.30794623494148254,
+      "sim_zero_shot": 0.4164004325866699,
+      "uri": "http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a"
+    },
+    {
+      "cv_id": "real_cv9",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.42863303422927856,
+      "sim_mnrl_v1": 0.5128235220909119,
+      "sim_zero_shot": 0.4044703543186188,
+      "uri": "http://data.europa.eu/esco/skill/4da171e5-779c-4983-a76f-91c16751e99f"
+    },
+    {
+      "cv_id": "real_cv9",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.3620617389678955,
+      "sim_mnrl_v1": 0.4986260235309601,
+      "sim_zero_shot": 0.4066370725631714,
+      "uri": "http://data.europa.eu/esco/skill/76ef6ed3-1658-4a1a-9593-204d799c6d0c"
+    },
+    {
+      "cv_id": "real_cv9",
+      "in_training_sw": false,
+      "in_training_v1": false,
+      "sim_mnrl_sw": 0.4442861080169678,
+      "sim_mnrl_v1": 0.44915294647216797,
+      "sim_zero_shot": 0.5073449611663818,
+      "uri": "http://data.europa.eu/esco/skill/98301d4a-2cc3-439d-8d7f-0b6ac76302bb"
+    },
+    {
+      "cv_id": "real_cv9",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.4683334231376648,
+      "sim_mnrl_v1": 0.6011620759963989,
+      "sim_zero_shot": 0.6689916849136353,
+      "uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d"
+    },
+    {
+      "cv_id": "real_cv9",
+      "in_training_sw": true,
+      "in_training_v1": true,
+      "sim_mnrl_sw": 0.356991171836853,
+      "sim_mnrl_v1": 0.307656466960907,
+      "sim_zero_shot": 0.4473671317100525,
+      "uri": "http://data.europa.eu/esco/skill/d56fc2b5-4b0a-4e7e-9bde-a33736f6ff18"
+    }
+  ],
+  "rank": {
+    "in_training": {
+      "improved_count_sw": 27,
+      "improved_count_v1": 21,
+      "mean_delta_sw": -0.05151455501715342,
+      "mean_delta_v1": -0.07387300448285208,
+      "n_uris": 90
+    },
+    "n_cvs_processed": 14,
+    "n_cvs_skipped": 1,
+    "n_records": 164,
+    "not_in_training": {
+      "improved_count_sw": 16,
+      "improved_count_v1": 25,
+      "mean_delta_sw": -0.07205668051500579,
+      "mean_delta_v1": -0.035539392281222985,
+      "n_uris": 74
+    },
+    "notes": [
+      "in_training_v1 uses the on-disk train.jsonl as a proxy for mnrl_v1's training set (the 08:59 build it actually trained on was overwritten by the 19:43 build)."
+    ],
+    "skipped_cv_ids": [
+      "real_cv2"
+    ]
+  }
+}

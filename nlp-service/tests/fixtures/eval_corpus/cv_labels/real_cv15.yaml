@@ -1,0 +1,44 @@
+cv_id: real_cv15
+gold_skills:
+- skill_uri: CUST:cybersecurity
+  label: Cybersecurity
+  confidence_expected: high
+- skill_uri: CUST:soc-analyst
+  label: SOC Analyst
+  confidence_expected: high
+- skill_uri: CUST:siem
+  label: SIEM
+  confidence_expected: high
+- skill_uri: CUST:incident-response
+  label: Security Incident Response
+  confidence_expected: high
+- skill_uri: CUST:threat-detection
+  label: Threat Detection
+  confidence_expected: high
+- skill_uri: CUST:bug-bounty
+  label: Bug Bounty
+  confidence_expected: medium
+- skill_uri: CUST:data-visualization
+  label: Data Visualization
+  confidence_expected: high
+- skill_uri: CUST:pandas
+  label: Pandas (Software)
+  confidence_expected: high
+- skill_uri: CUST:data-manipulation
+  label: Data Manipulation
+  confidence_expected: high
+- skill_uri: CUST:python
+  label: Python
+  confidence_expected: medium
+- skill_uri: CUST:scripting
+  label: Scripting
+  confidence_expected: medium
+- skill_uri: CUST:programming
+  label: Programming
+  confidence_expected: medium
+skills_definitely_not_in_cv: []
+notes: 'Populated 2026-05-13 from PDF review. Candidate 15 - Security Engineer @Adobe (current), prior SOC
+  Analyst @DIGI Romania (SIEM, incident triage, response). Top Skills (LinkedIn): Data Visualization, Pandas (Software), Data
+  Manipulation. Multiple cybersecurity certs (Pre Security, Intro to Cyber Security, Advent of Cyber 2025, Practical Bug Bounty).
+  Python / Scripting / Programming marked medium because they are implied via Pandas usage and ''automation scripts'' rather
+  than explicitly named.'

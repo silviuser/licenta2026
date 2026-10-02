@@ -1,0 +1,41 @@
+id: jd4
+title: Backend Developer
+language: en
+location: Hybrid
+category: backend
+seniority: unspecified
+source_anonymized: ''
+raw_text: "Backend Developer\n\nYour day to day:\n\nWe’re looking for a skilled Backend Developer to join our team and help\
+  \ us design and build robust, scalable, and efficient backend services. Your primary focus will be working with Java (11+)\
+  \ and Spring Boot, but we also welcome experience with other backend technologies like Golang.\n\nWith these activities\
+  \ you will have a great impact on our business:\n\nDesign, develop, and maintain backend services and APIs\nCollaborate\
+  \ with frontend developers, DevOps, QA, and product teams to deliver high-quality features\nBuild scalable microservices\
+  \ and event-driven architectures\nEnsure high availability and performance of backend systems,write clean, testable, and\
+  \ maintainable code with unit and integration tests\nDebug, troubleshoot, and resolve issues in real-time during testing\
+  \ phases,contribute to continuous improvement of development practices and CI/CD pipelines\n\n\nWith these skills you are\
+  \ a great candidate:\n\nProficiency in REST API design, development & integration\nSecurity best practices in backend development\n\
+  Solid grasp of Unit Testing and TDD\nExposure to Kafka or similar messaging platforms (RabbitMQ, ActiveMQ, etc.)\nUnderstanding\
+  \ of CI/CD pipelines,familiarity with microservices and event-driven architecture\n\n\nMust have technical / professional\
+  \ qualifications:\n\nStrong experience with Java 8+ and Spring Boot\nSolid knowledge of Git and version control best practices\n\
+  Familiarity with Docker or other containerization tools\nCloud environment familiarity (AWS, GCP, Azure—any is welcome)\n\
+  Bonus points for experience with Golang\n\n\nSounds like the perfect job? We’ve got even more to offer:\n\nHybrid way of\
+  \ working\nMedical and dental services\nLife and hospitalization insurance\nDedicated employee phone subscription\nTake\
+  \ control of your benefits and choose any of the below options: meal tickets/private pension/vacation vouchers/cultural\
+  \ vouchers within the budget \nSpecial discounts for gyms and retailers\nAnnual Company Bonus\nLoyalty Programme\nOngoing\
+  \ Education – we continuously invest in you to ensure you have everything needed to excel on the job and enhance your skills\
+  \ \nYou get to work with tried and trusted web-technology\nGetting in on the ground floor of a technology changing company\n\
+  We let you write your own story: go for a trip, experience new things, have fun and enjoy your 23 vacation days \nSpecial\
+  \ Paternal Program - 4 months of paid paternity leave\n\n"
+required_skills:
+- Strong experience with Java 8+ and Spring Boot
+- Solid knowledge of Git and version control best practices
+- Familiarity with Docker or other containerization tools
+- Cloud environment familiarity (AWS, GCP, Azure)
+- Bonus points for experience with Golang
+nice_to_have_skills:
+- Proficiency in REST API design, development & integration
+- Security best practices in backend development
+- Solid grasp of Unit Testing and TDD
+- Exposure to Kafka or similar messaging platforms (RabbitMQ, ActiveMQ, etc.)
+- Understanding of CI/CD pipelines, familiarity with microservices and event-driven architecture
+notes: ''
